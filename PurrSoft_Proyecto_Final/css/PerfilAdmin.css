@@ -9,7 +9,7 @@
 .card {
     padding-top: 20px;
     margin: 10px 0 20px 0;
-    background-color: rgba(214, 224, 226, 0.2);
+    bound-color: rgba(214, 224, 226, 0.2);
     border-top-width: 0;
     border-bottom-width: 2px;
     -webkit-border-radius: 3px;
@@ -362,7 +362,7 @@
     }
 
         .content form input[type="text"],
-        .content form input[type="password"] {
+        .content form text[type="cedula"] {
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
             -ms-border-radius: 3px;
@@ -388,7 +388,7 @@
         }
 
             .content form input[type="text"]:focus,
-            .content form input[type="password"]:focus {
+            .content form text[type="cedula"]:focus {
                 -webkit-box-shadow: 0 0 2px #ed1c24 inset;
                 -moz-box-shadow: 0 0 2px #ed1c24 inset;
                 -ms-box-shadow: 0 0 2px #ed1c24 inset;
@@ -419,7 +419,13 @@
     font-size:15px;
 }
 
-
+.mGrid{
+    margin-top: -220px;
+    text-align:center;
+}
+botonCrear{
+    margin-top:auto;
+}
 
 
 

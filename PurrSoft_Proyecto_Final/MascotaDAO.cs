@@ -100,7 +100,7 @@ namespace PurrSoft_Proyecto_Final
             }
         }
 
-        public List<Mascotas> ConsultarTodasUsuario(int cedulaUsuario)
+        public List<Mascotas> ConsultarMascotasUsuario(int cedulaUsuario)
         {
             List<Mascotas> listaMascotas = new List<Mascotas>();
             var consulta = (from m in bd.Mascotas where m.Cedula_usuario == cedulaUsuario && m.ID_estado_mascota == 1 select m);

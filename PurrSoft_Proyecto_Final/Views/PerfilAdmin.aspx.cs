@@ -11,17 +11,63 @@ namespace PurrSoft_Proyecto_Final.Views
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
+			if (!IsPostBack)
+			{
+				CargarGrillaUsuarios();
+			}
+			UsuarioDAO usuarioDAO = new UsuarioDAO();
+			Usuarios usuariosDTO = usuarioDAO.ConsultaPorDocumento((Session["tipoDocumentoLogin"].ToString()), (int.Parse(Session["numeroDocumentoLogin"].ToString())));
+			lblNombrePerfil.Text = usuariosDTO.Nombres;
+			lblRol.Text = usuariosDTO.Roles.Descripcion;
+			imgFotoPerfilAdmin.ImageUrl = usuariosDTO.Imagen;
+			
+			
 		}
 
 		protected void btnActualizar_Click(object sender, EventArgs e) {
-			Console.WriteLine("You click me ...................");
-			System.Diagnostics.Debug.WriteLine("You click me ..................");
-			System.Diagnostics.Trace.WriteLine("You click me ..................");
 
+			Response.Redirect("ActualizarDatosUsuarioAdmin");
 		}
 
 
 
+		protected void gvdListaUsuarios_RowCommand(object sender, GridViewCommandEventArgs e)
+		{
+			GridViewRow fila = (GridViewRow)((Control)e.CommandSource).NamingContainer;
+			int indice = fila.RowIndex;
+
+			if (e.CommandName == "Ver")
+			{
+				Session["numeroDocUsuarioVerPerfil"] = gvdListaUsuarios.Rows[indice].Cells[0].Text;
+				Session["TipodocUsuarioVerPerfil"] = gvdListaUsuarios.Rows[indice].Cells[1].Text;
+				Response.Redirect("VerDatosUsuarioAdmin.aspx");
+			}
+			if (e.CommandName == "Actualizar")
+			{
+				Session["numeroDocUsuarioActualizarPerfil"] = gvdListaUsuarios.Rows[indice].Cells[0].Text;
+				Session["TipodocUsuarioActualizarPerfil"] = gvdListaUsuarios.Rows[indice].Cells[1].Text;
+				Response.Redirect("ActualizarDatosUsuarioAdmin.aspx");
+			}
+			
+		}
+
+		protected void CargarGrillaUsuarios()
+		{
+			UsuarioDAO usuarioDAO = new UsuarioDAO();
+			gvdListaUsuarios.DataSource = usuarioDAO.ConsultaTodos().ToList();
+			gvdListaUsuarios.DataBind();
+		}
+
+		protected void btnCrear_Click(object sender, EventArgs e)
+		{
+			Response.Redirect("CrearUsuarioAdmin.aspx");
+		}
+
+		protected void btnBuscarUsuario_Click(object sender, EventArgs e)
+		{
+			Session["tipoDocBusquedaPerfilAdmin"]= ddlTipoDocumento.Text;
+			Session["numeroDocBusquedaPerfilAdmin"] = int.Parse(txtNumeroDoc.Text);
+			Response.Redirect("BusquedaUsuarioAdmin.aspx");
+		}
 	}
 }

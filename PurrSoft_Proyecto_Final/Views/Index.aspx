@@ -52,7 +52,8 @@
             <div class="form-group ttamaño">
                 <h4 class="ingreso">INGRESAR</h4><br />
                 <label for="exampleInputEmail1">Tipo Documento</label><br />
-                <asp:DropDownList ID="ddlTipoDoc" runat="server" Height="33px" Width="54px">
+                <asp:DropDownList ID="ddlTipoDoc" runat="server" Height="33px" Width="88px">
+                    <asp:ListItem>Seleccionar</asp:ListItem>
                     <asp:ListItem>CC</asp:ListItem>
                     <asp:ListItem>TI</asp:ListItem>
                     <asp:ListItem>CE</asp:ListItem>
@@ -60,12 +61,12 @@
             </div>
             <div class="form-group ttamaño">
                 <label for="exampleInputEmail1">Numero de documento</label>
-                <asp:TextBox  ID ="txtNumeroDocumento" runat="server" CssClass="form-control ttamaño"></asp:TextBox>
+                <asp:TextBox  ID ="txtNumeroDocumento" runat="server" CssClass="form-control ttamaño" require="require"></asp:TextBox>
             </div>
 
             <div class="form-group ttamaño">
                 <label for="exampleInputPassword1">Password</label>
-                <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control ttamaño" style="width: 104%; height: 41px" TextMode="Password"></asp:TextBox>
+                <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control ttamaño" style="width: 104%; height: 41px" TextMode="Password" require="require"></asp:TextBox>
             </div>
 
             <div class="row">
@@ -74,13 +75,14 @@
                     <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" CssClass="action-button shadow animate green" OnClick="btnIngresar_Click" />
                 </div>
 
-
             </div><br />
         </form>
     </div>
 
+    
 
-    <asp:Label ID="lblMensajeIngreso" runat="server" Text="Label"></asp:Label>
+
+    <asp:Label ID="lblMensajeIngreso" runat="server" Text="Label" BorderStyle="Double"></asp:Label>
    
     <!-- Features Section -->
         

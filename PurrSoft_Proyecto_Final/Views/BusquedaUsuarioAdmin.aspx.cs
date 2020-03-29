@@ -12,7 +12,14 @@ namespace PurrSoft_Proyecto_Final.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["cedula"] = 644724642;
+            UsuarioDAO usuarioDAO = new UsuarioDAO();
+            Usuarios usuarioDTO = usuarioDAO.ConsultaPorDocumento(Session["tipoDocBusquedaPerfilAdmin"].ToString(), int.Parse(Session["numeroDocBusquedaPerfilAdmin"].ToString())) ;
+            imgUsuario.ImageUrl = usuarioDTO.Imagen;
+            lblNombres.Text = usuarioDTO.Nombres;
+            lblApellidos.Text = usuarioDTO.Apellidos;
+            lblTelefono.Text = usuarioDTO.Telefono.ToString();
+            lblEmail.Text = usuarioDTO.Email;
+
             if (!IsPostBack)
             {
                 CargarGrilla();
@@ -31,23 +38,35 @@ namespace PurrSoft_Proyecto_Final.Views
                 int idMascota = int.Parse(gvdListaMascotas.Rows[indice].Cells[0].Text);
                 MascotaDAO mascotaDAO = new MascotaDAO();
                 CargarGrilla();
-                lblMensaje.Text = mascotaDAO.EliminarMascota(idMascota);
+                mascotaDAO.EliminarMascota(idMascota);
             }
 
             if (e.CommandName == "Actualizar")
             {
                 Session["idMascotaActualizar"] = gvdListaMascotas.Rows[indice].Cells[0].Text;
-                Response.Redirect("VerInfoMascotaAdmin.aspx");
+                Session["tipoDocUsuarioActualizar"] = gvdListaMascotas.Rows[indice].Cells[1].Text;
+                Session["numeroDocUsuarioActualizar"] = gvdListaMascotas.Rows[indice].Cells[2].Text;
+                Response.Redirect("ActualizarDatosMascotasAdmin.aspx");
             }
+            if (e.CommandName == "Ver")
+            {
+                Session["idMascotaVer"] = gvdListaMascotas.Rows[indice].Cells[0].Text;
+                Response.Redirect("VerInfoMascotaAdmin.aspx");
+
+            }
+
         }
 
         protected void CargarGrilla()
         {
             MascotaDAO mascotaDAO = new MascotaDAO();
-            gvdListaMascotas.DataSource = mascotaDAO.ConsultarTodasUsuario(int.Parse(Session["cedula"].ToString())).ToList();
+            gvdListaMascotas.DataSource = mascotaDAO.ConsultarMascotasUsuario(int.Parse(Session["numeroDocBusquedaPerfilAdmin"].ToString())).ToList();
             gvdListaMascotas.DataBind();
         }
 
-
+        protected void btnCrearMascota_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CrearMascotaAdmin.aspx");
+        }
     }
 }

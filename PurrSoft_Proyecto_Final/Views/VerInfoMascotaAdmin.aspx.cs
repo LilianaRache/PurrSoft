@@ -11,25 +11,21 @@ namespace PurrSoft_Proyecto_Final.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                MascotaDAO mascotaDAO = new MascotaDAO();
-                Mascotas mascotaDTO = mascotaDAO.ConsultaPorId(int.Parse(Session["idMascotaActualizar"].ToString()));
-                txtIdMascota.Text = mascotaDTO.ID_mascota.ToString();
-                txtNombreMascota.Text = mascotaDTO.Nombre.ToString();
-                // agregar los demas campos que deseo actualizar
-            }
-           
+            MascotaDAO mascotaDAO = new MascotaDAO();
+            Mascotas mascotaDTO = mascotaDAO.ConsultaPorId(int.Parse(Session["idMascotaVer"].ToString()));
+            txtNombreMascota.Text = mascotaDTO.Nombre.ToString();
+            txtEspecieMascota.Text = mascotaDTO.Especie.ToString();
+            txtRazaMascota.Text = mascotaDTO.Raza.ToString();
+            txtColorMascota.Text = mascotaDTO.Color.ToString();
+            txtSexoMascota.Text = mascotaDTO.Sexo.ToString();
+            txtSeñasParticulares.Text = mascotaDTO.Señas_particulares.ToString();
+            txtFechaNacimiento.Text = mascotaDTO.Fecha_nacimiento.ToString();
+            txtEstado.Text = mascotaDTO.Estados.Descripcion;
+
         }
 
-        protected void btnActualizar_Click(object sender, EventArgs e)
+        protected void btnVolver_Click(object sender, EventArgs e)
         {
-            MascotaDAO mascotaDAO = new MascotaDAO();
-            Mascotas mascotaDTO = new Mascotas();
-            mascotaDTO.ID_mascota = int.Parse(txtIdMascota.Text);
-            mascotaDTO.Nombre = txtNombreMascota.Text;
-            // igual con todos los atributos 
-            mascotaDAO.ActualizarMascotas(mascotaDTO);
             Response.Redirect("BusquedaUsuarioAdmin.aspx");
         }
     }
