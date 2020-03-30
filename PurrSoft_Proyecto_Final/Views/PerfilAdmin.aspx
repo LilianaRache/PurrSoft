@@ -57,7 +57,7 @@
                 <asp:DropDownList ID="ddlTipoDocumento" runat="server">
                     <asp:ListItem>CC</asp:ListItem>
                     <asp:ListItem>TI</asp:ListItem>
-                    <asp:ListItem>PAS</asp:ListItem>
+                    <asp:ListItem>CE</asp:ListItem>
                 </asp:DropDownList>
 			</div><br />
 			<div class="letraContenido">
@@ -72,7 +72,7 @@
         </div>
 </div><!-- container -->
     <div>
-        <asp:Button ID="btnCrear" runat="server" Text="Crear Usuario" CssClass="botonCrear" OnClick="btnCrear_Click"/>
+        <asp:Button ID="btnCrear" runat="server" Text="Crear Usuario" CssClass="botonCrear btn btn-success" OnClick="btnCrear_Click"/>
     </div>
 
     <asp:GridView ID="gvdListaUsuarios" runat="server" CssClass="mGrid"  Width="1139px" AutoGenerateColumns="False" Height="209px" OnRowCommand="gvdListaUsuarios_RowCommand" >

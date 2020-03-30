@@ -20,8 +20,9 @@ namespace PurrSoft_Proyecto_Final.Views
 			lblNombrePerfil.Text = usuariosDTO.Nombres;
 			lblRol.Text = usuariosDTO.Roles.Descripcion;
 			imgFotoPerfilAdmin.ImageUrl = usuariosDTO.Imagen;
-			
-			
+
+		
+
 		}
 
 		protected void btnActualizar_Click(object sender, EventArgs e) {

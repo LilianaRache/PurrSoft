@@ -57,7 +57,7 @@ namespace PurrSoft_Proyecto_Final
             return consultaPorID;
         }
 
-        public string ActualizarUsuario(Usuarios usuario)
+        public bool ActualizarUsuario(Usuarios usuario)
         {
             try
             {
@@ -70,15 +70,17 @@ namespace PurrSoft_Proyecto_Final
                 buscarUsuario.Direccion = usuario.Direccion;
                 buscarUsuario.Telefono = usuario.Telefono;
                 buscarUsuario.Email = usuario.Email;
+                buscarUsuario.ID_ciudad = usuario.ID_ciudad;
                 buscarUsuario.Password_u = usuario.Password_u;
                 buscarUsuario.Imagen = usuario.Imagen;
 
                 bd.SubmitChanges();
-                return "Se actualizo correctamente";
+                return true;
             }
             catch (Exception ex)
             {
-                return "No se pudo actualizar" + ex.Message;
+                Console.WriteLine("Error" + ex.Message);
+                return false;
 
             }
 

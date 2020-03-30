@@ -19,14 +19,14 @@
 
 				<div class="wrap-input100 validate-input" data-validate="TipoDocumento is required">
 					<span class="label-input100"></span>
-                    <asp:Label class="labels" ID="Label8" runat="server" Text="Tipo de documento"> Nombres</asp:Label>
+                    <asp:Label class="labels" ID="Label8" runat="server" Text="Tipo de documento"> Tipo Documento </asp:Label>
                     <asp:TextBox ID="txtTipoDoc" runat="server"  ReadOnly="True" required="required" CssClass="input100" ></asp:TextBox>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate="NumeroDocumento is required">
 					<span class="label-input100"></span>
-                    <asp:Label class="labels" ID="Label9" runat="server" Text="Label"> Numero de Documento </asp:Label>
+                    <asp:Label class="labels" ID="Label9" runat="server" Text="Label"> Numero de Documento  </asp:Label>
                     <asp:TextBox ID="txtNumeroDoc" runat="server"  ReadOnly="True" required="required" CssClass="input100"></asp:TextBox>
 					<span class="focus-input100"></span>
 				</div>
