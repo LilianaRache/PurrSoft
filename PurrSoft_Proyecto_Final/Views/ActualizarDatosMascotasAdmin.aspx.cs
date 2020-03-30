@@ -12,6 +12,51 @@ namespace PurrSoft_Proyecto_Final.Views
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (!IsPostBack)
+            {
+               
+                    MascotaDAO mascotaDAO = new MascotaDAO();
+                    Mascotas mascotaDTO = mascotaDAO.ConsultaPorId(int.Parse(Session["idMascotaActualizar"].ToString()));
+                    txtNombreMascota.Text = mascotaDTO.Nombre.ToString();
+                    txtEspecie.Text = mascotaDTO.Especie.ToString();
+                    txtRazaMascota.Text = mascotaDTO.Raza.ToString();
+                    txtColorMascota.Text = mascotaDTO.Color.ToString();
+                    txtSexoMascota.Text = mascotaDTO.Sexo.ToString();
+                    txtSeñasMascota.Text = mascotaDTO.Señas_particulares.ToString();
+     
+            }
+
         }
+
+        
+        protected void btnActualizar_Click(object sender, EventArgs e)
+        {
+            MascotaDAO mascotaDAO = new MascotaDAO();
+            Mascotas mascotaDTO = new Mascotas();
+            mascotaDTO.ID_mascota = (int.Parse(Session["idMascotaActualizar"].ToString()));
+            //Cambiar los datos datos de tipo de documento 
+            mascotaDTO.Tipo_documento_usuario = (Session["tipoDocUsuarioActualizar"].ToString());
+            mascotaDTO.Cedula_usuario = (int.Parse(Session["numeroDocUsuarioActualizar"].ToString()));
+            mascotaDTO.Nombre = txtNombreMascota.Text;
+            mascotaDTO.Especie = txtEspecie.Text;
+            mascotaDTO.Raza = txtRazaMascota.Text;
+            mascotaDTO.Color = txtColorMascota.Text;
+            mascotaDTO.Sexo = txtSexoMascota.Text;
+            mascotaDTO.Señas_particulares = txtSeñasMascota.Text;
+            mascotaDTO.Fecha_nacimiento = ClFechaNacimiento.SelectedDate;
+            if (rbEstadoMascota.SelectedItem.Value.ToString() == "Activo")
+            {
+                mascotaDTO.ID_estado_mascota = 1;
+            }
+            else
+            {
+                mascotaDTO.ID_estado_mascota = 2;
+            }
+            // igual con todos los atributos 
+            lblMensaje.Text = mascotaDAO.ActualizarMascotas(mascotaDTO);
+            Response.Redirect("BusquedaUsuarioAdmin.aspx");
+        }
+
+       
     }
 }

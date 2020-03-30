@@ -122,6 +122,7 @@
     margin: 5px 0 10px 0;
     border: solid 1px #525252;
     border-collapse: collapse;
+    margin-left:50px;
 }
 
 .mGrid td {

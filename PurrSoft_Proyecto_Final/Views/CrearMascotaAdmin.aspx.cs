@@ -13,5 +13,33 @@ namespace PurrSoft_Proyecto_Final.Views
         {
 
         }
+
+
+        protected void btnCrear_Click(object sender, EventArgs e)
+        {
+            Mascotas mascotaDTO = new Mascotas();
+            MascotaDAO mascotaDAO = new MascotaDAO();
+
+            mascotaDTO.Tipo_documento_usuario = ddlTipoDoc.Text;
+            mascotaDTO.Cedula_usuario = int.Parse(txtNumeroDoc.Text);
+            mascotaDTO.Nombre = txtNombre.Text;
+            mascotaDTO.Raza = txtRaza.Text;
+            mascotaDTO.Especie = txtEspecie.Text;
+            mascotaDTO.Color = txtColor.Text;
+            mascotaDTO.Sexo = txtSexo.Text;
+            mascotaDTO.Señas_particulares = txtSeñas.Text;
+            mascotaDTO.Fecha_nacimiento = ClFechaNacimiento.SelectedDate;
+            if (rbEstadoMascota.SelectedItem.Value.ToString() == "Activo")
+            {
+                mascotaDTO.ID_estado_mascota = 1;
+            }
+            else
+            {
+                mascotaDTO.ID_estado_mascota = 2;
+            }
+            //Falta fecha de nacimiento y estado
+            lblMensaje.Text = mascotaDAO.RegistrarMascotas(mascotaDTO);
+            Response.Redirect("BusquedaUsuarioAdmin.aspx");
+        }
     }
 }

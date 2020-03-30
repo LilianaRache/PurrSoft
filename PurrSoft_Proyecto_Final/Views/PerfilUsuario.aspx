@@ -1,14 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="PerfilUsuario.aspx.cs" Inherits="PurrSoft_Proyecto_Final.Views.Perfil_Usuario" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-        
-    <link href="../css/usuario.css" rel="stylesheet" />    
+    <img src="../Images/Icono_usuario.jpg" align="left">
    
+    <link href="../css/usuario.css" rel="stylesheet" />    
+      
    
      <header>
 	<div class="nombre_u" >
 		<img  class="avatar_u" src="../Images/cat-widget2.jpg" alt=""/>
 		<h1 class="user_n">Castor</h1>
-	</div>
+    </div>
 		<ul class="social_lista">
 			<li>
 				<a href="gmail.com">Correo@gmail.com</a>

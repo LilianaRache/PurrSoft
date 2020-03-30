@@ -6,7 +6,7 @@
     
    
        
-    <header>
+   <header>
     <div id="carouselExampleIndicators" class="carousel slide col-10 tamañoTexto" data-ride="carousel" style="left: -12px; top: 0px">
       <ol class="carousel-indicators" style="left: 12px; right: 82px; bottom: -11px; width: 63%; height: 44px">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="width: 25px; height: 11px"></li>
@@ -55,7 +55,8 @@
             <div class="form-group ttamaño">
                 <h4 class="ingreso">INGRESAR</h4><br />
                 <label for="exampleInputEmail1">Tipo Documento</label><br />
-                <asp:DropDownList ID="DropDownList1" runat="server" Height="33px" Width="54px">
+                <asp:DropDownList ID="ddlTipoDoc" runat="server" Height="33px" Width="88px">
+                    <asp:ListItem>Seleccionar</asp:ListItem>
                     <asp:ListItem>CC</asp:ListItem>
                     <asp:ListItem>TI</asp:ListItem>
                     <asp:ListItem>CE</asp:ListItem>
@@ -63,25 +64,30 @@
             </div>
             <div class="form-group ttamaño">
                 <label for="exampleInputEmail1">Numero de documento</label>
-                <input type="text" class="form-control ttamaño" id="" placeholder="Numero" style="width: 104%; height: 42px">
+                <asp:TextBox  ID ="txtNumeroDocumento" runat="server" CssClass="form-control ttamaño" require="require"></asp:TextBox>
             </div>
 
             <div class="form-group ttamaño">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control ttamaño" id="exampleInputPassword1" placeholder="Password" style="width: 104%; height: 41px">
+                <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control ttamaño" style="width: 104%; height: 41px" TextMode="Password" require="require"></asp:TextBox>
             </div>
 
             <div class="row">
 
                 <div class="col-sm-6" style="left: 7px; top: 6px; width:31%;">
-                    <button type="submit" class="action-button shadow animate green">Iniciar</button>
+                    <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" CssClass="action-button shadow animate green" OnClick="btnIngresar_Click" />
                 </div>
+
             </div><br />
         </form>
     </div>
- 
+            
+    
+
+
+    <asp:Label ID="lblMensajeIngreso" runat="server" Text="Label" BorderStyle="Double"></asp:Label>
    
-     
+        
 
      <!-- Portfolio Section -->
    <div class="container" style="margin-top:-220px;">
@@ -98,7 +104,7 @@
           </div>
         </div>
       </div> 
-      <div class="col-lg-4 col-sm-6 portfolio-item"> 
+      <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <img class="card-img-top" src="../Images/pyg.jpg" alt="">
           <div class="card-body">

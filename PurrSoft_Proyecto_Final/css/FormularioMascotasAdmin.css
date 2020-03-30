@@ -435,3 +435,7 @@ textarea.input1 {
     width:60px;
     height: 40px;
 }
+.subtitulo{
+    font-size:15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

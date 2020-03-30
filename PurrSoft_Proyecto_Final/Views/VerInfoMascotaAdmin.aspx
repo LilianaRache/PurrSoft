@@ -10,42 +10,42 @@
                 <img src="../Images/parrot-Ver.jpg" alt="Imagen Formulario" style="width:600px; height:930px;"/>
 			</div>
 			<div class="col-md-6 " style="left: 438px; top: 8px; width: 55%;">
-			<form class=" contact1-form validate-form" method="put">
+			<form class=" contact1-form validate-form" method="get">
 				<h3>Datos de las Mascotas </h3> <br />
 				
 				<div class="wrap-input1 validate-input" data-validate = "Nombre is required">
                     <asp:Label CssClass="texto" ID="Label1" runat="server" Text="Nombre de la Mascota"></asp:Label>
-					<input class="input1" type="text" name="Nombre"  id="ipInfoMascota" readonly="readonly">
+                    <asp:TextBox ID="txtNombreMascota" runat="server" CssClass="input1" ReadOnly="true"></asp:TextBox>
 					<span class="shadow-input1"></span>
 				</div>
 
-				<div class="wrap-input1 validate-input"  data-validate = "Raza is required">
+				<div class="wrap-input1 validate-input"  data-validate = "Especie is required">
 					<asp:Label CssClass="texto" ID="Label2" runat="server" Text="Raza "></asp:Label>
-					<input class="input1" type="text" name="Raza" readonly="readonly">
+                    <asp:TextBox ID="txtEspecieMascota" runat="server" CssClass="input1" ReadOnly="true"></asp:TextBox>
 					<span class="shadow-input1"></span>
 				</div>
 
-				<div class="wrap-input1 validate-input" data-validate = "Especie is required">
+				<div class="wrap-input1 validate-input" data-validate = "Raza is required">
 					<asp:Label CssClass="texto" ID="Label3" runat="server" Text="Especie"></asp:Label>
-					<input class="input1" type="text" name="Especie" readonly="readonly">
+                    <asp:TextBox ID="txtRazaMascota" runat="server" CssClass="input1" ReadOnly="true"></asp:TextBox>
 					<span class="shadow-input1"></span>
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Color is required">
 					<asp:Label CssClass="texto" ID="Label4" runat="server" Text="Color"></asp:Label>
-					<input class="input1" type="text" name="Color" readonly="readonly">
+                    <asp:TextBox ID="txtColorMascota" runat="server" CssClass="input1" ReadOnly="true"></asp:TextBox>
 					<span class="shadow-input1"></span>
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Sexo is required">
 					<asp:Label CssClass="texto" ID="Label5" runat="server" Text="Sexo"></asp:Label>
-					<input class="input1" type="text" name="Sexo" readonly="readonly">
+                    <asp:TextBox ID="txtSexoMascota" runat="server" CssClass="input1" ReadOnly="true"></asp:TextBox>
 					<span class="shadow-input1"></span>
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Señas Particulares is required">
 					<asp:Label CssClass="texto" ID="Label6" runat="server" Text="Señas Particulares"></asp:Label>
-					<textarea class="input1" name="señasParticulares" readonly="readonly"></textarea>
+                    <asp:TextBox ID="txtSeñasParticulares" runat="server" CssClass="input1"></asp:TextBox>
 					<span class="shadow-input1"></span>
 				</div>
 
@@ -61,7 +61,7 @@
 				</div>
 
 				<div class="container-contact1-form-btn">
-					<button class="contact1-form-btn" id="bntactualizarDatosMascota">Actualizar</button>
+                    <asp:Button ID="btnVolver" runat="server" Text="Volver"  CssClass="contact1-form-btn" OnClick="btnVolver_Click" />
 				</div>
 			</form>
 				</div>
