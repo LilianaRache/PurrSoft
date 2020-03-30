@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="RegistroUsuarios.aspx.cs" Inherits="PurrSoft_Proyecto_Final.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    
+    
+
     <div style="text-align: center;">
         <form action="/my-handling-form-page" method="post">
                  <h1>Registro de Usuarios</h1>
@@ -38,7 +41,7 @@
 
             <div style=" margin: 0 auto;text-align: center;border-radius: 10px;border: 1px solid #666666; width: 248px;height: 195px;">
             <label for="fechaProxConsulta">Fecha de proxima consulta:</label>
-            <asp:Calendar  style="text-align: center" ID="CalenFechaProxConsulta" runat="server"></asp:Calendar>
+            <asp:Calendar  style="text-align: center" ID="CalenFechaProxConsulta" runat="server" Width="243px"></asp:Calendar>
             </div>
             <br /><br />
            
@@ -48,8 +51,5 @@
 
     </div>
     <br />
-        <br />
-
-
-   
+        
 </asp:Content>

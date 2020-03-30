@@ -10,8 +10,33 @@
 
             <div class="container" style="justify-content: center;">
                 <div class="signup-content">
+                     <div class="col-sm-4">
+                         <h2 class="text-center">Detalle de Historia</h2>
+                 <h2>Mascota</h2>
+                    <div class="fakeimg">
+                        <img src="img/doctorP.png" alt="" >
+                </div>
+                <h4>Nombre</h4>
+                <p>Polux</p>
+                <h4>Raza</h4>
+                <p>Golden</p>
+                <ul class="nav nav-pills flex-column">
+                <li>
+                <h5>Estado</h5>
+                </li>
+            <li class="nav-item">
+            <button type="button" class="btn btn-success">Activo</button>
+            </li>
+            <li class="nav-item">
+            <button type="button" class="btn btn-danger">Inactivo</button>
+            </li>
+            </ul>
+
+            <hr class="d-sm-none">
+            </div>
+                    <div class="col-sm-8">
                     <form method="POST" id="signup-form" class="signup-form">
-                        <h2 class="form-title title">Detalle de Historia</h2>
+                        
                         <div class="form-group">
                             <asp:Label ID="Label1" runat="server" Text="Numero de Detalle" CssClass="letra"></asp:Label><br />
                             <input type="text" class="form-input" name="name" id="idDetalleHistoria" readonly="readonly" style="width: 99%; height: 3px" />
@@ -62,6 +87,7 @@
                         </div>
 
                     </form>
+                </div>
                 </div>
             </div>
         </section>
