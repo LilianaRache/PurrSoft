@@ -7,13 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace PurrSoft_Proyecto_Final
-{
-
-
-    public partial class _Default
-    {
-
+namespace PurrSoft_Proyecto_Final {
+    
+    
+    public partial class _Default {
+        
         /// <summary>
         /// Control ddlTipoDoc.
         /// </summary>
