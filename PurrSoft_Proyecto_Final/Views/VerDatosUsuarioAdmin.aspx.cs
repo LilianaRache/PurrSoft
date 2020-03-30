@@ -23,7 +23,7 @@ namespace PurrSoft_Proyecto_Final.Views
             txtEmail.Text = usuarioDTO.Email;
             txtCiudad.Text = usuarioDTO.Ciudades.Nombre_ciudad;
             txtPassword.Text = usuarioDTO.Password_u;
-            imgImagen.ImageUrl = usuarioDTO.Imagen;
+            imgFotoPerfil.ImageUrl = usuarioDTO.Imagen;
 
         }
 

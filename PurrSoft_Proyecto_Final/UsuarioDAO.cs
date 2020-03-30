@@ -9,17 +9,18 @@ namespace PurrSoft_Proyecto_Final
     {
         ORMDataContext bd = new ORMDataContext();
 
-        public string RegistrarUsuario(Usuarios usuario)
+        public bool RegistrarUsuario(Usuarios usuario)
         {
             try
             {
                 bd.Usuarios.InsertOnSubmit(usuario);
                 bd.SubmitChanges();
-                return "Se registro un usuario exitosamente";
+                return true;
             }
             catch (Exception ex)
             {
-                return "No se pudo registrar el usuario" + ex.Message;
+                Console.WriteLine("Error" + ex.Message);
+                return false;
 
             }
 

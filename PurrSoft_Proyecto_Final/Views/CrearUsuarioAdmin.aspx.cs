@@ -43,7 +43,20 @@ namespace PurrSoft_Proyecto_Final.Views
             usuariosDTO.Password_u = txtPassword.Text;
             usuariosDTO.Imagen = txtImagen.Text;
 
+            bool registrado = usuariosDAO.RegistrarUsuario(usuariosDTO);
 
+            if (registrado == true)
+            {
+                Response.Write("<script> alert('Se registro correctamente') </script>");
+
+            }
+            else
+            {
+                Response.Write("<script> alert('Se registro correctamente') </script>");
+
+            }
+
+            Response.Redirect("PerfilAdmin.aspx");
 
 
 
