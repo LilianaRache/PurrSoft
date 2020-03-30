@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PurrSoft_Proyecto_Final.App_Code
+namespace PurrSoft_Proyecto_Final
 {
-    public class CiudadesDAO
+    public class CiudadDAO
     {
         ORMDataContext bd = new ORMDataContext();
 
@@ -24,11 +24,6 @@ namespace PurrSoft_Proyecto_Final.App_Code
             return listaCiudades;
 
         }
-
-
-
-
-
 
     }
 }

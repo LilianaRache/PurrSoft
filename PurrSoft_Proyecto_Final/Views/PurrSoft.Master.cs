@@ -13,5 +13,11 @@ namespace PurrSoft_Proyecto_Final
         {
 
         }
+
+        protected void btnSalir_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("Index.aspx");
+        }
     }
 }

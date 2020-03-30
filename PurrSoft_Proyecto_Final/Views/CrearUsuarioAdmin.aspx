@@ -16,69 +16,94 @@
 			</div><br />
 
 			<form class="contact100-form validate-form">
-				<div class="wrap-input100 validate-input" data-validate="nombre is required">
+				<div class="wrap-input100 validate-input" data-validate="tipoDocumento is required">
 					<span class="label-input100"></span>
-                    <asp:Label class="labels" ID="lbNombre" runat="server" Text="Label"> Nombres</asp:Label>
-					<input class="input100" type="text" name="nombre" placeholder="Nombres Completos">
+                    <asp:Label class="labels" ID="lbNombre" runat="server" Text="Label"> Tipo de Documento</asp:Label>
+                    <asp:DropDownList ID="ddlTipoDocumento" runat="server" CssClass="input100" >
+                        <asp:ListItem>CC</asp:ListItem>
+                        <asp:ListItem>TI</asp:ListItem>
+                        <asp:ListItem>CE</asp:ListItem>
+                    </asp:DropDownList>
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate="Apellido is required">
+				<div class="wrap-input100 validate-input" data-validate="Cedula is required">
 					<span class="label-input100"></span>
-					<asp:Label class="labels" ID="Label1" runat="server" Text="Label"> Apellidos</asp:Label>
-					<input class="input100" type="text" name="Apellido" placeholder="Apellidos Completos">
+					<asp:Label class="labels" ID="Label1" runat="server" Text="Label"> Numero de Documento</asp:Label>
+					<asp:TextBox ID="txtNumeroDocumento" runat="server" CssClass="input100"> </asp:TextBox>
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate="Direccion is required">
+				<div class="wrap-input100 validate-input" data-validate="Rol required">
+					<span class="label-input100"></span>
+					<asp:Label class="labels" ID="Label10" runat="server" Text="Label">Rol</asp:Label>
+                    <asp:DropDownList ID="ddlRol" runat="server" CssClass="input100" DataSourceID="ROL" DataTextField="Descripcion" DataValueField="Descripcion"></asp:DropDownList>
+					<asp:SqlDataSource ID="ROL" runat="server" ConnectionString="<%$ ConnectionStrings:PurrsoftConnectionString %>" SelectCommand="SELECT [Descripcion] FROM [Roles]"></asp:SqlDataSource>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Nombres is required">
 					<span class="label-input100">Phone:</span>
-					<asp:Label class="labels" ID="Label2" runat="server" Text="Label"> Direccion</asp:Label>
-					<input class="input100" type="text" name="direccion" placeholder=" direccion de residencia">
+					<asp:Label class="labels" ID="Label2" runat="server" Text="Label"> Nombres</asp:Label>
+                    <asp:TextBox ID="txtNombre" runat="server" CssClass="input100"  ></asp:TextBox>
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate="telefono is required">
+				<div class="wrap-input100 validate-input" data-validate="Apellidos is required">
 					<span class="label-input100"></span>
-					<asp:Label class="labels" ID="Label3" runat="server" Text="Label">Telefono</asp:Label>
-					<input class="input100" type="text" name="telefono" placeholder="Telefono de contacto">
+					<asp:Label class="labels" ID="Label3" runat="server" Text="Label">Apellidos</asp:Label>
+                    <asp:TextBox ID="txtApellido" runat="server" CssClass="input100" ></asp:TextBox>
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "email is required: ex@abc.xyz">
+				<div class="wrap-input100 validate-input" data-validate="Telefono is required">
 					<span class="label-input100"></span>
-					<asp:Label class="labels" ID="Label4" runat="server" Text="Label">Correo</asp:Label>
-					<input class="input100" type="text" name="email" placeholder="Correo">
+					<asp:Label class="labels" ID="Label8" runat="server" Text="Label">Telefono</asp:Label>
+                    <asp:TextBox ID="txtTelefono" runat="server" CssClass="input100"></asp:TextBox>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Direccion required">
+					<span class="label-input100"></span>
+					<asp:Label class="labels" ID="Label9" runat="server" Text="Label">Direccion</asp:Label>
+                    <asp:TextBox ID="txtDireccion" runat="server" CssClass="input100" ></asp:TextBox>
+					<span class="focus-input100"></span>
+				</div>
+
+
+
+				<div class="wrap-input100 validate-input" data-validate = "Email is required: ex@abc.xyz">
+					<span class="label-input100"></span>
+					<asp:Label class="labels" ID="Label4" runat="server" Text="Label">Email</asp:Label>
+                    <asp:TextBox ID="txtEmail" runat="server" CssClass="input100" TextMode="Email" ></asp:TextBox>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate="ciudad is required">
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label5" runat="server" Text="Label">Ciudad</asp:Label>
-					<input class="input100" type="text" name="ciudad" placeholder="Ciudad de residencia">
+                    <asp:DropDownList ID="ddlCiudad" runat="server" CssClass="input100" DataSourceID="CIUDAD_ID" DataTextField="Nombre_ciudad" DataValueField="Nombre_ciudad" Width="664px"></asp:DropDownList>
+					<asp:SqlDataSource ID="CIUDAD_ID" runat="server" ConnectionString="<%$ ConnectionStrings:PurrsoftConnectionString %>" SelectCommand="SELECT [ID_ciudad], [Nombre_ciudad] FROM [Ciudades]"></asp:SqlDataSource>
+					<asp:SqlDataSource ID="CIUDAD" runat="server" ConnectionString="<%$ ConnectionStrings:PurrsoftConnectionString %>" SelectCommand="SELECT [Nombre_ciudad] FROM [Ciudades]"></asp:SqlDataSource>
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Valid CUADRARRRR email is required: ex@abc.xyz">
+				<div class="wrap-input100 validate-input" data-validate = "Password is required">
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label6" runat="server" Text="Label">Contraseña</asp:Label>
-					<input class="input100" type="password" name="email" placeholder="Contraseña de usuario">
+                    <asp:TextBox ID="txtPassword" runat="server"  CssClass="input100"  TextMode="Password"></asp:TextBox>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate="image is required"">
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label7" runat="server" Text="Label">Imagen</asp:Label>
-					<input class="input100" type="text" name="image" placeholder="Link de la imagen">
+                    <asp:TextBox ID="txtImagen" runat="server" CssClass="input100"></asp:TextBox>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
-						<span>
-							Actualizar
-							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-						</span>
-					</button>
+                    <asp:Button CssClass="contact100-form-btn" ID="btnCrear" runat="server" Text="Crear" OnClick="btnCrear_Click" />
 				</div>
 			</form>
 		</div>

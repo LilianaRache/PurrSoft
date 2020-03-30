@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Web;
 using System.Linq;
+using System.Web;
 
-namespace PurrSoft_Proyecto_Final.App_Code
+namespace PurrSoft_Proyecto_Final
 {
-    public class MascotasDAO
+    public class MascotaDAO
     {
+
         ORMDataContext bd = new ORMDataContext();
 
         public string RegistrarMascotas(Mascotas mascota)
@@ -56,7 +57,7 @@ namespace PurrSoft_Proyecto_Final.App_Code
             return consultaPorId;
         }
 
-        public string ActualizarMascotas (Mascotas mascota)
+        public string ActualizarMascotas(Mascotas mascota)
         {
             try
             {
@@ -74,7 +75,7 @@ namespace PurrSoft_Proyecto_Final.App_Code
                 consultar.ID_estado_mascota = mascota.ID_estado_mascota;
                 bd.SubmitChanges();
                 return "La informacion se actualizo correctamente";
-            }   
+            }
             catch (Exception ex)
             {
                 return "No se puedo actualizar los datos" + ex.Message;
@@ -83,16 +84,50 @@ namespace PurrSoft_Proyecto_Final.App_Code
 
         }
 
+        public string EliminarMascota(int id)
+        {
+            try
+            {
+                var consultaPorId = (from m in bd.Mascotas where m.ID_mascota == id select m).First();
+                consultaPorId.ID_estado_mascota = 2;
+                bd.SubmitChanges();
+                return "Se elimino correctamente";
+            }
+            catch (Exception ex)
+            {
 
+                return "No se pudo eliminar la mascota" + ex.Message;
+            }
+        }
 
+        public List<Mascotas> ConsultarMascotasUsuario(int cedulaUsuario)
+        {
+            List<Mascotas> listaMascotas = new List<Mascotas>();
+            var consulta = (from m in bd.Mascotas where m.Cedula_usuario == cedulaUsuario && m.ID_estado_mascota == 1 select m);
+            foreach (var obj in consulta)
+            {
+                Mascotas mascota = new Mascotas();
+                mascota.ID_mascota = obj.ID_mascota;
+                mascota.Cedula_usuario = obj.Cedula_usuario;
+                mascota.Tipo_documento_usuario = obj.Tipo_documento_usuario;
+                mascota.Nombre = obj.Nombre;
+                mascota.Raza = obj.Raza;
+                mascota.Especie = obj.Especie;
+                mascota.Color = obj.Color;
+                mascota.Sexo = obj.Sexo;
+                mascota.Señas_particulares = obj.Señas_particulares;
+                mascota.Fecha_nacimiento = obj.Fecha_nacimiento;
+                mascota.ID_estado_mascota = obj.ID_estado_mascota;
 
+                listaMascotas.Add(mascota);
+            }
+            return listaMascotas;
 
-
+        }
 
 
 
 
 
     }
-    
 }

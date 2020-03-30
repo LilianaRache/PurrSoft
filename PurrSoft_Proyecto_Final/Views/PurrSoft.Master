@@ -53,7 +53,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="inicio.html">Inicio</a>
+    <asp:Button ID="btnSalir" runat="server" Text="Salir" CssClass="nav-link" OnClick="btnSalir_Click" />
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contactanos.html">Contactanos</a>

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PurrSoft_Proyecto_Final.App_Code
+namespace PurrSoft_Proyecto_Final
 {
-    public class DetalleHistoriasDAO
+    public class DetalleHistoria
     {
         ORMDataContext bd = new ORMDataContext();
 
@@ -21,18 +21,17 @@ namespace PurrSoft_Proyecto_Final.App_Code
             catch (Exception ex)
             {
                 return "No se pudieron guardar los cambios" + ex.Message;
-               
+
             }
 
 
         }
 
-        public Detalle_historia ConsultaDetalleId (Mascotas mascota)
+        public Detalle_historia ConsultaDetalleId(Mascotas mascota)
         {
             var consultaDetalle = (from d in bd.Detalle_historia where d.ID_mascota == mascota.ID_mascota select d).First();
             return consultaDetalle;
         }
-
 
 
 

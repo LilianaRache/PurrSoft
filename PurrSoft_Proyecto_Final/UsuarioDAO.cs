@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web;
 
-namespace PurrSoft_Proyecto_Final.App_Code
+namespace PurrSoft_Proyecto_Final
 {
+    public class UsuarioDAO
+    {
+        ORMDataContext bd = new ORMDataContext();
 
-    public class UsuariosDAO
-    { 
-       ORMDataContext bd = new ORMDataContext();
         public string RegistrarUsuario(Usuarios usuario)
         {
             try
@@ -19,12 +20,13 @@ namespace PurrSoft_Proyecto_Final.App_Code
             catch (Exception ex)
             {
                 return "No se pudo registrar el usuario" + ex.Message;
-             
+
             }
 
         }
 
-        public List<Usuarios> ConsultaTodos() {
+        public List<Usuarios> ConsultaTodos()
+        {
 
             List<Usuarios> listaUsuarios = new List<Usuarios>();
             var consultaUsuarios = from u in bd.Usuarios select u;
@@ -47,13 +49,15 @@ namespace PurrSoft_Proyecto_Final.App_Code
             return listaUsuarios;
         }
 
-        public Usuarios ConsultaPorDocumento(string tipo_doc, int numero_documento ) {
+        public Usuarios ConsultaPorDocumento(string tipo_doc, int numero_documento)
+        {
 
             var consultaPorID = (from u in bd.Usuarios where u.Tipo_documento == tipo_doc && u.Numero_doc == numero_documento select u).First();
-            return consultaPorID;     
+            return consultaPorID;
         }
 
-        public string ActualizarUsuario(Usuarios usuario) {
+        public string ActualizarUsuario(Usuarios usuario)
+        {
             try
             {
                 var buscarUsuario = (from u in bd.Usuarios where u.Tipo_documento == usuario.Tipo_documento && u.Numero_doc == usuario.Numero_doc select u).First();
@@ -74,11 +78,12 @@ namespace PurrSoft_Proyecto_Final.App_Code
             catch (Exception ex)
             {
                 return "No se pudo actualizar" + ex.Message;
-                
+
             }
-        
+
         }
-        public Usuarios Login(string Tipo_doc, int numero_documento, string password) {
+        public Usuarios Login(string Tipo_doc, int numero_documento, string password)
+        {
 
             try
             {
@@ -92,6 +97,10 @@ namespace PurrSoft_Proyecto_Final.App_Code
             }
 
         }
+
+
+
+
 
 
 
