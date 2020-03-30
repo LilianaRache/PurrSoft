@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PurrSoft_Proyecto_Final</RootNamespace>
     <AssemblyName>PurrSoft_Proyecto_Final</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort>44398</IISExpressSSLPort>
@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -130,6 +131,7 @@
     <Content Include="css\ActulizarDatosUsuariosAdmin.css" />
     <Content Include="css\BusquedaUsuarioAdmin.css" />
     <Content Include="css\BusquedaUsuarioDoctor.css" />
+    <Content Include="css\Contactanos.css" />
     <Content Include="css\CrearDetalleHistoria.css" />
     <Content Include="css\CrearMascotaAdmin.css" />
     <Content Include="css\CrearUsuarioAdmin.css" />
@@ -182,6 +184,7 @@
     <Content Include="Views\ActualizarDatosMascotasAdmin.aspx" />
     <Content Include="Views\ActualizarDatosUsuarioAdmin.aspx" />
     <Content Include="Views\BusquedaUsuarioDoctor.aspx" />
+    <Content Include="Views\Contactanos.aspx" />
     <Content Include="Views\CrearDetalleHistoria.aspx" />
     <Content Include="Views\CrearMascotaAdmin.aspx" />
     <Content Include="Views\CrearUsuarioAdmin.aspx" />
@@ -254,6 +257,13 @@
     </Compile>
     <Compile Include="Views\BusquedaUsuarioDoctor.aspx.designer.cs">
       <DependentUpon>BusquedaUsuarioDoctor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Contactanos.aspx.cs">
+      <DependentUpon>Contactanos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Contactanos.aspx.designer.cs">
+      <DependentUpon>Contactanos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\CrearDetalleHistoria.aspx.cs">
       <DependentUpon>CrearDetalleHistoria.aspx</DependentUpon>

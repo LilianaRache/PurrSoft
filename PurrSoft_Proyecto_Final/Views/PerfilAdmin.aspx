@@ -1,23 +1,34 @@
-﻿
-<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="PerfilAdmin.aspx.cs" Inherits="PurrSoft_Proyecto_Final.Views.PerfilAdmin" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="PerfilAdmin.aspx.cs" Inherits="PurrSoft_Proyecto_Final.Views.PerfilAdmin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <link href="../css/PerfilAdmin.css" rel="stylesheet" />
+   <link href="../css/PerfilAdmin.css" rel="stylesheet" />
 
-    <div class="container" style="margin:70px 80px;">
+
+    <div class="container" style="margin:60px 80px;">
+
+
+         <div >
+
+                <div class="col-sm-6" style="right: 90px; top: 6px;  width:1%;">
+                    <button type="submit" class="action-button shadow animate gray">Regresar</button>
+                </div>
+            </div><br />
+
+
         <div class="row">
             <div class="col-md-8">
                 <div class="col-lg-3 col-sm-6">
                     <div class="card hovercard" style="left: 0px; top: 0px; width: 626px">
-                        <div class="cardheader">
+                        <div>
+                            <img class="fondo" src="../Images/FondoAdmin.jpg" alt="Alternate Text" />
                         </div>
                         <div class="avatar">
-                            <img src="../Images/summerfield-336672_1280.jpg" />
+                            <img src="../Images/admin.jpg" />
                         </div>
                         <div class="info">
                             <div class="title">
-                                <span>Nombre Usuario</span>
+                                <span>Nombre del Administrador</span>
                             </div>
                             <div class="desc"><span>ROL</span></div>
 
@@ -34,7 +45,7 @@
 
     <!-- BUSQUEDA POR USUARIO -->
 
-<div class="container" style="margin-bottom:50px; left: 336px; top: -316px; width: 415px;">
+<div class="container" style="margin-bottom:50px; left: 369px; top: -546px; width: 300px;">
     <div class="row">
       <div class="col-md-4" style="left: 0px; top: 0px; width: 86%">
 	<section class="content">
@@ -63,5 +74,8 @@
 
     <asp:GridView ID="GridView1" runat="server" CssClass="mGrid" Width="1233px"></asp:GridView>
 
+
+      <script src="../vendor/jquery/jquery.min.js"></script>
+      <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </asp:Content>
