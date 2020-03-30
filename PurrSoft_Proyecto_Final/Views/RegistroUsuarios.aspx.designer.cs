@@ -7,13 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace PurrSoft_Proyecto_Final
-{
-
-
-    public partial class WebForm2
-    {
-
+namespace PurrSoft_Proyecto_Final {
+    
+    
+    public partial class WebForm2 {
+        
         /// <summary>
         /// Control ddlTipoDocuemto.
         /// </summary>
@@ -22,7 +20,7 @@ namespace PurrSoft_Proyecto_Final
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlTipoDocuemto;
-
+        
         /// <summary>
         /// Control CalenFechaConsulta.
         /// </summary>
@@ -31,7 +29,7 @@ namespace PurrSoft_Proyecto_Final
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar CalenFechaConsulta;
-
+        
         /// <summary>
         /// Control CalenFechaProxConsulta.
         /// </summary>
@@ -40,7 +38,7 @@ namespace PurrSoft_Proyecto_Final
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar CalenFechaProxConsulta;
-
+        
         /// <summary>
         /// Control btnRegistrar.
         /// </summary>
@@ -49,7 +47,7 @@ namespace PurrSoft_Proyecto_Final
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnRegistrar;
-
+        
         /// <summary>
         /// Control btnVolver.
         /// </summary>
