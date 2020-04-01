@@ -1,4 +1,4 @@
-﻿.<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="HistoriasClinicas.aspx.cs" Inherits="PurrSoft_Proyecto_Final.Views.HistoriaClinica" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="HistoriasClinicas.aspx.cs" Inherits="PurrSoft_Proyecto_Final.Views.HistoriaClinica" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <link href="../css/HistoriasClinicas.css" rel="stylesheet" />

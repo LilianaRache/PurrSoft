@@ -145,6 +145,7 @@
     <Content Include="css\VerDetalleHistoria.css" />
     <Content Include="css\VerInfoMascotaAdmin.css" />
     <Content Include="Images\background3.jpg" />
+    <Content Include="Images\Bengala.png" />
     <Content Include="Images\bg-01.jpg" />
     <Content Include="Images\cancel.png" />
     <Content Include="Images\cat-Form.png" />
@@ -159,9 +160,11 @@
     <Content Include="Images\FondoVerusu.jpg" />
     <Content Include="Images\huellaAñadir.png" />
     <Content Include="Images\Icono_usuario.jpg" />
+    <Content Include="Images\nyan-cat.gif" />
     <Content Include="Images\ojo.png" />
     <Content Include="Images\parrot-Ver.jpg" />
     <Content Include="Images\summerfield-336672_1280.jpg" />
+    <Content Include="js\sweetalert2.all.min.js" />
     <Content Include="js\contact_me.js" />
     <Content Include="js\jqBootstrapValidation.js" />
     <Content Include="js\PerfilDoctor.js" />

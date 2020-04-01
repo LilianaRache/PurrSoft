@@ -31,7 +31,7 @@
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('../Images/difrentes_ani.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3 class="colorL">Porque se hizo</h3>
+            <%--<h3 class="colorL">Porque se hizo</h3>--%>
             <p class="colorL">Se hizo para suplir una necesidad</p>
           </div>
         </div>

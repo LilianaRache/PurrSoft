@@ -11,7 +11,7 @@ namespace PurrSoft_Proyecto_Final.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+         
         }
 
         protected void btnCrear_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace PurrSoft_Proyecto_Final.Views
             }
             else
             {
-                Response.Write("<script> alert('Se registro correctamente') </script>");
+                Response.Write("<script> alert('No registro correctamente') </script>");
 
             }
 
