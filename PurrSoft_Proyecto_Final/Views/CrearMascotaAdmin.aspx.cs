@@ -45,11 +45,11 @@ namespace PurrSoft_Proyecto_Final.Views
             bool registrado = mascotaDAO.RegistrarMascotas(mascotaDTO);
             if (registrado == true)
             {
-                Response.Write("<script> alert('Se registro correctamente') </script>");
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "create_success_modal()", true);
             }
             else
             {
-                Response.Write("<script> alert('No registro correctamente') </script>");
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "create_fail_modal()", true);
 
             }
             Response.Redirect("BusquedaUsuarioAdmin.aspx");

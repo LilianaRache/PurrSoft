@@ -27,17 +27,19 @@
                             <img class="fondo" src="../Images/fondo_doctor.jpg" alt="Alternate Text" />
                         </div>
                         <div class="avatar">
-                            <img src="../Images/doctor.png" />
+                            <asp:Image ID="imgAvatar" runat="server"/>
                         </div>
                         <div class="info">
-                            <div class="title"> 
-                                <span>Nombre del Doctor</span>
+                            <div class="title">
+                                <asp:Label ID="lblNombreDoctor" runat="server" ></asp:Label>
                             </div>
-                            <div class="desc"><span>ROL</span></div>
+                            <div class="desc">
+                                <asp:Label ID="lblRolDoctor" runat="server"></asp:Label>
+                            </div>
 
                         </div>
                         <div>
-                            <asp:Button ID="Button1" runat="server" class="btn btn-success letraContenido" Text="Actualizar" Height="38px" Width="114px" />
+                            <asp:Button ID="btnActuarizarDoctor" runat="server" class="btn btn-success letraContenido" Text="Actualizar" Height="38px" Width="114px" OnClick="btnActuarizarDoctor_Click" />
                         </div> <br />
                     </div>
                 </div>
@@ -56,18 +58,18 @@
 			<h1 class="h1">Buscar Por Usuario</h1>
 			<div class="letraContenido">
                 <asp:Label ID="Label1"  required="" runat="server" Text="Tipo de documento"></asp:Label>
-                <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:DropDownList ID="ddlTipoDoc" runat="server">
                     <asp:ListItem>CC</asp:ListItem>
                     <asp:ListItem>TI</asp:ListItem>
-                    <asp:ListItem>PAS</asp:ListItem>
+                    <asp:ListItem>CE</asp:ListItem>
                 </asp:DropDownList>
 			</div><br />
 			<div class="letraContenido">
                 <asp:Label ID="Label2" runat="server" Text="Numero de documento"></asp:Label>
-				<input type="text" required="" id="password" class="password" />
+                <asp:TextBox ID="txtNumeroDoc" runat="server" require=""></asp:TextBox>
 			</div> <br />
 			<div>
-                <asp:Button class="btn btn-info letraContenido" ID="Button2" runat="server" Text="Buscar" Height="39px" Width="95px" />
+                <asp:Button class="btn btn-info letraContenido" ID="btnBuscarUsuario" runat="server" Text="Buscar" Height="39px" Width="95px" OnClick="btnBuscarUsuario_Click" />
 			</div><br />
 		
 	</section><!-- content -->

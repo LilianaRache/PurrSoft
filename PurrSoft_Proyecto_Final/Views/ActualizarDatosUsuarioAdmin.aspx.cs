@@ -53,16 +53,17 @@ namespace PurrSoft_Proyecto_Final.Views
 
             if (Actualizar == true)
             {
-                Response.Write("<script> alert('Se actualizo correctamente') </script>");
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "update_success_user_modal()", true);
             }
             else
             {
-                Response.Write("<script> alert('No se pudo actualizar correctamente') </script>");
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "update_fail_user_modal()", true);
             }
+         }
 
+        protected void btnVolvel_Click(object sender, EventArgs e)
+        {
             Response.Redirect("PerfilAdmin.aspx");
-
-
         }
     }
 }

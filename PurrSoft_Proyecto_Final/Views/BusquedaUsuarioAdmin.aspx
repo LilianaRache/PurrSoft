@@ -67,7 +67,13 @@
     </asp:GridView>
 
 
-  
+   <script src="../js/sweetalert2.all.min.js"></script>
+	<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script src="../js/Alerts.js"></script>
+
 
 
 </asp:Content>

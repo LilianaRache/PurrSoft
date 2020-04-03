@@ -22,7 +22,7 @@ namespace PurrSoft_Proyecto_Final.Views
                 txtRazaMascota.Text = mascotaDTO.Raza;
                 txtColorMascota.Text = mascotaDTO.Color;
                 txtSexoMascota.Text = mascotaDTO.Sexo;
-                txtFechaNacimiento.Text = mascotaDTO.Fecha_nacimiento.ToString();
+                ClFechaNacimiento.SelectedDate =(DateTime) mascotaDTO.Fecha_nacimiento;
                 txtSeñasMascota.Text = mascotaDTO.Señas_particulares;
                 txtEstado.Text = mascotaDTO.Estados.Descripcion;
      
@@ -34,12 +34,9 @@ namespace PurrSoft_Proyecto_Final.Views
         protected void btnActualizar_Click(object sender, EventArgs e)
         {
 
-           
-
             MascotaDAO mascotaDAO = new MascotaDAO();
             Mascotas mascotaDTO = new Mascotas();
             mascotaDTO.ID_mascota = (int.Parse(Session["idMascotaActualizar"].ToString()));
-            //Cambiar los datos datos de tipo de documento 
             mascotaDTO.Tipo_documento_usuario = (Session["tipoDocBusquedaPerfilAdmin"].ToString());
             mascotaDTO.Cedula_usuario = (int.Parse(Session["numeroDocBusquedaPerfilAdmin"].ToString()));
             mascotaDTO.Nombre = txtNombreMascota.Text;
@@ -58,14 +55,23 @@ namespace PurrSoft_Proyecto_Final.Views
                 mascotaDTO.ID_estado_mascota = 2;
             }
 
+            bool resultado = mascotaDAO.ActualizarMascotas(mascotaDTO);
 
-           // Response.Write("<script> alert($"{mascotaDAO.ActualizarMascotas(mascotaDTO)}") </script>");
-             mascotaDAO.ActualizarMascotas(mascotaDTO);
-            // Response.Redirect("BusquedaUsuarioAdmin.aspx");
-
-            ClientScript.RegisterStartupScript(this.GetType(), "alarm", "test_alert()", true);
+            if (resultado == true)
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "update_success_modal()", true);
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "update_fail_modal()", true);
+            }
+            
+          
         }
 
-       
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("BusquedaUsuarioAdmin.aspx");
+        }
     }
 }

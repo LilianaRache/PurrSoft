@@ -47,23 +47,19 @@ namespace PurrSoft_Proyecto_Final.Views
 
             if (registrado == true)
             {
-                Response.Write("<script> alert('Se registro correctamente') </script>");
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "create_success_user_modal()", true);
 
             }
             else
             {
-                Response.Write("<script> alert('No registro correctamente') </script>");
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "create_fail_user_modal() ", true);
 
             }
+        }
 
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
             Response.Redirect("PerfilAdmin.aspx");
-
-
-
-
-
-
-
         }
     }
 }

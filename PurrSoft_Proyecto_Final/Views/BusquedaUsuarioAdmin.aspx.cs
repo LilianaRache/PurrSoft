@@ -15,20 +15,15 @@ namespace PurrSoft_Proyecto_Final.Views
             if (!IsPostBack)
             {
                 CargarGrillas();
-
-                UsuarioDAO usuarioDAO = new UsuarioDAO();
-                Usuarios usuarioDTO = usuarioDAO.ConsultaPorDocumento(Session["tipoDocBusquedaPerfilAdmin"].ToString(), int.Parse(Session["numeroDocBusquedaPerfilAdmin"].ToString()));
-                imgUsuario.ImageUrl = usuarioDTO.Imagen;
-                lblNombres.Text = usuarioDTO.Nombres;
-                lblApellidos.Text = usuarioDTO.Apellidos;
-                lblTelefono.Text = usuarioDTO.Telefono.ToString();
-                lblEmail.Text = usuarioDTO.Email;
-
-
+                Usuarios usuarioBuscadoAdmin = (Usuarios)Session["usuarioBuscadoAdmin"];
+                imgUsuario.ImageUrl = usuarioBuscadoAdmin.Imagen;
+                lblNombres.Text = usuarioBuscadoAdmin.Nombres;
+                lblApellidos.Text = usuarioBuscadoAdmin.Apellidos;
+                lblTelefono.Text = usuarioBuscadoAdmin.Telefono.ToString();
+                lblEmail.Text = usuarioBuscadoAdmin.Email;
             }
 
-
-
+            
         }
 
         protected void gvdListaMascotas_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -45,12 +40,14 @@ namespace PurrSoft_Proyecto_Final.Views
                 if (resultado == true)
                 {
 
-                    Response.Write("<script> alert('Se registro correctamente') </script>");
+
+                    ClientScript.RegisterStartupScript(this.GetType(), "alarm", "delete_success_modal()", true);
 
                 }
                 else
                 {
-                    Response.Write("<script> alert('No registro correctamente') </script>");
+
+                    ClientScript.RegisterStartupScript(this.GetType(), "alarm", "delete_fail_modal()", true);
 
 
                 }
@@ -81,7 +78,15 @@ namespace PurrSoft_Proyecto_Final.Views
             {
                 MascotaDAO mascotaDAO = new MascotaDAO();
                 int idMascota = int.Parse(gvdListadoMascotasInactivas.Rows[indice].Cells[0].Text);
-                mascotaDAO.ReactivarMascota(idMascota);
+                bool reactivar = mascotaDAO.ReactivarMascota(idMascota);
+                if (reactivar == true)
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alarm", "activate_success_modal()", true);
+                }
+                else
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alarm", "activate_fail_modal()", true);
+                }
                 CargarGrillas();
             }
         }

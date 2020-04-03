@@ -53,7 +53,7 @@ namespace PurrSoft_Proyecto_Final
         public Usuarios ConsultaPorDocumento(string tipo_doc, int numero_documento)
         {
 
-            var consultaPorID = (from u in bd.Usuarios where u.Tipo_documento == tipo_doc && u.Numero_doc == numero_documento select u).First();
+            var consultaPorID = (from u in bd.Usuarios where u.Tipo_documento == tipo_doc && u.Numero_doc == numero_documento select u).FirstOrDefault();
             return consultaPorID;
         }
 
