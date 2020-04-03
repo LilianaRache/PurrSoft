@@ -96,7 +96,7 @@ function create_success_user_modal() {
 function update_success_user_modal() {
     Swal.fire(
         'Que Bien!',
-        'El usuario se Actualizado exitosamente',
+        'El usuario se actualizo exitosamente',
         'success'
     )
 }

@@ -156,6 +156,7 @@
     <Content Include="Images\dog-VerDetalle.PNG" />
     <Content Include="Images\edit.png" />
     <Content Include="Images\FondoAdmin.jpg" />
+    <Content Include="Images\FondoBus.jpg" />
     <Content Include="Images\FondoCrearUsuario.jpg" />
     <Content Include="Images\FondoHistoria.jpg" />
     <Content Include="Images\FondoPerfil.jpg" />

@@ -7,18 +7,6 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 
-
-.header {
-    width: 50vw;
-    max-width: 500px;
-    min-width: 400px;
-    height: 150px;
-    background: url(http://i.imgur.com/woUbg3p.jpg);
-    background-size: cover;
-    background-position: center center;
-    transition: all .08s linear;
-}
-
 .profile {
     width: 50vw;
     max-width: 500px;
@@ -30,6 +18,7 @@
     padding-top: 40px;
     padding-left: 25px;
     font-family: 'Open Sans', sans-serif;
+    background-color: #d0f5b5;
 }
 
 .image {
@@ -79,6 +68,7 @@ img {
 
 .shadow {
     box-shadow: 0px 0px 10px 1px black;
+    background-color: #d0f5b5;
 }
 
 .overflow {
@@ -121,6 +111,8 @@ img {
     margin: 5px 0 10px 0;
     border: solid 1px #525252;
     border-collapse: collapse;
+    margin-left: 40px;
+    text-align:center;
 }
 
 .mGrid td {
@@ -137,4 +129,15 @@ img {
     font-size: 0.9em;
 }
 
+
+.header {
+    width: 50vw;
+    max-width: 500px;
+    min-width: 400px;
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+    transition: all .08s linear;
+    background-image: url('../Images/FondoBus.jpg');
+}
 

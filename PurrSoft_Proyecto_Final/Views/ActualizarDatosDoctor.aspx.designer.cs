@@ -15,13 +15,13 @@ namespace PurrSoft_Proyecto_Final.Views
     {
 
         /// <summary>
-        /// Control imgPerfilActualizar.
+        /// Control imgPerfilActualizarDoctor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgPerfilActualizar;
+        protected global::System.Web.UI.WebControls.Image imgPerfilActualizarDoctor;
 
         /// <summary>
         /// Control btnVolvel.
@@ -42,13 +42,13 @@ namespace PurrSoft_Proyecto_Final.Views
         protected global::System.Web.UI.WebControls.Label lbNombre;
 
         /// <summary>
-        /// Control txtNombre.
+        /// Control txtNombreDoctor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombre;
+        protected global::System.Web.UI.WebControls.TextBox txtNombreDoctor;
 
         /// <summary>
         /// Control Label1.
@@ -60,13 +60,13 @@ namespace PurrSoft_Proyecto_Final.Views
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Control txtApellidos.
+        /// Control txtApellidosDoctor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtApellidos;
+        protected global::System.Web.UI.WebControls.TextBox txtApellidosDoctor;
 
         /// <summary>
         /// Control Label8.
@@ -78,13 +78,13 @@ namespace PurrSoft_Proyecto_Final.Views
         protected global::System.Web.UI.WebControls.Label Label8;
 
         /// <summary>
-        /// Control txtRol.
+        /// Control txtRolDoctor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRol;
+        protected global::System.Web.UI.WebControls.TextBox txtRolDoctor;
 
         /// <summary>
         /// Control Label2.
@@ -96,13 +96,13 @@ namespace PurrSoft_Proyecto_Final.Views
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// Control txtTelefono.
+        /// Control txtTelefonoDoctor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTelefono;
+        protected global::System.Web.UI.WebControls.TextBox txtTelefonoDoctor;
 
         /// <summary>
         /// Control Label3.
@@ -114,13 +114,13 @@ namespace PurrSoft_Proyecto_Final.Views
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// Control txtDireccion.
+        /// Control txtDireccionDoctor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDireccion;
+        protected global::System.Web.UI.WebControls.TextBox txtDireccionDoctor;
 
         /// <summary>
         /// Control Label4.
@@ -132,13 +132,13 @@ namespace PurrSoft_Proyecto_Final.Views
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// Control txtEmail.
+        /// Control txtEmailDoctor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.TextBox txtEmailDoctor;
 
         /// <summary>
         /// Control Label5.
@@ -159,13 +159,13 @@ namespace PurrSoft_Proyecto_Final.Views
         protected global::System.Web.UI.WebControls.TextBox txtCiudad;
 
         /// <summary>
-        /// Control ddlCiudad.
+        /// Control ddlCiudadDoctor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCiudad;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCiudadDoctor;
 
         /// <summary>
         /// Control CIUDAD.
@@ -177,6 +177,15 @@ namespace PurrSoft_Proyecto_Final.Views
         protected global::System.Web.UI.WebControls.SqlDataSource CIUDAD;
 
         /// <summary>
+        /// Control ReqCiudad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqCiudad;
+
+        /// <summary>
         /// Control Label6.
         /// </summary>
         /// <remarks>
@@ -186,13 +195,13 @@ namespace PurrSoft_Proyecto_Final.Views
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// Control txtPassword.
+        /// Control txtPasswordDoctor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtPasswordDoctor;
 
         /// <summary>
         /// Control Label7.
@@ -204,13 +213,13 @@ namespace PurrSoft_Proyecto_Final.Views
         protected global::System.Web.UI.WebControls.Label Label7;
 
         /// <summary>
-        /// Control txtImagen.
+        /// Control txtImagenDoctor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtImagen;
+        protected global::System.Web.UI.WebControls.TextBox txtImagenDoctor;
 
         /// <summary>
         /// Control btnActualizar.
@@ -220,5 +229,14 @@ namespace PurrSoft_Proyecto_Final.Views
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnActualizar;
+
+        /// <summary>
+        /// Control txtIdRol.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtIdRol;
     }
 }

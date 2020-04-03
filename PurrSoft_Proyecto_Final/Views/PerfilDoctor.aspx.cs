@@ -29,7 +29,32 @@ namespace PurrSoft_Proyecto_Final.Views
         {
             Session["TipoDocBuscadoDoctor"] = ddlTipoDoc.Text;
             Session["NumeroDocBuscadoDoctor"] = txtNumeroDoc.Text;
-            Response.Redirect("BusquedaUsuarioDoctor.aspx");
+
+          
+            try
+            {
+                UsuarioDAO usuarioDAO = new UsuarioDAO();
+                Usuarios usuarioDTO = usuarioDAO.ConsultaPorDocumento((ddlTipoDoc.Text), (int.Parse(txtNumeroDoc.Text)));
+
+                if (usuarioDTO != null)
+                {
+                    Session["usuarioBuscadoDoctor"] = usuarioDTO;
+                    Response.Redirect("BusquedaUsuarioDoctor.aspx");
+                }
+                else
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alarm", "login_error_modal()", true);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "login_error_modal()", true);
+
+            }
+
         }
+        
     }
 }
