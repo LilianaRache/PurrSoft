@@ -265,7 +265,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CiudadDAO.cs" />
-    <Compile Include="DetalleHistoria.cs" />
+    <Compile Include="DetalleHistoriaDAO.cs" />
     <Compile Include="MascotaDAO.cs" />
     <Compile Include="UsuarioDAO.cs" />
     <Compile Include="Views\ActualizarDatosAdmin.aspx.cs">

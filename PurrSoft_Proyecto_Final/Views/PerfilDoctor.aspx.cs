@@ -55,6 +55,10 @@ namespace PurrSoft_Proyecto_Final.Views
             }
 
         }
-        
+
+        protected void btnRegresar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Index.aspx");
+        }
     }
 }

@@ -14,7 +14,7 @@
         <div >
 
                 <div class="col-sm-6" style="right: 90px; top: 6px;  width:1%;">
-                    <button type="submit" class="action-button shadow animate gray">Regresar</button>
+                    <asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="action-button shadow animate gray" OnClick="btnRegresar_Click"/>               
                 </div>
             </div><br />
 

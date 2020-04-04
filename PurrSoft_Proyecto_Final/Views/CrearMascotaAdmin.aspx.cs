@@ -40,7 +40,6 @@ namespace PurrSoft_Proyecto_Final.Views
             {
                 mascotaDTO.ID_estado_mascota = 2;
             }
-            //Falta fecha de nacimiento y estado
 
             bool registrado = mascotaDAO.RegistrarMascotas(mascotaDTO);
             if (registrado == true)
