@@ -26,9 +26,9 @@
 		</ul>
 		<div class="infromacion">
 			<h3 style="text-align:center">Mis Mascotas</h3>
-             <asp:GridView ID="gvdListaMascotasUsu" runat="server" AutoGenerateColumns="False" OnRowCommand="gvdListaMascotasUsu_RowCommand" style="margin-top: 0px">
+             <asp:GridView ID="gvdListaMascotasUsu" runat="server" AutoGenerateColumns="False" OnRowCommand="gvdListaMascotasUsu_RowCommand" style="margin-top: 0px" Width="735px">
                  <Columns>
-                     <asp:BoundField DataField="ID_mascota" HeaderText="Id_Mascota" Visible="False" />
+                     <asp:BoundField DataField="ID_mascota" HeaderText="Id_Mascota" />
                      <asp:BoundField DataField="Nombre" HeaderText="Nombre de la Mascota" />
                      <asp:BoundField DataField="Especie" HeaderText="Especie" />
                      <asp:BoundField DataField="Raza" HeaderText="Raza" />
