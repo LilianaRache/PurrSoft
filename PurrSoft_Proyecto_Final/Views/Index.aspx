@@ -31,7 +31,7 @@
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('../Images/difrentes_ani.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3 class="colorL">Porque se hizo</h3>
+            <%--<h3 class="colorL">Porque se hizo</h3>--%>
             <p class="colorL">Se hizo para suplir una necesidad</p>
           </div>
         </div>
@@ -131,5 +131,9 @@
 
       <script src="../vendor/jquery/jquery.min.js"></script>
       <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+     <script src="../js/sweetalert2.all.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="../js/Alerts.js"></script>
     
 </asp:Content>

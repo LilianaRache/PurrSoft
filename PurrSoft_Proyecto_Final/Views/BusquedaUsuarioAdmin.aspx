@@ -36,6 +36,7 @@
     <div>
         <asp:Button ID="btnCrearMascota" runat="server" Text="Crear Nueva Mascota" OnClick="btnCrearMascota_Click"/>
     </div>
+    <h1>Listado de Mascotas Activas</h1>
     <asp:GridView ID="gvdListaMascotas" CssClass="gridView" runat="server" AutoGenerateColumns="False" OnRowCommand="gvdListaMascotas_RowCommand" Width="967px" >
         <Columns>
             <asp:BoundField DataField="ID_mascota" HeaderText="Id_Mascota" />
@@ -49,9 +50,30 @@
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>
+    </asp:GridView><br /><br />
+    <h1>Listado de Mascotas Inactivas </h1>
+    <asp:GridView ID="gvdListadoMascotasInactivas" runat="server" CssClass="gridView" Width="967px" AutoGenerateColumns="False" OnRowCommand="gvdListadoMascotasInactivas_RowCommand">
+        <Columns>
+            <asp:BoundField DataField="ID_mascota" HeaderText="Id_Mascota" />
+            <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
+            <asp:BoundField DataField="Especie" HeaderText="Especie" />
+            <asp:TemplateField HeaderText="Acciones">
+                  <ItemTemplate> 
+                    <asp:ImageButton CommandName="Reactivar" ID="imgReactivar" runat="server" ImageUrl="~/Images/Bengala.png" Width="22px"/>
+                </ItemTemplate>
+            </asp:TemplateField>
+        </Columns>
+
     </asp:GridView>
 
-  
+
+   <script src="../js/sweetalert2.all.min.js"></script>
+	<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script src="../js/Alerts.js"></script>
+
 
 
 </asp:Content>

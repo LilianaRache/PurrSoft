@@ -76,7 +76,7 @@
   <footer class="py-5 bg-dark font">
     <div class="container">
         <p class="m-0 text-center text-white">
-			Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | 
+			<!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | 
                                             Liliana Rache, Juan Sebastian, Julian Martinez, David Cruz
 		</p>
         <p>
@@ -84,7 +84,7 @@
 					<i class="fa fa-github" style="font-size:24px"></i>
 					<i class="fa fa-html5" style="font-size:24px"></i>
 					<i class="fa fa-twitter-square" style="font-size:24px"></i>
-            </p>
+            </p>-->
     </div>  
    </footer>
 

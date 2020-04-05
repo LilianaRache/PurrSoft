@@ -14,20 +14,21 @@ namespace PurrSoft_Proyecto_Final.Views
 			if (!IsPostBack)
 			{
 				CargarGrillaUsuarios();
-			}
-			UsuarioDAO usuarioDAO = new UsuarioDAO();
-			Usuarios usuariosDTO = usuarioDAO.ConsultaPorDocumento((Session["tipoDocumentoLogin"].ToString()), (int.Parse(Session["numeroDocumentoLogin"].ToString())));
-			lblNombrePerfil.Text = usuariosDTO.Nombres;
-			lblRol.Text = usuariosDTO.Roles.Descripcion;
-			imgFotoPerfilAdmin.ImageUrl = usuariosDTO.Imagen;
+				UsuarioDAO usuarioDAO = new UsuarioDAO();
+				Usuarios usuariosDTO = usuarioDAO.ConsultaPorDocumento((Session["tipoDocumentoLogin"].ToString()), (int.Parse(Session["numeroDocumentoLogin"].ToString())));
+				lblNombrePerfil.Text = usuariosDTO.Nombres;
+				lblRol.Text = usuariosDTO.Roles.Descripcion;
+				imgFotoPerfilAdmin.ImageUrl = usuariosDTO.Imagen;
 
-		
+			}
+
+
 
 		}
 
 		protected void btnActualizar_Click(object sender, EventArgs e) {
 
-			Response.Redirect("ActualizarDatosUsuarioAdmin");
+			Response.Redirect("ActualizarDatosAdmin.aspx");
 		}
 
 
@@ -68,7 +69,30 @@ namespace PurrSoft_Proyecto_Final.Views
 		{
 			Session["tipoDocBusquedaPerfilAdmin"]= ddlTipoDocumento.Text;
 			Session["numeroDocBusquedaPerfilAdmin"] = int.Parse(txtNumeroDoc.Text);
-			Response.Redirect("BusquedaUsuarioAdmin.aspx");
+
+			try
+			{
+				UsuarioDAO usuarioDAO = new UsuarioDAO();
+				Usuarios usuarioDTO = usuarioDAO.ConsultaPorDocumento(Session["tipoDocBusquedaPerfilAdmin"].ToString(), int.Parse(Session["numeroDocBusquedaPerfilAdmin"].ToString()));
+
+				if (usuarioDTO != null)
+				{
+					Session["usuarioBuscadoAdmin"] = usuarioDTO;
+					Response.Redirect("BusquedaUsuarioAdmin.aspx");
+				}
+				else
+				{
+					ClientScript.RegisterStartupScript(this.GetType(), "alarm", "search_fail_modal()", true);
+				}
+
+
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine(ex.Message);
+
+				ClientScript.RegisterStartupScript(this.GetType(), "alarm", "search_fail_modal()", true);
+			}
 		}
 	}
 }

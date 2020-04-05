@@ -16,14 +16,12 @@ namespace PurrSoft_Proyecto_Final
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
-
-
             string tipoDocumento, password;
             int numeroDocumento;
 
-            if (ddlTipoDoc.Text == "Seleccionar" || txtNumeroDocumento == null || txtPassword == null)
+            if (ddlTipoDoc.Text == "Seleccionar" || txtNumeroDocumento.Text == "" || txtPassword.Text == "")
             {
-                Response.Write("<script> alert('No pudo ingresar') </script>");
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "login_error_modal()", true);
             }
             else
             {
@@ -37,7 +35,7 @@ namespace PurrSoft_Proyecto_Final
 
                 if (usuarioLogin.Numero_doc == 0)
                 {
-                    Response.Write("<script> alert('El Usuario NO esta registrado') </script>");
+                    ClientScript.RegisterStartupScript(this.GetType(), "alarm", "login_error_modal()", true);
                 }
                 else
                 {
@@ -62,3 +60,5 @@ namespace PurrSoft_Proyecto_Final
         }
     }
 }
+
+
