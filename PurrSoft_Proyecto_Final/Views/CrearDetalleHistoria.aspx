@@ -4,17 +4,15 @@
     <link href="../css/CrearDetalleHistoria.css" rel="stylesheet" />
 
     <div class="main">
-
+        <div class="fondoI" > 
         <section class="signup">
-
+           
             <div class="container" style="justify-content: center;">
+
                 <div class="signup-content">
                     <form method="POST" id="signup-form" class="signup-form">
                         <h2 class="form-title title">Detalle de Historia</h2>
-                        <div class="form-group">
-                            <asp:Label ID="Label1" runat="server" Text="Numero de Detalle" CssClass="letra"></asp:Label><br />
-                            <input type="text" class="form-input" name="name" id="idDetalleHistoria" readonly="readonly" style="width: 99%; height: 3px" />
-                        </div>
+                        
                         <div class="form-group">
                             <asp:Label ID="Label2" runat="server" Text="Nombre del Doctor" CssClass="letra"></asp:Label><br />
                             <input type="text" class="form-input" name="nombreDoctor" id="nombreDoctor" style="height: 11px" />
@@ -63,9 +61,10 @@
                     </form>
                 </div>
             </div>
+            
         </section>
-
-    </div>
+       </div>
+      
 
 
 

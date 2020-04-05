@@ -1,4 +1,5 @@
 ﻿body {
+    background:#D1E1EE;
 }
 
 
@@ -13,7 +14,7 @@
     max-width: 500px;
     min-width: 400px;
     height: 150px;
-    background: url(http://i.imgur.com/woUbg3p.jpg);
+    background-image: url("../Images/fondodoctor.jpg");
     background-size: cover;
     background-position: center center;
     transition: all .08s linear;
@@ -23,7 +24,7 @@
     width: 50vw;
     max-width: 500px;
     min-width: 400px;
-    height: 160px;
+    height: 700px;
     background: white;
     position: relative;
     box-sizing: border-box;
@@ -50,14 +51,14 @@ img {
 
 
 .name {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
-    color: #444;
+    
 }
 
 .nickname {
-    color: #888;
-    font-size: 1.5rem;
+    
+    font-size: 2rem;
     padding-bottom: 7px;
 }
 
@@ -103,7 +104,7 @@ img {
 }
 
 .count {
-    color: black;
+    
     font-family: 'Open Sans', sans-serif;
     font-size: 1.9rem;
     font-weight: 700;
