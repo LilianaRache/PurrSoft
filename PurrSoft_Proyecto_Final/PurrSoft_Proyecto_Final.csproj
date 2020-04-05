@@ -129,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\ActualizarDatosAdmin.css" />
+    <Content Include="css\ActualizarDatosUSUARIO.css" />
     <Content Include="css\ActulizarDatosDoctor.css" />
     <Content Include="css\ActulizarDatosUsuariosAdmin.css" />
     <Content Include="css\BusquedaUsuarioAdmin.css" />
@@ -145,6 +146,7 @@
     <Content Include="css\PerfilDoctor.css" />
     <Content Include="css\VerDatosUsuarioAdmin.css" />
     <Content Include="css\VerDetalleHistoria.css" />
+    <Content Include="css\VerDetalleHistoriaUsuario.css" />
     <Content Include="css\VerInfoMascotaAdmin.css" />
     <Content Include="Images\background3.jpg" />
     <Content Include="Images\Bengala.png" />
@@ -152,6 +154,7 @@
     <Content Include="Images\cancel.png" />
     <Content Include="Images\cat-Form.png" />
     <Content Include="Images\detalle-Crear .PNG" />
+    <Content Include="Images\detalleOK.gif" />
     <Content Include="Images\dog-Crear.jpg" />
     <Content Include="Images\dog-VerDetalle.PNG" />
     <Content Include="Images\edit.png" />
@@ -166,6 +169,7 @@
     <Content Include="Images\nyan-cat.gif" />
     <Content Include="Images\ojo.png" />
     <Content Include="Images\parrot-Ver.jpg" />
+    <Content Include="Images\PerroDetalleHistoria.jpg" />
     <Content Include="Images\summerfield-336672_1280.jpg" />
     <Content Include="js\Alerts.js" />
     <Content Include="js\sweetalert2.all.min.js" />
@@ -189,6 +193,7 @@
     <Content Include="Views\ActualizarDatosAdmin.aspx" />
     <Content Include="Views\ActualizarDatosDoctor.aspx" />
     <Content Include="Views\ActualizarDatosMascotasAdmin.aspx" />
+    <Content Include="Views\ActualizarDatosUSUARIO.aspx" />
     <Content Include="Views\BusquedaUsuarioAdmin.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -257,6 +262,7 @@
     <Content Include="Views\PerfilDoctor.aspx" />
     <Content Include="Views\VerDatosUsuarioAdmin.aspx" />
     <Content Include="Views\VerDetalleHistoria.aspx" />
+    <Content Include="Views\VerDetalleHistoriaUsuario.aspx" />
     <Content Include="Views\VerInfoMascotaAdmin.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -288,6 +294,13 @@
     </Compile>
     <Compile Include="Views\ActualizarDatosMascotasAdmin.aspx.designer.cs">
       <DependentUpon>ActualizarDatosMascotasAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ActualizarDatosUSUARIO.aspx.cs">
+      <DependentUpon>ActualizarDatosUSUARIO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ActualizarDatosUSUARIO.aspx.designer.cs">
+      <DependentUpon>ActualizarDatosUSUARIO.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\BusquedaUsuarioDoctor.aspx.cs">
       <DependentUpon>BusquedaUsuarioDoctor.aspx</DependentUpon>
@@ -344,6 +357,13 @@
     </Compile>
     <Compile Include="Views\VerDetalleHistoria.aspx.designer.cs">
       <DependentUpon>VerDetalleHistoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VerDetalleHistoriaUsuario.aspx.cs">
+      <DependentUpon>VerDetalleHistoriaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\VerDetalleHistoriaUsuario.aspx.designer.cs">
+      <DependentUpon>VerDetalleHistoriaUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\VerInfoMascotaAdmin.aspx.cs">
       <DependentUpon>VerInfoMascotaAdmin.aspx</DependentUpon>

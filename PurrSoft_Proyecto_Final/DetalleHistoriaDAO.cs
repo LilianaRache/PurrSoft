@@ -9,25 +9,26 @@ namespace PurrSoft_Proyecto_Final
     {
         ORMDataContext bd = new ORMDataContext();
 
-        public string RegistrarDetalle(Detalle_historia detalle)
+        public bool RegistrarDetalle(Detalle_historia detalle)
         {
             try
             {
                 bd.Detalle_historia.InsertOnSubmit(detalle);
                 bd.SubmitChanges();
-                return "Se registro la informacion correctamente";
+                return true;
 
             }
             catch (Exception ex)
             {
-                return "No se pudieron guardar los cambios" + ex.Message;
+                Console.WriteLine(ex.Message);
+                return false;
 
             }
 
 
         }
 
-        public List<Detalle_historia> ConsultaDetalleId(int idMascota)
+        public List<Detalle_historia> ConsultaDetallesIdMascota(int idMascota)
         {
             List<Detalle_historia> detalle_Historias = new List<Detalle_historia>();
             var consultaDetalle = (from d in bd.Detalle_historia where d.ID_mascota == idMascota select d);
@@ -50,6 +51,12 @@ namespace PurrSoft_Proyecto_Final
             }
 
             return detalle_Historias;
+        }
+
+        public Detalle_historia ConsultarDetalle(int id_detalle)
+        {
+            var consulta = (from d in bd.Detalle_historia where d.ID_detalle_historia == id_detalle select d).First();
+            return consulta;
         }
     }
 }

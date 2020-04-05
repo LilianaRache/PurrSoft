@@ -51,7 +51,7 @@ namespace PurrSoft_Proyecto_Final.Views
         protected void CargarGrilla()
         {
             DetalleHistoriaDAO detalleHistoriaDAO = new DetalleHistoriaDAO();
-            gvdListaDetalle.DataSource = detalleHistoriaDAO.ConsultaDetalleId(int.Parse(Session["idMascotaEscogidaDoctor"].ToString())).ToList();
+            gvdListaDetalle.DataSource = detalleHistoriaDAO.ConsultaDetallesIdMascota(int.Parse(Session["idMascotaEscogidaDoctor"].ToString())).ToList();
             gvdListaDetalle.DataBind();
         }
     }

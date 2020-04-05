@@ -122,3 +122,26 @@ function login_error_modal() {
         title: 'Oops... no pudo ingresar, por favor ingrese los datos correctos'
     })
 }
+
+//Registro de historia
+
+function create_success_detail_modal() {
+
+    Swal.fire({
+        title: ' Se registro exitosamente',
+        width: 300,
+        padding: '3em',
+        background: '#fff url(/images/trees.png)',
+        backdrop: `rgba(0,0,123,0.4) url("../Images/detalleOK.gif") left top no-repeat`
+    })
+
+}
+
+function create_fail_detail_modal() {
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops... no se pudo registrar el detalle correctamente'
+    })
+}
+
+
