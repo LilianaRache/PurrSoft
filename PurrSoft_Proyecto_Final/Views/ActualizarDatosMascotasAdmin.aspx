@@ -1,15 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="ActualizarDatosMascotasAdmin.aspx.cs" Inherits="PurrSoft_Proyecto_Final.Views.FormularioMascotas_Admin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <link href="../css/FormularioMascotasAdmin.css" rel="stylesheet" />
+    <link href="../css/FormularioMascotasAdmin2.css" rel="stylesheet" />
 
-    <div class="contact1">
-		<div class="container-contact1">
+    <div>
+		<img src="../Images/fondo25.jpg" alt="Imagen Formulario" style="position: absolute;"/>
+		<div class="container-contact1 formulario">
 			<div class="row">
 
 			<div class=" col-xs-3 contact1-pic js-tilt" style="left: -105px; top: 0px">
-                <img src="../Images/cat-Form.png" alt="Imagen Formulario" style="width:660px; height:930px;"/>
+                
 			</div>
-			<div class="col-xs-6 " style="left: 590px; top: -10px; width: 55%; margin-left: 0px;">
+			<div class="col-xs-6 ">
 			<form class=" contact1-form validate-form" method="put">
 				<h4>Datos de las Mascotas </h4> <br />
 				

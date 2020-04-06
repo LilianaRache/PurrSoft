@@ -22,7 +22,7 @@ namespace PurrSoft_Proyecto_Final
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Purrsoft")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="PurrSoft")]
 	public partial class ORMDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -57,7 +57,7 @@ namespace PurrSoft_Proyecto_Final
     #endregion
 		
 		public ORMDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["PurrsoftConnectionString"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["PurrSoftConnectionString1"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

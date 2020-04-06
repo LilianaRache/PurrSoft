@@ -6,16 +6,16 @@
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
     <link href="../css/PerfilDoctor.css" rel="stylesheet" />
-
+    <link href="../css/PerfilDoctor1.css" rel="stylesheet" />
 
     <div class="container" style="margin:60px 80px;">
 
 
         <div >
 
-                <div class="col-sm-6" style="right: 90px; top: 6px;  width:1%;">
-                    <button type="submit" class="action-button shadow animate gray">Regresar</button>
-                </div>
+                <div class="container-contact100-form-btn">
+                    <asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="action-button shadow animate boton-regresar" />
+				</div>
             </div><br />
 
 

@@ -1,0 +1,198 @@
+﻿body {
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+
+.header {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.profile {
+    height: 160px;
+    background: #000;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.image {
+    position: absolute;
+    border: 3px solid white;
+    top: -55px;
+    left: 20px;
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+}
+
+img {
+    width: inherit;
+    height: inherit;
+    border-radius: 8px;
+}
+
+
+.name {
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+
+.nickname {
+    color: black;
+    font-size: 25px;
+    padding-bottom: 7px;
+}
+
+
+
+.material-icons {
+    position: relative;
+    top: 3px;
+    font-size: 1rem;
+}
+
+.shadow {
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.following,
+.followers {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #bbb;
+    font-weight: 300;
+}
+
+.followers {
+    float: right;
+    padding-right: 30px;
+}
+
+.bottom {
+    margin-top: 10px;
+}
+
+.count {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.centrar {
+    justify-content: center;
+}
+
+/* Grid View*/
+
+.gridView {
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+    margin-left: 130px;
+}
+
+.mGrid td {
+    padding: 2px;
+    border: solid 1px #c1c1c1;
+    color: #717171;
+}
+
+.mGrid th {
+    padding: 4px 2px;
+    color: #fff;
+    background: #424242 url(grd_head.png) repeat-x top;
+    border-left: solid 1px #525252;
+    font-size: 0.9em;
+}
+
+
+/*------------------------------------------------------------*/
+
+
+
+.imagen {
+    top: 100px;
+    left: 65px;
+    opacity: 0.5;
+}
+
+.datos-perfil {
+    position: absolute;
+    top: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+}
+
+.nombre {
+    margin-left: 300px;
+}
+
+.apellido {
+    margin-left: 300px;
+}
+
+.telefono {
+    margin-left: 300px;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.correo {
+    margin-left: 300px;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.boton-mascota {
+    top: 330px;
+    left: 590px;
+    position: absolute;
+    background-color: #1D6774;
+    border-color: #9A8F91;
+    text-shadow: 0px -2px black;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+
+.tabla-mascotas {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    height: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: black;
+    margin-bottom: 20px;
+    margin-left: 180px;
+}
+
+.boton-regresar {
+    left: 10px;
+    top: -110px;
+    position: absolute;
+    background-color: #9E1736;
+    border-color: #9A8F91;
+    text-shadow: 0px -2px black;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #fff;
+}

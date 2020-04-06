@@ -3,16 +3,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
    <link href="../css/PerfilAdmin.css" rel="stylesheet" />
-
+    <link href="../css/PerdilAdmin1.css" rel="stylesheet" />
 
     <div class="container" style="margin:60px 80px;">
 
 
          <div >
 
-                <div class="col-sm-6" style="right: 90px; top: 6px;  width:1%;">
-                    <button type="submit" class="action-button shadow animate gray">Regresar</button>
-                </div>
+				<div class="container-contact100-form-btn">
+                    <asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="action-button shadow animate boton-regresar" />
+				</div>
             </div><br />
 
 
@@ -52,7 +52,7 @@
       <div class="col-md-4" style="left: 0px; top: 0px; width: 86%">
 	<section class="content">	
 			<h1 class="h1">Buscar Por Usuario</h1>
-			<div class="letraContenido">
+			<div class="letraContenido" >
                 <asp:Label ID="Label1"  required="" runat="server" Text="Tipo de documento"></asp:Label>
                 <asp:DropDownList ID="ddlTipoDocumento" runat="server">
                     <asp:ListItem>CC</asp:ListItem>
@@ -71,11 +71,13 @@
           </div>
         </div>
 </div><!-- container -->
-    <div>
-        <asp:Button ID="btnCrear" runat="server" Text="Crear Usuario" CssClass="botonCrear" OnClick="btnCrear_Click"/>
+    <div class="crear">
+         <asp:Button ID="btnCrear" runat="server" Text="Crear Usuario" CssClass="btn btn-info letraContenido" OnClick="btnCrear_Click" style="top: -330px;margin-left: 40px; position:relative"/>
     </div>
 
-    <asp:GridView ID="gvdListaUsuarios" runat="server" CssClass="mGrid"  Width="1139px" AutoGenerateColumns="False" Height="209px" OnRowCommand="gvdListaUsuarios_RowCommand" >
+       
+
+    <asp:GridView ID="gvdListaUsuarios" runat="server" CssClass="mGrid tabla-mascotas" AutoGenerateColumns="False" Width="1139px" Height="209px" OnRowCommand="gvdListaUsuarios_RowCommand" >
         <Columns>
             <asp:BoundField DataField="Numero_doc" HeaderText="Numero Documento" />
             <asp:BoundField DataField="Tipo_documento" HeaderText="Tipo Documento" />

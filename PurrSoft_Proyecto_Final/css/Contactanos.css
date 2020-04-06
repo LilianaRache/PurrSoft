@@ -13,17 +13,10 @@ body {
     border-radius: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
-    color: #FFF;
+    color: #000000;
     text-decoration: none;
 }
 
-.gray {
-    background-color: #566573;
-    border-bottom: 5px solid #424949;
-    text-shadow: 0px -2px #424949;
-    top: 304px;
-    left: 1035px;
-}
 
 .yellow {
     background-color: rgba(0,0,0,0.08);
@@ -48,16 +41,6 @@ body {
         padding: 3rem 6rem;
     }
 
-    .cid-rArHNGGDR4 .contact1 {
-        position: fixed;
-        opacity: 0.5;
-        left: -1249px;
-        width: 200%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
 .input-group-addon {
     padding-right: 20px;
 }
@@ -76,18 +59,6 @@ body {
     margin-left: 30px;
 
 }
-
-
-.usuario {
-    width: 30px;
-    height: 27px;
-    top:8px;
-    position:absolute;
-    left: 3px;
-}
-
-
-
 
     .cid-rArHNGGDR4 .link {
         position: relative;
@@ -123,8 +94,8 @@ body {
     }
 
 @media (max-width: 992px) {
-    .cid-rArHNGGDR4 .contact1 {
-        width: 50%;
+    .cid-rArHNGGDR4 {
+        width: 5%;
     }
 
     .cid-rArHNGGDR4 .text-wrap {

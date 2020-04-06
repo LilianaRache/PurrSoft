@@ -52,7 +52,7 @@
             <div class="form-group ttamaño">
                 <h4 class="ingreso">INGRESAR</h4><br />
                 <label for="exampleInputEmail1">Tipo Documento</label><br />
-                <asp:DropDownList ID="ddlTipoDoc" runat="server" Height="33px" Width="88px">
+                <asp:DropDownList ID="ddlTipoDoc" runat="server" Height="33px" Width="90px">
                     <asp:ListItem>Seleccionar</asp:ListItem>
                     <asp:ListItem>CC</asp:ListItem>
                     <asp:ListItem>TI</asp:ListItem>
