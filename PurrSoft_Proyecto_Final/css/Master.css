@@ -7,17 +7,15 @@
     height: 100vh;
     margin-top: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
 .font {
     font-size: 16px;
 }
 
-.color{
-    color:aliceblue;
-
- }
+.color {
+    color: #fff;
+}
 
 
 .carousel-item {
@@ -33,9 +31,65 @@
 .portfolio-item {
     margin-bottom: 30px;
 }
-
+/*
 .cuadrado {
     width: 100px;
     height: 100px;
-    background-color:blueviolet;
+    background-color: blueviolet;
 }
+
+.cont-bot-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bot-nav {
+    min-width: 0px;
+    height: 45px;
+    border-radius: 25px;
+    background: #9E1736;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.cont-bot-nav {
+    margin: 0px;
+    margin-left: 0px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+    .cont-bot-nav:hover {
+        background: #808080;
+    }
+
+.container-bot-nav:hover {
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    transform: translateX(5px);
+} */
+
+/*David*/

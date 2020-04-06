@@ -1,17 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="ActualizarDatosMascotasAdmin.aspx.cs" Inherits="PurrSoft_Proyecto_Final.Views.FormularioMascotas_Admin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <link href="../css/FormularioMascotasAdmin.css" rel="stylesheet" />
+    
+	<link href="../css/FormularioMascotasAdmin.css" rel="stylesheet" />
 
     <div class="contact1">
 		<div class="container-contact1">
 			<div class="row">
 
-			<div class=" col-xs-3 contact1-pic js-tilt" style="left: -105px; top: 0px">
-                <img src="../Images/cat-Form.png" alt="Imagen Formulario" style="width:660px; height:930px;"/>
+			<div class=" col-xs-3 contact1-pic js-tilt" style="left: -290px; top: 0px">
+                <img src="../Images/Fondo5.jpg" alt="Imagen Formulario" style="width:2200px; height:1095px;"/>
 			</div>
-			<div class="col-xs-6 " style="left: 292px; top: 6px; width: 55%;">
+
+			<div class="col-xs-6 " style="left: 180px; top: 6px; width: 55%;">
 			<form class=" contact1-form validate-form" method="put">
-				<h4>Datos de las Mascotas </h4> <br />
+				<h2>Datos de las Mascotas </h2> <br />
 				
 				<div class="wrap-input1 validate-input" data-validate = "Nombre is required">
 					<input class="input1" type="text" name="Nombre" placeholder="Nombre" id="ipInfoMascota">
@@ -49,7 +51,8 @@
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Message is required">
-					<h5>Estado de la Mascota</h5><br />
+					
+					<h4>Estado de la Mascota</h4><br />
                     <asp:CheckBoxList ID="cboxEstadoMascota" runat="server" RepeatColumns="1" Height="77px" Width="359px">
                         <asp:ListItem>Activo</asp:ListItem>
                         <asp:ListItem>Inactivo</asp:ListItem>
@@ -58,6 +61,9 @@
 
 				<div class="container-contact1-form-btn">
 					<button class="contact1-form-btn" id="bntactualizarDatosMascota">Actualizar</button>
+				</div>
+				<div class="container-contact100-form-btn">
+					<asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="action-button shadow animate boton-regresar" />
 				</div>
 			</form>
 				</div>

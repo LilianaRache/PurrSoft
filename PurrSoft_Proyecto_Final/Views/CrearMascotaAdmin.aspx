@@ -7,15 +7,16 @@
 		<div class="container-contact1">
 			<div class="row">
 
-			<div class=" col-xs-3 contact1-pic js-tilt" style="left: -105px; top: 0px">
-                <img src="../Images/dog-Crear.jpg" alt="Imagen Formulario" style="width:660px; height:930px;"/>
+			<div class=" col-xs-3 contact1-pic js-tilt" style="left: -340px; top: 0px">
+                <img src="../Images/Fondo2.png" alt="Imagen Formulario" style="width:1900px; height:1065px;"/>
 			</div>
-			<div class="col-xs-6 " style="left: 292px; top: 6px; width: 55%;">
+
+			<div class="col-md-6 " style="left: 292px; top: 6px; width: 55%;">
 			<form class=" contact1-form validate-form" method="put">
-				<h4>Datos de las Mascotas </h4> <br />
+				<h2>Datos de las Mascotas </h2> <br />
 				
 				<div class="wrap-input1 validate-input" data-validate = "Nombre is required">
-					<input class="input1" type="text" name="Nombre" placeholder="Nombre" id="ipInfoMascota">
+					<input class="input1" type="text" name="Nombre" placeholder="Nombre">
 					<span class="shadow-input1"></span>
 				</div>
 
@@ -50,7 +51,8 @@
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Message is required">
-					<h5>Estado de la Mascota</h5><br />
+
+					<h4>Estado de la Mascota</h4><br />
                     <asp:CheckBoxList ID="cboxEstadoMascota" runat="server" RepeatColumns="1" Height="77px" Width="359px">
                         <asp:ListItem>Activo</asp:ListItem>
                         <asp:ListItem>Inactivo</asp:ListItem>
@@ -65,7 +67,5 @@
 			</div>
 		</div>
 	</div>
-
-
 
 </asp:Content>
