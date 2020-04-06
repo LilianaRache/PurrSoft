@@ -6,10 +6,51 @@
   PERFIL
    ========================================================================== */
 
+
+
+/* Botones============================= */
+.animate {
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.action-button {
+    position: relative;
+    padding: 5px 20px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.gray {
+    background-color: #566573;
+    border-bottom: 5px solid #424949;
+    text-shadow: 0px -2px #424949;
+    top: 452px;
+    left: 888px;
+}
+
+.yellow {
+    background-color: rgba(0,0,0,0.08);
+    border-bottom: 5px solid #D1B358;
+    text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+/* Botones =============================*/
+
 .card {
     padding-top: 20px;
     margin: 10px 0 20px 0;
-    background-color: rgba(214, 224, 226, 0.2);
+    bound-color: rgba(214, 224, 226, 0.2);
     border-top-width: 0;
     border-bottom-width: 2px;
     -webkit-border-radius: 3px;
@@ -200,10 +241,16 @@
 }
 
     .card.hovercard .cardheader {
-        background-image: url('../Images/FondoPerfil.jpg');
+        background-image: url('../Images/FondoAdmin.jpg');
         background-size: cover;
         height: 135px;
     }
+
+.fondo {
+    opacity: 0.7;
+    width: 624px;
+    height: 253px;
+}
 
     .card.hovercard .avatar {
         position: relative;
@@ -362,7 +409,7 @@
     }
 
         .content form input[type="text"],
-        .content form input[type="password"] {
+        .content form text[type="cedula"] {
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
             -ms-border-radius: 3px;
@@ -388,7 +435,7 @@
         }
 
             .content form input[type="text"]:focus,
-            .content form input[type="password"]:focus {
+            .content form text[type="cedula"]:focus {
                 -webkit-box-shadow: 0 0 2px #ed1c24 inset;
                 -moz-box-shadow: 0 0 2px #ed1c24 inset;
                 -ms-box-shadow: 0 0 2px #ed1c24 inset;
@@ -419,7 +466,29 @@
     font-size:15px;
 }
 
+.mGrid{
+    margin-top: -220px;
+    text-align:center;
+}
+botonCrear{
+    margin-top:auto;
+}
 
+.boton-regresar {
+    width: 160px;
+    height: 50px;
+    left: 500px;
+    top: 1003px;
+    position: absolute;
+    background-color: #9E1736;
+    border-color: #9A8F91;
+    text-shadow: 0px -2px black;
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
 
 
 

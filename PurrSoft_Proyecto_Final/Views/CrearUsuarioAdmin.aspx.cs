@@ -11,7 +11,55 @@ namespace PurrSoft_Proyecto_Final.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+         
+        }
 
+        protected void btnCrear_Click(object sender, EventArgs e)
+        {
+           
+            UsuarioDAO usuariosDAO = new UsuarioDAO();
+            Usuarios usuariosDTO = new Usuarios();
+
+            usuariosDTO.Tipo_documento = ddlTipoDocumento.Text;
+            usuariosDTO.Numero_doc = int.Parse(txtNumeroDocumento.Text);
+            if (ddlRol.Text == "Administrador")
+            {
+                usuariosDTO.ID_rol = 1;
+            }
+            else if (ddlRol.Text == "Medico")
+            {
+                usuariosDTO.ID_rol = 2;
+            }
+            else if (ddlRol.Text == "Usuario")
+            {
+                usuariosDTO.ID_rol = 3;
+            }
+            usuariosDTO.Nombres = txtNombre.Text;
+            usuariosDTO.Apellidos = txtApellido.Text;
+            usuariosDTO.Telefono = int.Parse(txtTelefono.Text);
+            usuariosDTO.Direccion = txtDireccion.Text;
+            usuariosDTO.Email = txtEmail.Text;
+            usuariosDTO.ID_ciudad = ddlCiudad.SelectedIndex + 1;
+            usuariosDTO.Password_u = txtPassword.Text;
+            usuariosDTO.Imagen = txtImagen.Text;
+
+            bool registrado = usuariosDAO.RegistrarUsuario(usuariosDTO);
+
+            if (registrado == true)
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "create_success_user_modal()", true);
+
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "create_fail_user_modal() ", true);
+
+            }
+        }
+
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PerfilAdmin.aspx");
         }
     }
 }

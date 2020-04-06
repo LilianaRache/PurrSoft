@@ -1,8 +1,8 @@
-﻿<
-%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="RegistroMascotas.aspx.cs" Inherits="PurrSoft_Proyecto_Final.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="RegistroMascotas.aspx.cs" Inherits="PurrSoft_Proyecto_Final.WebForm1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div style="text-align: center;">
+    
+    <!--<div style="text-align: center;">
         <form action="/my-handling-form-page" method="post">
 
             <table  style="text-align: center;">
@@ -41,7 +41,8 @@
                     <td> <textarea id="txtPrescripcion"  placeholder="Prescripcion" style="width: 338px; height: 61px"></textarea></td>
                 </tr>
                 <tr>
-                     <td style="margin: 0 auto; text-align: center; border-radius: 10px; border: 1px solid #666666; width: 248px; height: 195px;"><label for="fechaConsulta">Fecha de Consulta :</label> 
+                     <td style="margin: 0 auto; text-align: center; border-radius: 10px; border: 1px solid #666666; width: 248px; height: 195px;">
+                        <label for="fechaConsulta">Fecha de Consulta :</label> 
                          <asp:Calendar ID="CalenFechaConsulta" runat="server"></asp:Calendar>
                      </td>
                    
@@ -59,6 +60,47 @@
         </table>
       </form>
       
-    </div>
+    </div> -->
+   
+    <link href="../css/registroMascota.css" rel="stylesheet" />
 
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+
+
+
+     <section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <h2>Registrar <br>mascota</h2>
+            </section>
+            
+        </section>
+
+        <form action="" >
+            <div class="registro">
+                <asp:Label Text="Motivo de consulta" Font-Size="19px" runat="server" /><br /> 
+                <asp:Label Text="label" runat="server" font-size="15px"/>
+                <br />
+                <asp:Label Text="text" runat="server" Font-Size="19px"/><br />
+                <asp:Label Text="text" runat="server" font-size="15px"/>
+                <br />
+                <asp:Label Text="text" runat="server" Font-Size="19px"/><br />
+                <asp:Label Text="text" runat="server" font-size="15px" />
+                <br />
+                <asp:Label Text="text" runat="server" Font-Size="19px"/><br />
+                <asp:Label Text="text" runat="server"  font-size="15px"/>
+                <br />
+                 <asp:Label Text="FEcha de nacimiento" runat="server" Font-Size="19px"/><br />
+                 <asp:Calendar ID="CalFecConsul" runat="server"></asp:Calendar>
+                <br />
+                <asp:Button ID="Button1" runat="server" CssClass="botones" Text="Button" /><br /> <br /> <br />
+                <br />
+                <a href="#" class="botones">volver</a>
+            </div>
+        </form>
+
+    </section>
+    <a href="#" class="botones btn-sm">content</a>
+    
 </asp:Content>

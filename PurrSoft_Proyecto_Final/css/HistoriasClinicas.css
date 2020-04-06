@@ -110,7 +110,7 @@ body {
 }
 .display-7 {
     font-family: 'Muli', sans-serif;
-    font-size: 1.5rem;
+    font-size: 20px;
 }
 .mbr-black {
     color: #343434;
@@ -123,6 +123,7 @@ body {
     margin: 5px 0 10px 0;
     border: solid 1px #525252;
     border-collapse: collapse;
+    text-align:center;
 }
 
     .mGrid td {
@@ -169,3 +170,13 @@ body {
                 color: #000;
                 text-decoration: none;
             }
+
+.boton {
+    margin-left: 1200px;
+    margin-top:30px;
+}
+
+.botonActualizar {
+    margin-left: 1200px;
+    margin-top: 20px;
+}

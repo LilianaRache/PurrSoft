@@ -1,0 +1,159 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli|Reem+Kufi&display=swap');
+
+body {
+}
+.boton{
+    background-color:deeppink;
+}
+/* Botones============================= */
+.action-button {
+    position: relative;
+    padding: 5px 20px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.yellow {
+    background-color: rgba(0,0,0,0.08);
+    border-bottom: 5px solid #D1B358;
+    text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}/* Botones =============================*/
+
+.cid-rArHNGGDR4 {
+    padding-top: 90px;
+    padding-bottom: 45px;
+    background-color: #f1eeea;
+}
+
+    .cid-rArHNGGDR4 .text-wrap {
+        background-color: #656b50;
+        padding: 3rem 6rem;
+    }
+
+.input-group-addon {
+    padding-right: 20px;
+}
+
+.form-group {
+    font-size: 10px;
+}
+
+.form-control {
+    padding: 17px;
+    font-size: 10px;
+
+}
+
+#mensaje.form-control {
+    margin-left: 30px;
+
+}
+
+    .cid-rArHNGGDR4 .link {
+        position: relative;
+        width: fit-content;
+        display: inline-block;
+        padding-right: 2rem;
+        cursor: pointer;
+    }
+
+        .cid-rArHNGGDR4 .link:before {
+            content: "\e966";
+            font-family: MobiriseIcons !important;
+            position: absolute;
+            right: 0rem;
+            transition: all 0.3s;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            color: currentColor;
+        }
+
+        .cid-rArHNGGDR4 .link:hover:before {
+            margin-right: -0.4rem;
+        }
+
+    .cid-rArHNGGDR4 .mbr-text,
+    .cid-rArHNGGDR4 .link-wrap {
+        text-align: center;
+    }
+
+    .cid-rArHNGGDR4 H4 {
+        color: #b69b74;
+    }
+
+@media (max-width: 992px) {
+    .cid-rArHNGGDR4 {
+        width: 5%;
+    }
+
+    .cid-rArHNGGDR4 .text-wrap {
+        background-color: #656b50;
+        padding: 2rem 2rem;
+    }
+}
+
+.align-right {
+    text-align: right;
+}
+
+.mbr-bold {
+    font-weight: 700;
+}
+
+.pb-4, .py-4 {
+    padding-bottom: 1.5rem !important;
+}
+
+.display-1 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 5.2rem;
+}
+
+    .display-1 > .mbr-iconfont {
+        font-size: 8.32rem;
+    }
+
+.cid-rAroxtsyKC .text-wrap {
+    padding: 0 1rem;
+}
+
+.cid-rArHNGGDR4 .mbr-text, .cid-rArHNGGDR4 .link-wrap {
+    text-align: center;
+}
+
+.mbr-text {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.mbr-white {
+    color: #ffffff;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.display-7 {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5rem;
+}
+
+.mbr-black {
+    color: #343434;
+}
+

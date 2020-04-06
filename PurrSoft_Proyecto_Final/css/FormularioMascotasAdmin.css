@@ -191,7 +191,6 @@ iframe {
 }
 
 input.input1 {
-    height: 50px;
     border-radius: 25px;
     padding: 0 30px;
 }
@@ -609,6 +608,17 @@ iframe {
 .imgBD {
     width: 40px;
 }
+
+.calendario{
+    width:60px;
+    height: 40px;
+}
+.subtitulo{
+    font-size:15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*------------------------------------------------------------------*/
 
 .boton-regresar {
     width: 160px;
