@@ -15,10 +15,13 @@
 
     <webopt:BundleReference runat="server" Path="~/Content/css" />
       <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
- 
-  
+    <link href="~/ico.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/88e0261e02.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
 </head>
 <body>
     <form runat="server">
@@ -45,42 +48,53 @@
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top font">
     <div class="container ">
-        <span class="font color">PurrSoft</span>
+        <span class="font color">PURRSOFT</span>
      
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+         
           <li class="nav-item">
-    <asp:Button ID="btnSalir" runat="server" Text="Salir" CssClass="nav-link" OnClick="btnSalir_Click" />
+            <a class="nav-link"href="Index.aspx">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contactanos.html">Contactanos</a>
+            <a class="nav-link" href="contactanos.aspx">Contactanos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="iniciar_sesion.html">Iniciar sesion</a>
-          </li>
-           <li class="nav-item">
-             <a class="nav-link" href="Registrarse.html">Registrarse</a>
+             <li class="nav-item">
+                <asp:Button ID="btnSalir" runat="server" Text="Salir" CssClass="nav-link" OnClick="btnSalir_Click"  />
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-      
+        
  <!-- Content -->
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+              
             </asp:ContentPlaceHolder>
         
   <!-- Footer -->
   <footer style="height: 70px;"  class="py-5 bg-dark font">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+        <p class="m-0 text-center text-white">
+			<!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | 
+                                            Liliana Rache, Juan Sebastian, Julian Martinez, David Cruz
+		</p>
+        <p>
+					<i class="fa fa-facebook-official" style="font-size:24px"></i>
+					<i class="fa fa-github" style="font-size:24px"></i>
+					<i class="fa fa-html5" style="font-size:24px"></i>
+					<i class="fa fa-twitter-square" style="font-size:24px"></i>
+            </p>-->
     </div>  
    </footer>
 
   </form>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  
 </body>
 </html>

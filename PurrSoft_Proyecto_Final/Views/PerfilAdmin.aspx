@@ -36,7 +36,7 @@
                               </span></div>
                         </div>
                         <div>
-                            <asp:Button ID="btnActualizar" runat="server" class="btn btn-success letraContenido" Text="Actualizar tus Datos" Height="38px" Width="169px" />
+                            <asp:Button ID="btnActualizar" runat="server" class="btn btn-success letraContenido" Text="Actualizar tus Datos" Height="38px" Width="169px" OnClick="btnActualizar_Click" />
                         </div> <br />
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                 <asp:DropDownList ID="ddlTipoDocumento" runat="server">
                     <asp:ListItem>CC</asp:ListItem>
                     <asp:ListItem>TI</asp:ListItem>
-                    <asp:ListItem>PAS</asp:ListItem>
+                    <asp:ListItem>CE</asp:ListItem>
                 </asp:DropDownList>
 			</div><br />
 			<div class="letraContenido">
@@ -96,5 +96,13 @@
 
       <script src="../vendor/jquery/jquery.min.js"></script>
       <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+     
+    <script src="../js/Alerts.js"></script>
+	 <script src="../js/sweetalert2.all.min.js"></script>
+	<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    
+
 
 </asp:Content>

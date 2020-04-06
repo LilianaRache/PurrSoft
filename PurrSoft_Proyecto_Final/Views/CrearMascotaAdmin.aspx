@@ -16,16 +16,12 @@
 
 				<div class="wrap-input1 validate-input" data-validate = "tipoDoc is required">
                     <asp:Label ID="Label2" runat="server" Text="Tipo documento de Usuario"></asp:Label> <br />
-                    <asp:DropDownList ID="ddlTipoDoc" runat="server">
-                        <asp:ListItem>CC</asp:ListItem>
-                        <asp:ListItem>TI</asp:ListItem>
-                        <asp:ListItem>CE</asp:ListItem>
-                    </asp:DropDownList>
+                    <asp:TextBox ID="txtTipoDoc" runat="server" CssClass="input1" ReadOnly="true"></asp:TextBox>
 					<span class="shadow-input1"></span>
 				</div>
 				<div class="wrap-input1 validate-input" data-validate = "NumeroDoc is required">
                     <asp:Label ID="Label9" runat="server" Text="Numero documento de Usuario"></asp:Label>
-                    <asp:TextBox ID="txtNumeroDoc" runat="server" CssClass="input1"></asp:TextBox>
+                    <asp:TextBox ID="txtNumeroDoc" runat="server" CssClass="input1" ReadOnly="true"></asp:TextBox>
 					<span class="shadow-input1"></span>
 				</div>
 
@@ -88,9 +84,13 @@
 		</div>
 	</div>
 
-    <div class="alert alert-secondary" role="alert">
-        <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
-    </div>
+	 <script src="../js/sweetalert2.all.min.js"></script>
+	<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script src="../js/Alerts.js"></script>
+
 
 
 

@@ -1,4 +1,5 @@
 ﻿body {
+    background:#D1E1EE;
 }
 
 
@@ -7,29 +8,33 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 
+<<<<<<< HEAD
 
 .header {
     width: 50vw;
     max-width: 500px;
     min-width: 400px;
     height: 150px;
-    background: url(http://i.imgur.com/woUbg3p.jpg);
+    background-image: url("../Images/fondodoctor.jpg");
     background-size: cover;
     background-position: center center;
     transition: all .08s linear;
 }
 
+=======
+>>>>>>> upstream/master
 .profile {
     width: 50vw;
     max-width: 500px;
     min-width: 400px;
-    height: 160px;
+    height: 700px;
     background: white;
     position: relative;
     box-sizing: border-box;
     padding-top: 40px;
     padding-left: 25px;
     font-family: 'Open Sans', sans-serif;
+    background-color: #d0f5b5;
 }
 
 .image {
@@ -50,14 +55,14 @@ img {
 
 
 .name {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
-    color: #444;
+    
 }
 
 .nickname {
-    color: #888;
-    font-size: 1.5rem;
+    
+    font-size: 2rem;
     padding-bottom: 7px;
 }
 
@@ -79,6 +84,7 @@ img {
 
 .shadow {
     box-shadow: 0px 0px 10px 1px black;
+    background-color: #d0f5b5;
 }
 
 .overflow {
@@ -103,7 +109,7 @@ img {
 }
 
 .count {
-    color: black;
+    
     font-family: 'Open Sans', sans-serif;
     font-size: 1.9rem;
     font-weight: 700;
@@ -121,6 +127,8 @@ img {
     margin: 5px 0 10px 0;
     border: solid 1px #525252;
     border-collapse: collapse;
+    margin-left: 40px;
+    text-align:center;
 }
 
 .mGrid td {
@@ -137,4 +145,15 @@ img {
     font-size: 0.9em;
 }
 
+
+.header {
+    width: 50vw;
+    max-width: 500px;
+    min-width: 400px;
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+    transition: all .08s linear;
+    background-image: url('../Images/FondoBus.jpg');
+}
 

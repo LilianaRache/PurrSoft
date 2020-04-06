@@ -128,7 +128,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\ActualizarDatosUsuariosAdmin1.css" />
+    <Content Include="assets\css\fontawesome-all.min.css" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\js\breakpoints.min.js" />
+    <Content Include="assets\js\browser.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.scrollex.min.js" />
+    <Content Include="assets\js\jquery.scrolly.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\util.js" />
+    <Content Include="assets\webfonts\fa-brands-400.svg" />
+    <Content Include="assets\webfonts\fa-regular-400.svg" />
+    <Content Include="assets\webfonts\fa-solid-900.svg" />
+    <Content Include="css\ActualizarDatosAdmin.css" />
+    <Content Include="css\ActualizarDatosUSUARIO.css" />
+    <Content Include="css\ActulizarDatosDoctor.css" />
     <Content Include="css\ActulizarDatosUsuariosAdmin.css" />
     <Content Include="css\BusquedaUsuarioAdmin.css" />
     <Content Include="css\BusquedaUsuarioAdmin1.css" />
@@ -138,7 +152,11 @@
     <Content Include="css\CrearDetalleHistoria.css" />
     <Content Include="css\CrearMascotaAdmin.css" />
     <Content Include="css\CrearUsuarioAdmin.css" />
+    <Content Include="css\registroMascota.css" />
+    <Content Include="css\font-awesome.css" />
     <Content Include="css\FormularioMascotasAdmin.css" />
+    <Content Include="css\ActualizarDatosUsuariosAdmin1.css" />
+    <Content Include="css\historialMascota.css" />
     <Content Include="css\FormularioMascotasAdmin2.css" />
     <Content Include="css\HistoriasClinicas.css" />
     <Content Include="css\Index.css" />
@@ -146,29 +164,51 @@
     <Content Include="css\PerdilAdmin1.css" />
     <Content Include="css\PerfilAdmin.css" />
     <Content Include="css\PerfilDoctor.css" />
+    <Content Include="css\registrou.css" />
+    <Content Include="css\usuario.css" />
     <Content Include="css\PerfilDoctor1.css" />
     <Content Include="css\VerDatosUsuarioAdmin.css" />
     <Content Include="css\VerDatosUsuarioAdmin1.css" />
     <Content Include="css\VerDetalleHistoria.css" />
+    <Content Include="css\VerDetalleHistoriaUsuario.css" />
     <Content Include="css\VerInfoMascotaAdmin.css" />
+    <Content Include="Images\backgnb.jpg" />
     <Content Include="Images\background3.jpg" />
+    <Content Include="Images\Bengala.png" />
     <Content Include="Images\bg-01.jpg" />
     <Content Include="Images\cancel.png" />
     <Content Include="Images\cat-Form.png" />
+    <Content Include="Images\detalle-Crear.PNG" />
     <Content Include="Images\detalle-Crear .PNG" />
+    <Content Include="Images\detalleOK.gif" />
     <Content Include="Images\dog-Crear.jpg" />
     <Content Include="Images\dog-VerDetalle.PNG" />
     <Content Include="Images\edit.png" />
+    <Content Include="Images\fomdoverhistoria.png" />
+    <Content Include="Images\fondoad.jpg" />
     <Content Include="Images\FondoAdmin.jpg" />
+    <Content Include="Images\fondocrearhistoriamedi.jpg" />
+    <Content Include="Images\FondoBus.jpg" />
     <Content Include="Images\FondoCrearUsuario.jpg" />
+    <Content Include="Images\fondodoctor.jpg" />
     <Content Include="Images\FondoHistoria.jpg" />
     <Content Include="Images\FondoPerfil.jpg" />
+    <Content Include="Images\fondoperro.jpg" />
+    <Content Include="Images\fondou.jpg" />
+    <Content Include="Images\fondousuarios.jpg" />
     <Content Include="Images\FondoVerusu.jpg" />
+    <Content Include="Images\fondoveteri.jpg" />
     <Content Include="Images\huellaAñadir.png" />
     <Content Include="Images\Icono_usuario.jpg" />
+    <Content Include="Images\nyan-cat.gif" />
     <Content Include="Images\ojo.png" />
     <Content Include="Images\parrot-Ver.jpg" />
+    <Content Include="Images\perrosfondo.jpg" />
+    <Content Include="Images\pugm.jpg" />
+    <Content Include="Images\PerroDetalleHistoria.jpg" />
     <Content Include="Images\summerfield-336672_1280.jpg" />
+    <Content Include="js\Alerts.js" />
+    <Content Include="js\sweetalert2.all.min.js" />
     <Content Include="js\contact_me.js" />
     <Content Include="js\jqBootstrapValidation.js" />
     <Content Include="js\PerfilDoctor.js" />
@@ -186,13 +226,16 @@
     <Content Include="vendor\jquery\jquery.min.js" />
     <Content Include="vendor\jquery\jquery.slim.js" />
     <Content Include="vendor\jquery\jquery.slim.min.js" />
+    <Content Include="Views\ActualizarDatosAdmin.aspx" />
+    <Content Include="Views\ActualizarDatosDoctor.aspx" />
+    <Content Include="Views\ActualizarDatosMascotasAdmin.aspx" />
+    <Content Include="Views\ActualizarDatosUSUARIO.aspx" />
     <Content Include="Views\BusquedaUsuarioAdmin.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Views\ActualizarDatosMascotasAdmin.aspx" />
     <Content Include="Views\ActualizarDatosUsuarioAdmin.aspx" />
     <Content Include="Views\BusquedaUsuarioDoctor.aspx" />
     <Content Include="Views\Contactanos.aspx" />
@@ -221,6 +264,25 @@
       <LastGenOutput>ORM.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="assets\sass\libs\_breakpoints.scss" />
+    <Content Include="assets\sass\libs\_functions.scss" />
+    <Content Include="assets\sass\libs\_html-grid.scss" />
+    <Content Include="assets\sass\libs\_mixins.scss" />
+    <Content Include="assets\sass\libs\_vars.scss" />
+    <Content Include="assets\sass\libs\_vendor.scss" />
+    <Content Include="assets\sass\main.scss" />
+    <Content Include="assets\webfonts\fa-brands-400.eot" />
+    <Content Include="assets\webfonts\fa-brands-400.ttf" />
+    <Content Include="assets\webfonts\fa-brands-400.woff" />
+    <Content Include="assets\webfonts\fa-brands-400.woff2" />
+    <Content Include="assets\webfonts\fa-regular-400.eot" />
+    <Content Include="assets\webfonts\fa-regular-400.ttf" />
+    <Content Include="assets\webfonts\fa-regular-400.woff" />
+    <Content Include="assets\webfonts\fa-regular-400.woff2" />
+    <Content Include="assets\webfonts\fa-solid-900.eot" />
+    <Content Include="assets\webfonts\fa-solid-900.ttf" />
+    <Content Include="assets\webfonts\fa-solid-900.woff" />
+    <Content Include="assets\webfonts\fa-solid-900.woff2" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -255,6 +317,7 @@
     <Content Include="Views\PerfilDoctor.aspx" />
     <Content Include="Views\VerDatosUsuarioAdmin.aspx" />
     <Content Include="Views\VerDetalleHistoria.aspx" />
+    <Content Include="Views\VerDetalleHistoriaUsuario.aspx" />
     <Content Include="Views\VerInfoMascotaAdmin.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -263,9 +326,37 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CiudadDAO.cs" />
-    <Compile Include="DetalleHistoria.cs" />
+    <Compile Include="DetalleHistoriaDAO.cs" />
     <Compile Include="MascotaDAO.cs" />
     <Compile Include="UsuarioDAO.cs" />
+    <Compile Include="Views\ActualizarDatosAdmin.aspx.cs">
+      <DependentUpon>ActualizarDatosAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ActualizarDatosAdmin.aspx.designer.cs">
+      <DependentUpon>ActualizarDatosAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ActualizarDatosDoctor.aspx.cs">
+      <DependentUpon>ActualizarDatosDoctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ActualizarDatosDoctor.aspx.designer.cs">
+      <DependentUpon>ActualizarDatosDoctor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ActualizarDatosMascotasAdmin.aspx.cs">
+      <DependentUpon>ActualizarDatosMascotasAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ActualizarDatosMascotasAdmin.aspx.designer.cs">
+      <DependentUpon>ActualizarDatosMascotasAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ActualizarDatosUSUARIO.aspx.cs">
+      <DependentUpon>ActualizarDatosUSUARIO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ActualizarDatosUSUARIO.aspx.designer.cs">
+      <DependentUpon>ActualizarDatosUSUARIO.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\BusquedaUsuarioDoctor.aspx.cs">
       <DependentUpon>BusquedaUsuarioDoctor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -322,6 +413,13 @@
     <Compile Include="Views\VerDetalleHistoria.aspx.designer.cs">
       <DependentUpon>VerDetalleHistoria.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\VerDetalleHistoriaUsuario.aspx.cs">
+      <DependentUpon>VerDetalleHistoriaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\VerDetalleHistoriaUsuario.aspx.designer.cs">
+      <DependentUpon>VerDetalleHistoriaUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\VerInfoMascotaAdmin.aspx.cs">
       <DependentUpon>VerInfoMascotaAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -340,13 +438,6 @@
     </Compile>
     <Compile Include="Views\BusquedaUsuarioAdmin.aspx.designer.cs">
       <DependentUpon>BusquedaUsuarioAdmin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ActualizarDatosMascotasAdmin.aspx.cs">
-      <DependentUpon>ActualizarDatosMascotasAdmin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\ActualizarDatosMascotasAdmin.aspx.designer.cs">
-      <DependentUpon>ActualizarDatosMascotasAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\ActualizarDatosUsuarioAdmin.aspx.cs">
       <DependentUpon>ActualizarDatosUsuarioAdmin.aspx</DependentUpon>

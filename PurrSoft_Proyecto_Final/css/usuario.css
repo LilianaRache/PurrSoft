@@ -1,0 +1,87 @@
+ .nombre_u
+		{	
+			text-align: center;
+			height:300px;
+			padding:30px;
+			background-image: url("../Images/fondou.jpg");
+			background-size: cover;
+            border-radius:10px;
+		}
+		.avatar_u
+		{
+			width:200px ;
+			height:200px;
+			border-radius: 50%;
+		}
+		.user_n
+		{
+			font-size:20px;
+			margin-top:14px ;
+		}
+		.social_lista
+		{
+			list-style: none;
+			text-align: center;
+			padding: 0;
+            font-size:18px;
+		}
+		.social_lista li
+		{
+			display:inline-block;
+			margin:5px;
+
+		}
+		/* cambiar de color los hipervinculos */
+		a
+		{
+			text-decoration: none;
+			color:red;
+		}
+		a:hover
+		{
+			color:black;
+		}
+		.ico
+		{
+			width:16px;
+			height: 16px;
+			display:inline-block; 
+			background-size: cover;
+		}
+		/* iconos */
+		.correo
+		{
+			background-image: url("");
+		}
+		.documento
+		{
+			background-image: url("");
+		}
+		.telfono
+		{
+			background-image: url("");
+		}
+		.direccion
+		{
+			background-image: url("");
+		}
+		.infromacion
+		{
+			padding: 18px;
+		}
+		.infromacion h3
+		{
+			color:;
+			font-size: 30px;
+		}
+		.infromacion p
+		{
+			color: ;
+			font-size: 18px;
+		}
+
+        contenedor_u
+        {
+            text-align: center;
+			height:300px; 
+        }

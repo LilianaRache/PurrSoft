@@ -7,12 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace PurrSoft_Proyecto_Final.Views
-{
+namespace PurrSoft_Proyecto_Final.Views {
 
 
-    public partial class BusquedaUsuario
-    {
+    public partial class BusquedaUsuario {
 
         /// <summary>
         /// Control imgUsuario.
@@ -77,6 +75,15 @@ namespace PurrSoft_Proyecto_Final.Views
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvdListaMascotas;
 
+        /// <summary>
+        /// Control gvdListadoMascotasInactivas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvdListadoMascotasInactivas;
+        
         /// <summary>
         /// Control btnRegresar.
         /// </summary>

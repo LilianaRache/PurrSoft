@@ -11,7 +11,8 @@
 			<div class=" col-xs-3 contact1-pic js-tilt" style="left: -105px; top: 0px">
                 
 			</div>
-			<div class="col-xs-6 ">
+			<div class="col-xs-6 " style="left: 590px; top: -10px; width: 55%; margin-left: 0px;">
+                <asp:Button ID="btnVolver" runat="server" Text="Volver" CssClass="btn btn-info" OnClick="btnVolver_Click"/>
 			<form class=" contact1-form validate-form" method="put">
 				<h4>Datos de las Mascotas </h4> <br />
 				
@@ -53,12 +54,18 @@
 
 				<div class="wrap-input1 validate-input " data-validate = "Fecha is required">
                     <asp:Label ID="Label6" runat="server" Text="Fecha de Nacimiento" CssClass="subtitulo"></asp:Label>
-                    <asp:Calendar CssClass="calendario" ID="ClFechaNacimiento" runat="server" Height="16px" Width="263px" ></asp:Calendar>
-					<span class="shadow-input1"></span>
+                    <asp:TextBox ID="txtFechaNacimiento" runat="server" ReadOnly="true"></asp:TextBox>
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+						<ContentTemplate>
+							 <asp:Calendar CssClass="calendario" ID="ClFechaNacimiento" runat="server" Height="16px" Width="263px" ></asp:Calendar>
+							<span class="shadow-input1"></span>
+						</ContentTemplate>
+                    </asp:UpdatePanel>
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "cboxEstadoMascota is required">
 					<h5>Estado de la Mascota</h5><br />
+                    <asp:TextBox ID="txtEstado" runat="server" ReadOnly="true" CssClass="input1">></asp:TextBox><br />
                     <asp:RadioButtonList ID="rbEstadoMascota" runat="server" Height="69px" Width="326px">
                         <asp:ListItem>Activo</asp:ListItem>
                         <asp:ListItem>Inactivo</asp:ListItem>
@@ -77,5 +84,11 @@
     <div class="alert alert-secondary" role="alert">
         <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>        
     </div>
+
+     <script src="../js/sweetalert2.all.min.js"></script>
+	<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="../js/Alerts.js"></script>
 
 </asp:Content>

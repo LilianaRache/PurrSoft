@@ -7,56 +7,90 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace PurrSoft_Proyecto_Final
-{
-
-
-    public partial class WebForm2
-    {
-
+namespace PurrSoft_Proyecto_Final {
+    
+    
+    public partial class WebForm2 {
+        
         /// <summary>
-        /// Control ddlTipoDocuemto.
+        /// Control dpdCiudades.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTipoDocuemto;
-
+        protected global::System.Web.UI.WebControls.DropDownList dpdCiudades;
+        
         /// <summary>
-        /// Control CalenFechaConsulta.
+        /// Control TextBox1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar CalenFechaConsulta;
-
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        
         /// <summary>
-        /// Control CalenFechaProxConsulta.
+        /// Control TextBox2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar CalenFechaProxConsulta;
-
+        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        
         /// <summary>
-        /// Control btnRegistrar.
+        /// Control TextBox3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegistrar;
-
+        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        
         /// <summary>
-        /// Control btnVolver.
+        /// Control TextBox4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVolver;
+        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        
+        /// <summary>
+        /// Control TextBox5.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        
+        /// <summary>
+        /// Control TextBox6.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        
+        /// <summary>
+        /// Control dpciudad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dpciudad;
+        
+        /// <summary>
+        /// Control TextBox7.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox7;
     }
 }

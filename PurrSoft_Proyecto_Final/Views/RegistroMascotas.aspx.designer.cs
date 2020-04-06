@@ -7,13 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace PurrSoft_Proyecto_Final
-{
-
-
-    public partial class WebForm1
-    {
-
+namespace PurrSoft_Proyecto_Final {
+    
+    
+    public partial class WebForm1 {
+        
         /// <summary>
         /// Control CalenFechaConsulta.
         /// </summary>
@@ -22,7 +20,7 @@ namespace PurrSoft_Proyecto_Final
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar CalenFechaConsulta;
-
+        
         /// <summary>
         /// Control CalenFechaProxConsulta.
         /// </summary>
@@ -31,7 +29,7 @@ namespace PurrSoft_Proyecto_Final
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar CalenFechaProxConsulta;
-
+        
         /// <summary>
         /// Control btnRegistrar.
         /// </summary>
@@ -40,7 +38,7 @@ namespace PurrSoft_Proyecto_Final
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnRegistrar;
-
+        
         /// <summary>
         /// Control btnVolver.
         /// </summary>
@@ -49,5 +47,23 @@ namespace PurrSoft_Proyecto_Final
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnVolver;
+        
+        /// <summary>
+        /// Control CalFecConsul.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar CalFecConsul;
+        
+        /// <summary>
+        /// Control Button1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

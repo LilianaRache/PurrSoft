@@ -2354,7 +2354,6 @@ pre code {
 }
 table {
   background-color: transparent;
-    height: 212px;
     width: 371px;
 }
 table col[class*="col-"] {
@@ -4176,6 +4175,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-pills > li + li {
   margin-left: 2px;
+    top: 0px;
+    left: 0px;
+    width: 116px;
+    height: 40px;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
