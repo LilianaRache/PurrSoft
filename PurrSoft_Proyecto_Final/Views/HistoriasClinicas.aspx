@@ -2,13 +2,28 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <link href="../css/HistoriasClinicas.css" rel="stylesheet" />
-
-    <div class="Container" style="margin-top: 50px;">
-        <section class="content4 cid-rArHNGGDR4" id="content04-1q">
-            <img class="img1" src="../Images/FondoHistoria.jpg" alt="Mobirise" style="margin-top: 50px;">
-
+    <link rel="stylesheet" href="../assets/css/main.css" />
+<section id="one">
+								<div class="image main" data-position="center">
+									<img src="../images/FondoHistoria.jpg" />
+								</div>
             <div class="container">
+									<header class="major">
+										<h2>Historial clinico</h2>
+									</header>
+                                    <h4>Motivo de consulta </h4>
+									 <asp:Label ID="Label4" runat="server" Text="Label">cxvdfvfdfdgdfgd</asp:Label>
+                                    <br />
+									<h4>Descripcion del caso</h4>
+									 <asp:Label ID="Label3" runat="server" Text="Label">cxvdfvfdfdgdfgd</asp:Label>
+                                    <br />
+                                    <h4>Antecedentes</h4>
+									< <asp:Label ID="Label2" runat="server" Text="Label">cxvdfvfdfdgdfgd</asp:Label>
+                                    <br />
+                                    <h4>Valoracion de resultados</h4>
+                                    <asp:Label ID="Label1" runat="server" Text="Label">cxvdfvfdfdgdfgd</asp:Label>
+								</div>
+							</section>
 
                 <div class="row justify-content-md-end">
                     <div class="col-lg-6 col-md-12">
@@ -27,7 +42,7 @@
 
             <div>
                 <asp:Button ID="btnVolver" runat="server" Text="Volver" Height="37px" Width="69px" CssClass="btn btn-info boton" OnClick="btnVolver_Click" />
-            </div>
+    </div>
 
         </section>
         <br />
@@ -50,5 +65,12 @@
     </div>
     <br />
 
-
+<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 </asp:Content>

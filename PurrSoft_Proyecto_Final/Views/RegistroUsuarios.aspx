@@ -1,55 +1,65 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="RegistroUsuarios.aspx.cs" Inherits="PurrSoft_Proyecto_Final.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
+    <link rel="stylesheet" href="reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="../css/registrou.css">
+
+
+    <div class="container_f">
+		<div class="form__top">
+			<h2>Registrar <span>Usuario</span></h2>
+		</div>
+
+		<form class="form__reg" action="">
+			<label for="" class="input">Tipo de documento</label>
+			<select name="" id=""> <!--<asp:DropDownList ID="dpdCiudades" runat="server"></asp:DropDownList>-->
+				<option value="0">Seleccione</option>
+				<option value="CC">Cedula de ciudadania</option>
+				<option value="CE">Cedula de extranjeria</option>
+				<option value="TI">Tarjeta de indentidad</option>
+				<option value="PAS">Pasaporte</option>
+			</select>	
+			&nbsp &nbsp
+			<label > Número de Cedula</label>
+			<asp:TextBox ID="TextBox1" CssClass="input" runat="server" ></asp:TextBox>
+            <br />   
+			<label >Nombres</label>
+			<asp:TextBox ID="TextBox2" CssClass="input" runat="server" ></asp:TextBox> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+			<label >Apellidos</label>
+			<asp:TextBox ID="TextBox3" CssClass="input" runat="server" ></asp:TextBox>
+            <br />
+			<label >Crear contraseña</label>
+			<asp:TextBox ID="TextBox4" CssClass="input" runat="server" ></asp:TextBox> &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp 
+			<label >Correo</label>
+           <asp:TextBox ID="TextBox5" CssClass="input" runat="server" ></asp:TextBox>
+            <br /> 
+			<label >Telefono / celular </label>
+            <asp:TextBox ID="TextBox6" CssClass="input" runat="server" ></asp:TextBox>
+            <br />
+			<label for="" class="input">Ciudad</label>  <!--<asp:DropDownList ID="dpciudad" runat="server"></asp:DropDownList>-->
+			<select name="" id="">
+				<option value="0">Seleccione</option>
+				<option value="1">bogota</option>
+			</select> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+			
+			<label >Direccion</label>	
+            <asp:TextBox ID="TextBox7" CssClass="input" runat="server" ></asp:TextBox>
+            <div class="btn__form">
+
+            	<input class="btn__reset" type="reset" value="LIMPIAR">	
+            	<input class="btn__submit" type="submit" value="REGISTRAR">
+            </div>
+		</form>
+	</div>
+	<div>  
+        <ul  class="nav justify-content-end">
+        <li class="nav-item text-right">
+          <a href="#" type="button" class="btn btn-secondary">Volver</a>
+        </li>
+        </ul>
+     </div>
+
     
-
-    <div style="text-align: center;">
-        <form action="/my-handling-form-page" method="post">
-                 <h1>Registro de Usuarios</h1>
-
-            
-            <label for="name">Tipo de documento:</label>
-            <asp:DropDownList ID="ddlTipoDocuemto" runat="server"></asp:DropDownList>
-             <br /> <br />
-
-            <label for="motivo de consulta">Motivo de consulta:</label>
-            <input type="text" id="ipMotivoConsulta" placeholder="Motivo de Consulta">
-             <br /><br /> 
-
-            <label for="descripcionCaso">Descripcion del caso:</label>
-            <input type="text" id="ipDescripcionCaso" placeholder="">
-             <br /><br />
-
-            <label for="antecedentes">Antecedentes:</label>
-            <input type="text" id="ipAntecedentes" placeholder="Antecedentes" />
-             <br /><br />
-
-            <label for="valoracion">Valoracion de resultados:</label>
-            <input type="text" id="ipValoracionResultados" placeholder="Valoracion">
-              <br /><br />
-            
-            <label for="prescripcion">Prescripcion Medica:</label>
-            <input type="text" id="ipPrescripcionMedica" placeholder="Prescripcion">
-             <br /><br />
-            
-           
-            <div style=" margin: 0 auto; text-align: center; border-radius: 10px; border: 1px solid #666666;width: 248px; height: 195px;">
-            <label for="fechaConsulta">Fecha de Consulta :</label>
-            <asp:Calendar ID="CalenFechaConsulta" runat="server" Height="171px" Width="243px"></asp:Calendar>
-            </div>
-            <br /><br />
-
-            <div style=" margin: 0 auto;text-align: center;border-radius: 10px;border: 1px solid #666666; width: 248px;height: 195px;">
-            <label for="fechaProxConsulta">Fecha de proxima consulta:</label>
-            <asp:Calendar  style="text-align: center" ID="CalenFechaProxConsulta" runat="server" Width="243px"></asp:Calendar>
-            </div>
-            <br /><br />
-           
-            <asp:Button ID="btnRegistrar" Text="Registrar" runat="server" />
-            <asp:Button ID="btnVolver" runat="server" Text="Volver" />
-        </form>
-
-    </div>
-    <br />
         
 </asp:Content>

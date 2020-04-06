@@ -7,10 +7,11 @@
 		<div class="container-contact1">
 			<div class="row">
 
-			<div class=" col-xs-3 contact1-pic js-tilt" style="left: -105px; top: 0px">
-                <img src="../Images/dog-Crear.jpg" alt="Imagen Formulario" style="width:660px; height:930px;"/>
+			<div class=" col-xs-3 contact1-pic js-tilt" style="left: -340px; top: 0px">
+                <img src="../Images/Fondo2.png" alt="Imagen Formulario" style="width:1900px; height:1065px;"/>
 			</div>
-			<div class="col-xs-6 " style="left: 292px; top: 6px; width: 55%;">
+
+			<div class="col-md-6 " style="left: 292px; top: 6px; width: 55%;">
 			<form class=" contact1-form validate-form" method="put">
 				<h4>Datos de las Mascotas </h4> <br />
 
@@ -76,21 +77,13 @@
 					</div>
 
 				<div class="container-contact1-form-btn">
-                    <asp:Button ID="btnCrear" runat="server" Text="Crear" CssClass="contact1-form-btn" OnClick="btnCrear_Click" />
+                    <asp:Button ID="btnCrear" runat="server" Text="Crear" CssClass="contact1-form-btn" " />
 				</div>
 			</form>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	 <script src="../js/sweetalert2.all.min.js"></script>
-	<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
-	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-
-    <script src="../js/Alerts.js"></script>
-
 
 
 

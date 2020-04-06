@@ -4,13 +4,15 @@
     <link href="../css/CrearDetalleHistoria.css" rel="stylesheet" />
 
     <div class="main">
-
+        <div class="fondoI" > 
         <section class="signup">
 
             <div class="container" style="justify-content: center;">
+
                 <div class="signup-content">
                     <form method="POST" id="signup-form" class="signup-form">
                         <h2 class="form-title title">Detalle de Historia</h2>
+                        
                         <div class="form-group">
                             <asp:Label ID="Label1" runat="server" Text="Nombre de Doctor" CssClass="letra"></asp:Label><br />
                             <asp:TextBox ID="txtNombreDoctor" runat="server" style="width: 99%; height: 3px"  CssClass="form-input"></asp:TextBox>
@@ -69,11 +71,12 @@
                     </form>
                 </div>
             </div>
+            
         </section>
     </div>
 
 
-    
+
 	 <script src="../js/sweetalert2.all.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="../js/Alerts.js"></script>

@@ -15,7 +15,7 @@ namespace PurrSoft_Proyecto_Final.Views
     {
 
         /// <summary>
-        /// Control Label1.
+        /// Control cboxEstadoMascota.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
@@ -166,5 +166,6 @@ namespace PurrSoft_Proyecto_Final.Views
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnVolver;
+        protected global::System.Web.UI.WebControls.CheckBoxList cboxEstadoMascota;
     }
 }

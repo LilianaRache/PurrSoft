@@ -1,19 +1,15 @@
 ﻿body {
-
 }
-
-
-
-
-
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
+
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    color: #fff;
 }
 
 body, html {
@@ -26,7 +22,7 @@ a {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
     line-height: 1.7;
-    color: #666666;
+    color: #000000;
     margin: 0px;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
@@ -40,12 +36,13 @@ a {
 
     a:hover {
         text-decoration: none;
-        color: #57b846;
+        color: #c80000;
     }
 
 /*---------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
-    margin: 0px;
+    margin: 5px;
+    color: #60001b;
 }
 
 p {
@@ -57,7 +54,7 @@ p {
 }
 
 ul, li {
-    margin: 0px;
+    margin: 2px;
     list-style-type: none;
 }
 
@@ -78,7 +75,7 @@ textarea {
     }
 
 input::-webkit-input-placeholder {
-    color: #999999;
+    color: #00092c;
 }
 
 input:-moz-placeholder {
@@ -94,7 +91,7 @@ input:-ms-input-placeholder {
 }
 
 textarea::-webkit-input-placeholder {
-    color: #999999;
+    color: #00092c;
 }
 
 textarea:-moz-placeholder {
@@ -118,6 +115,7 @@ button {
 
     button:hover {
         cursor: pointer;
+        color: #000000;
     }
 
 iframe {
@@ -135,10 +133,10 @@ iframe {
     min-height: 100%;
     padding: 15px;
     background: #009bff;
-    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
-    background: -o-linear-gradient(left, #0072ff, #00c6ff);
-    background: -moz-linear-gradient(left, #0072ff, #00c6ff);
-    background: linear-gradient(left, #0072ff, #00c6ff);
+    background: -webkit-linear-gradient(left, #006775, #2e4753);
+    background: -o-linear-gradient(left, #006775, #2e4753);
+    background: -moz-linear-gradient(left, #006775, #2e4753);
+    background: linear-gradient(left, #006775, #2e4753);
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -150,7 +148,7 @@ iframe {
 }
 
 .container-contact1 {
-    width: 1163px;
+    width: 2100px;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -162,13 +160,13 @@ iframe {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 90px 130px 88px 148px;
+    padding: 0px 100px 0px 100px;
 }
 
 /*------------------------------------------------------------------
 [  ]*/
 .contact1-pic {
-    width: 296px;
+    width: 210px;
 }
 
     .contact1-pic img {
@@ -193,7 +191,6 @@ iframe {
 }
 
 input.input1 {
-    height: 50px;
     border-radius: 25px;
     padding: 0 30px;
 }
@@ -216,18 +213,18 @@ textarea.input1 {
 .wrap-input1 {
     position: relative;
     width: 100%;
-    z-index: 1;
-    margin-bottom: 20px;
+    z-index: 0;
+    margin-bottom: 10px;
 }
 
 .input1 {
     display: block;
     width: 100%;
-    background: #e6e6e6;
+    background: rgba(255, 255, 255, 0.85);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.5;
-    color: #666666;
+    color: #000000;
 }
 
 .shadow-input1 {
@@ -240,7 +237,7 @@ textarea.input1 {
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 0px 0px;
-    color: rgba(87,184,70, 0.5);
+    color: rgba(8, 14, 17, 0.75);
 }
 
 .input1:focus + .shadow-input1 {
@@ -274,10 +271,10 @@ textarea.input1 {
 }
 
 .contact1-form-btn {
-    min-width: 193px;
+    min-width: 190px;
     height: 50px;
     border-radius: 25px;
-    background: #57b846;
+    background: #00b93c;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.5;
@@ -305,10 +302,10 @@ textarea.input1 {
     }
 
     .contact1-form-btn:hover {
-        background: #333333;
+        background: #9D2139;
     }
 
-        .contact1-form-btn:hover i {
+        .contact1-form-btn:hover {
             -webkit-transform: translateX(10px);
             -moz-transform: translateX(10px);
             -ms-transform: translateX(10px);
@@ -378,8 +375,8 @@ textarea.input1 {
     content: attr(data-validate);
     position: absolute;
     max-width: 70%;
-    background-color: white;
-    border: 1px solid #c80000;
+    background-color: #000000;
+    border: 1px solid #072a3c;
     border-radius: 13px;
     padding: 4px 25px 4px 10px;
     top: 50%;
@@ -389,6 +386,168 @@ textarea.input1 {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
     right: 8px;
+    pointer-events: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+    content: "\f06a";
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    color: #fff;
+    font-size: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 13px;
+}
+
+.alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.calendario {
+    width: 60px;
+    height: 40px;
+    background-color: rgba(0, 93, 109, 0.85);
+}
+
+/*David*/
+
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+    button:hover {
+        cursor: pointer;
+    }
+
+iframe {
+    border: none !important;
+}
+
+.container-contact100-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 8px;
+}
+
+
+.contact100-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 160px;
+    height: 50px;
+    background-color: #57b846;
+    border-radius: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+    .contact100-form-btn i {
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+
+    .contact100-form-btn:hover {
+        background-color: #333333;
+    }
+
+        .contact100-form-btn:hover i {
+            -webkit-transform: translateX(10px);
+            -moz-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            -o-transform: translateX(10px);
+            transform: translateX(10px);
+        }
+
+@media (max-width: 576px) {
+    .contact100-form {
+        padding: 43px 15px 57px 117px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact100-form {
+        padding: 43px 15px 57px 15px;
+    }
+
+    .label-input100 {
+        text-align: left;
+        position: unset;
+        top: unset;
+        left: unset;
+        width: 100%;
+        padding: 0 5px;
+    }
+}
+
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+    position: relative;
+}
+
+.alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: #fff;
+    border: 1px solid #c80000;
+    border-radius: 2px;
+    padding: 4px 25px 4px 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 2px;
     pointer-events: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #c80000;
@@ -416,7 +575,7 @@ textarea.input1 {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    right: 13px;
+    right: 8px;
 }
 
 .alert-validate:hover:before {
@@ -431,6 +590,25 @@ textarea.input1 {
     }
 }
 
+.imagen {
+    width: 120px;
+    height: 100px;
+}
+
+.labels {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.tamaño {
+    width: 670px;
+    height: 180px;
+}
+
+.imgBD {
+    width: 40px;
+}
+
 .calendario{
     width:60px;
     height: 40px;
@@ -438,4 +616,22 @@ textarea.input1 {
 .subtitulo{
     font-size:15px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*------------------------------------------------------------------*/
+
+.boton-regresar {
+    width: 160px;
+    height: 50px;
+    left: 500px;
+    top: 840px;
+    position: absolute;
+    background-color: #9E1736;
+    border-color: #9A8F91;
+    text-shadow: 0px -2px black;
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #fff;
 }

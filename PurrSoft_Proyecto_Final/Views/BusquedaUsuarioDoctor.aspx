@@ -6,25 +6,27 @@
       <div class="shadow overflow col-md-offset-4" style="margin-bottom:20px; margin-top:30px; width:500px; height: 366px;">
             <div class="header"></div>
             <div class="profile">
-                <div class="image">
+                <div class="image imagen">
                     <asp:Image ID="imgPerfilDoctor" runat="server" />
                 </div>
-                <div class="name">
-                    <asp:Label ID="lblNombres" runat="server" Text="Label"></asp:Label>
+                <div class="name nombre">
+                    <asp:Label ID="lblNombres" runat="server" Text="Nombre"></asp:Label>
                 </div>
-                <div class="nickname">
-                    <asp:Label ID="lblApellidos" runat="server" Text="Label"></asp:Label>
+                <div class="nickname apellido">
+                    <asp:Label ID="lblApellidos" runat="server" Text="apellido"></asp:Label>
                 </div>
-                <div class="location">
-                    <span>
-                          Telefono
-                        <asp:Label ID="lblTelefono" runat="server" Text="Label"></asp:Label>
-                    </span>
+                <div class="telefono">
+                        <span class="count">Telefono/Celular : </span>
+                        <asp:Label ID="lblTelefono" runat="server" Text="Label" CssClass="count"></asp:Label>
+                </div>
+                <div class="Correo">
+                    <span class="count">Correo: </span> 
+                        <asp:Label ID="lblEmail" runat="server" Text="Label" CssClass="count"></asp:Label>
                 </div>
                 <div class="bottom">
                     <span class="following ">
-                       <span class="count">Correo </span>
-                        <asp:Label ID="lblEmail" runat="server" Text="Label"></asp:Label>
+                        <span class="count">170</span>
+                        following
                     </span>
                 </div>
             </div>

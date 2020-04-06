@@ -1,11 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="PerfilUsuario.aspx.cs" Inherits="PurrSoft_Proyecto_Final.Views.Perfil_Usuario" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    
+   
    
     <link href="../css/usuario.css" rel="stylesheet" />    
       
    
-     <header>
+  <div class="container" style="margin-top:50px">
+        
 	<div class="nombre_u" >
 <%--		<img  class="avatar_u" src="../Images/cat-widget2.jpg" alt=""/>--%>
         <asp:Image ID="imgFotoUsuario" runat="server" />
@@ -20,9 +21,9 @@
 			<li>
                 <asp:Label ID="lblEmail" runat="server" Text="Label"></asp:Label> 
 			</li>
-            <li>
+			<li>
                 <asp:Button ID="btnActualizar" runat="server" Text="Actualizar Mis datos" CssClass="boton_personalizado" Height="35px" Width="172px" OnClick="btnActualizar_Click" />
-            </li>
+			</li>
 		</ul>
 		<div class="infromacion">
 			<h3 style="text-align:center">Mis Mascotas</h3>
@@ -40,9 +41,14 @@
                  </Columns>
             </asp:GridView>
 		</div>
-   </header>
 
-
+    <div>  
+        <ul  class="nav justify-content-end">
+        <li class="nav-item text-right">
+          <a href="#" type="button" class="btn btn-secondary">Volver</a>
+        </li>
+        </ul>
+          </div>
 
     <!--
     CSS DEL BOTON

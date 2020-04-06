@@ -1,0 +1,197 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli|Reem+Kufi&display=swap');
+
+body {
+}
+
+.cid-rArHNGGDR4 {
+    padding-top: 90px;
+    padding-bottom: 45px;
+    background-color: #f1eeea;
+}
+
+    .cid-rArHNGGDR4 .text-wrap {
+        background-color: #656b50;
+        padding: 3rem 6rem;
+    }
+
+.input-group-addon {
+    padding-right: 20px;
+}
+
+.form-group {
+    font-size: 10px;
+}
+
+.form-control {
+    padding: 1px;
+    font-size: 10px;
+}
+
+#mensaje.form-control {
+    margin-left: 30px;
+}
+
+.cid-rArHNGGDR4 .link {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+    .cid-rArHNGGDR4 .link:before {
+        content: "\e966";
+        font-family: MobiriseIcons !important;
+        position: absolute;
+        right: 0rem;
+        transition: all 0.3s;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1rem;
+        color: currentColor;
+    }
+
+    .cid-rArHNGGDR4 .link:hover:before {
+        margin-right: -0.4rem;
+    }
+
+.cid-rArHNGGDR4 .mbr-text,
+.cid-rArHNGGDR4 .link-wrap {
+    text-align: center;
+}
+
+.cid-rArHNGGDR4 H4 {
+    color: #b69b74;
+}
+
+@media (max-width: 992px) {
+    .cid-rArHNGGDR4 {
+        width: 50%;
+    }
+
+        .cid-rArHNGGDR4 .text-wrap {
+            background-color: #656b50;
+            padding: 2rem 2rem;
+        }
+}
+
+.align-right {
+    text-align: right;
+}
+
+.mbr-bold {
+    font-weight: 700;
+}
+
+.pb-4, .py-4 {
+    padding-bottom: 1.5rem !important;
+}
+
+.display-1 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 5.2rem;
+}
+
+    .display-1 > .mbr-iconfont {
+        font-size: 8.32rem;
+    }
+
+.cid-rAroxtsyKC .text-wrap {
+    padding: 0 1rem;
+}
+
+.cid-rArHNGGDR4 .mbr-text, .cid-rArHNGGDR4 .link-wrap {
+    text-align: center;
+}
+
+.mbr-text {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.mbr-white {
+    color: #ffffff;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.display-7 {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5rem;
+}
+
+.mbr-black {
+    color: #343434;
+}
+
+/* Botones============================= */
+
+.boton {
+    margin-right: 50px;
+    background-color: #9E1736;
+    border-color: #9A8F91;
+    text-shadow: 0px -2px black;
+    padding: 5px 20px;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+
+/* Botones =============================*/
+
+.fondo {
+    position: fixed;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+}
+
+.fondoContenedor {
+    width: 500px;
+    right: 0;
+    float: right;
+}
+
+.contenedor {
+    opacity: 0.7;
+    margin-top: 50px;
+    font: black;
+    float:right;
+}
+
+.contact {
+    background-color: #cfcfcf;
+    color: black;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.usuario {
+    width: 30px;
+    height: 28px;
+    top: 1px;
+    position: absolute;
+    left: 3px;
+    opacity: 1;
+}
+
+.nombre {
+    font-size: 13px;
+    opacity: 1;
+    color: black;
+}
+
+.caja-nombre {
+    margin:0;
+    opacity: 1;
+}
+
+.nombre-mensaje {
+    font-size: 13px;
+    height: 10px;
+}
