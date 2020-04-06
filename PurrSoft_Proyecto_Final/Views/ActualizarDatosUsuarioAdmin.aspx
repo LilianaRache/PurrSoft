@@ -7,10 +7,11 @@
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
 		<div class="wrap-contact100">
-			<div class="contact100-form-title " style="background-image: url(../images/FondoDatosUsuario.jpg);">
+			<div class="contact100-form-title " style="background-image: url(../images/fondo24.jpg);">
 
                 <span class="contact100-form-title-1">
                     <asp:Image ID="imgPerfilActualizar" runat="server" CssClass="imagen"/>
+					Actualizar Datos Administrador
 				</span>		
 			</div><br />
             <asp:Button ID="btnVolvel" runat="server" Text="Volver" CssClass="btn btn-info" OnClick="btnVolvel_Click" />
@@ -40,7 +41,7 @@
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate="Telefono is required">
-					<span class="label-input100">Phone:</span>
+					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label2" runat="server" Text="Label"> Telefono</asp:Label>
                     <asp:TextBox ID="txtTelefono" runat="server" CssClass="input100"></asp:TextBox>
 					<span class="focus-input100"></span>
@@ -71,24 +72,23 @@
 
 				<div class="wrap-input100 validate-input" data-validate = "Password required: ex@abc.xyz">
 					<span class="label-input100"></span>
-					<asp:Label class="labels" ID="Label6" runat="server" Text="Label">Contraseña</asp:Label>
+					<asp:Label class="labels" ID="Label6" runat="server" Text="Label">Contraseña:</asp:Label>
                     <asp:TextBox ID="txtPassword" runat="server" CssClass="input100"></asp:TextBox>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate="image is required"">
 					<span class="label-input100"></span>
-					<asp:Label class="labels" ID="Label7" runat="server" Text="Label">Imagen</asp:Label>
+					<asp:Label class="labels" ID="Label7" runat="server" Text="Label">Imagen:</asp:Label>
                     <asp:TextBox ID="txtImagen" runat="server" CssClass="input100"></asp:TextBox>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="container-contact100-form-btn">
-					<span>
-						  <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" CssClass="contact100-form-btn fa fa-long-arrow-right m-l-7 " OnClick="btnActualizar_Click" />
-					</span>
- 
+                    <asp:Button ID="btnActualizar" CssClass="contact100-form-btn fa fa-long-arrow-right m-l-7" aria-hidden="true" runat="server" Text="Actualizar" OnClick="btnActualizar_Click"/>
+					<asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="action-button shadow animate boton-regresar" />
 				</div>
+
 			</form>
 		</div>
 	</div>
@@ -99,5 +99,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
     <script src="../js/Alerts.js"></script>
+		  <script src="../vendor/jquery/jquery.min.js"></script>
+      <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
 </asp:Content>

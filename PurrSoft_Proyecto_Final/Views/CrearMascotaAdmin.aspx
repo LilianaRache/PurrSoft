@@ -76,7 +76,7 @@
 					</div>
 
 				<div class="container-contact1-form-btn">
-                    <asp:Button ID="btnCrear" runat="server" Text="Crear" CssClass="contact1-form-btn" OnClick="btnCrear_Click" />
+                    <asp:Button ID="btnCrear" runat="server" Text="Crear" CssClass="contact1-form-btn" " />
 				</div>
 			</form>
 				</div>

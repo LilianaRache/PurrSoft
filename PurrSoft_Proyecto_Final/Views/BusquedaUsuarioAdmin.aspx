@@ -4,12 +4,11 @@
 
     <link href="../css/BusquedaUsuarioAdmin1.css" rel="stylesheet" />
 
-    <img src="../Images/fondo21.jpg" class="imagen-fondo" alt="Alternate Text" />
         <div class="shadow overflow col-md-offset-4" style="margin-bottom:50px; margin-top:12px; width:500px; height: 250px;">
-            <img src="../Images/fondo18.jpg" class="header" alt="Alternate Text" />
+            <img src="../Images/fondo29.jpg" class="header" alt="Alternate Text" />
             <div class="profile datos-perfil">
                 <div class="image imagen">
-                    <asp:Image ID="imgUsuario" runat="server" />
+                    <asp:Image ID="imgUsuario" runat="server" /> 
                 </div>
                 <div class="name nombre">
                     <asp:Label ID="lblNombres" runat="server" Text="Label"></asp:Label>
