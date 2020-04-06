@@ -14,6 +14,7 @@
 					Pepito Perez
 				</span>	
 			</div><br />
+            <asp:Button ID="btnVolver" runat="server" Text="Volver" CssClass="btn btn-info" OnClick="btnVolver_Click"/>
 
 			<form class="contact100-form validate-form">
 				<div class="wrap-input100 validate-input" data-validate="tipoDocumento is required">
@@ -108,5 +109,12 @@
 			</form>
 		</div>
 	</div>
+
+	<script src="../js/sweetalert2.all.min.js"></script>
+	<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script src="../js/Alerts.js"></script>
 
 </asp:Content>

@@ -10,8 +10,8 @@
 		<div class="wrap-contact100">
 			<div class="contact100-form-title " style="background-image: url(../Images/FondoVerusu.jpg);">
 
-                <span class="contact100-form-title-1"><img class="imagen" src="../Images/summerfield-336672_1280.jpg" style="margin-bottom: 0px" />
-					Pepito Perez
+                <span class="contact100-form-title-1">
+                    <asp:Image ID="imgFotoPerfil" runat="server" CssClass="imagen" />				
 				</span>
 			</div><br />
 
@@ -19,14 +19,14 @@
 
 				<div class="wrap-input100 validate-input" data-validate="TipoDocumento is required">
 					<span class="label-input100"></span>
-                    <asp:Label class="labels" ID="Label8" runat="server" Text="Tipo de documento"> Nombres</asp:Label>
+                    <asp:Label class="labels" ID="Label8" runat="server" Text="Tipo de documento"> Tipo Documento </asp:Label>
                     <asp:TextBox ID="txtTipoDoc" runat="server"  ReadOnly="True" required="required" CssClass="input100" ></asp:TextBox>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate="NumeroDocumento is required">
 					<span class="label-input100"></span>
-                    <asp:Label class="labels" ID="Label9" runat="server" Text="Label"> Numero de Documento </asp:Label>
+                    <asp:Label class="labels" ID="Label9" runat="server" Text="Label"> Numero de Documento  </asp:Label>
                     <asp:TextBox ID="txtNumeroDoc" runat="server"  ReadOnly="True" required="required" CssClass="input100"></asp:TextBox>
 					<span class="focus-input100"></span>
 				</div>
@@ -84,13 +84,6 @@
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label6" runat="server" Text="Contraseña"></asp:Label>
                     <asp:TextBox ID="txtPassword" runat="server" required="required" CssClass="input100"  ReadOnly="True" TextMode="Password" ></asp:TextBox>
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate="image is required"">
-					<span class="label-input100"></span>
-					<asp:Label class="labels" ID="Label7" runat="server" Text="Label">Imagen</asp:Label>
-                    <asp:Image ID="imgImagen" runat="server" required="required" ReadOnly="True" CssClass="input100 imgBD"/>
 					<span class="focus-input100"></span>
 				</div>
 

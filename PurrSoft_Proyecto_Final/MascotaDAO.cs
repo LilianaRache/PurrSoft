@@ -10,18 +10,19 @@ namespace PurrSoft_Proyecto_Final
 
         ORMDataContext bd = new ORMDataContext();
 
-        public string RegistrarMascotas(Mascotas mascota)
+        public bool RegistrarMascotas(Mascotas mascota)
         {
             try
             {
                 bd.Mascotas.InsertOnSubmit(mascota);
                 bd.SubmitChanges();
-                return "La mascota se ha registrado correctamente";
+                return true;
 
             }
             catch (Exception ex)
             {
-                return "No se pudo registrar la mascota" + ex.Message;
+                Console.Write(ex.Message);
+                return false;
 
             }
         }
@@ -57,7 +58,7 @@ namespace PurrSoft_Proyecto_Final
             return consultaPorId;
         }
 
-        public string ActualizarMascotas(Mascotas mascota)
+        public bool ActualizarMascotas(Mascotas mascota)
         {
             try
             {
@@ -74,33 +75,50 @@ namespace PurrSoft_Proyecto_Final
                 consultar.Fecha_nacimiento = mascota.Fecha_nacimiento;
                 consultar.ID_estado_mascota = mascota.ID_estado_mascota;
                 bd.SubmitChanges();
-                return "La informacion se actualizo correctamente";
+                return true;
             }
             catch (Exception ex)
             {
-                return "No se puedo actualizar los datos" + ex.Message;
+                Console.WriteLine(ex.Message);
+                return false;
             }
 
 
         }
 
-        public string EliminarMascota(int id)
+        public bool EliminarMascota(int id)
         {
             try
             {
                 var consultaPorId = (from m in bd.Mascotas where m.ID_mascota == id select m).First();
                 consultaPorId.ID_estado_mascota = 2;
                 bd.SubmitChanges();
-                return "Se elimino correctamente";
+                return true;
             }
             catch (Exception ex)
             {
-
-                return "No se pudo eliminar la mascota" + ex.Message;
+                Console.WriteLine(ex.Message);
+                return false;
             }
         }
 
-        public List<Mascotas> ConsultarMascotasUsuario(int cedulaUsuario)
+        public bool ReactivarMascota(int id)
+        {
+            try
+            {
+                var consultaPorId = (from m in bd.Mascotas where m.ID_mascota == id select m).First();
+                consultaPorId.ID_estado_mascota = 1;
+                bd.SubmitChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public List<Mascotas> ConsultarMascotasActivasUsuario(int cedulaUsuario)
         {
             List<Mascotas> listaMascotas = new List<Mascotas>();
             var consulta = (from m in bd.Mascotas where m.Cedula_usuario == cedulaUsuario && m.ID_estado_mascota == 1 select m);
@@ -125,6 +143,30 @@ namespace PurrSoft_Proyecto_Final
 
         }
 
+        public List<Mascotas> ConsultarMascotasInactivasUsuario(int cedulaUsuario)
+        {
+            List<Mascotas> listaMascotas = new List<Mascotas>();
+            var consulta = (from m in bd.Mascotas where m.Cedula_usuario == cedulaUsuario && m.ID_estado_mascota == 2 select m);
+            foreach (var obj in consulta)
+            {
+                Mascotas mascota = new Mascotas();
+                mascota.ID_mascota = obj.ID_mascota;
+                mascota.Cedula_usuario = obj.Cedula_usuario;
+                mascota.Tipo_documento_usuario = obj.Tipo_documento_usuario;
+                mascota.Nombre = obj.Nombre;
+                mascota.Raza = obj.Raza;
+                mascota.Especie = obj.Especie;
+                mascota.Color = obj.Color;
+                mascota.Sexo = obj.Sexo;
+                mascota.Señas_particulares = obj.Señas_particulares;
+                mascota.Fecha_nacimiento = obj.Fecha_nacimiento;
+                mascota.ID_estado_mascota = obj.ID_estado_mascota;
+
+                listaMascotas.Add(mascota);
+            }
+            return listaMascotas;
+
+        }
 
 
 

@@ -11,7 +11,7 @@ namespace PurrSoft_Proyecto_Final.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+         
         }
 
         protected void btnCrear_Click(object sender, EventArgs e)
@@ -43,14 +43,23 @@ namespace PurrSoft_Proyecto_Final.Views
             usuariosDTO.Password_u = txtPassword.Text;
             usuariosDTO.Imagen = txtImagen.Text;
 
+            bool registrado = usuariosDAO.RegistrarUsuario(usuariosDTO);
 
+            if (registrado == true)
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "create_success_user_modal()", true);
 
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "create_fail_user_modal() ", true);
 
+            }
+        }
 
-
-
-
-
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PerfilAdmin.aspx");
         }
     }
 }

@@ -20,13 +20,13 @@
 				</div>
 
 				<div class="wrap-input1 validate-input"  data-validate = "Especie is required">
-					<asp:Label CssClass="texto" ID="Label2" runat="server" Text="Raza "></asp:Label>
+					<asp:Label CssClass="texto" ID="Label2" runat="server" Text="Especie "></asp:Label>
                     <asp:TextBox ID="txtEspecieMascota" runat="server" CssClass="input1" ReadOnly="true"></asp:TextBox>
 					<span class="shadow-input1"></span>
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Raza is required">
-					<asp:Label CssClass="texto" ID="Label3" runat="server" Text="Especie"></asp:Label>
+					<asp:Label CssClass="texto" ID="Label3" runat="server" Text="Raza"></asp:Label>
                     <asp:TextBox ID="txtRazaMascota" runat="server" CssClass="input1" ReadOnly="true"></asp:TextBox>
 					<span class="shadow-input1"></span>
 				</div>
@@ -39,7 +39,7 @@
 
 				<div class="wrap-input1 validate-input" data-validate = "Sexo is required">
 					<asp:Label CssClass="texto" ID="Label5" runat="server" Text="Sexo"></asp:Label>
-                    <asp:TextBox ID="txtSexoMascota" runat="server" CssClass="input1" ReadOnly="true"></asp:TextBox>
+                    <asp:TextBox ID="txtSexoMascota" runat="server" CssClass="input1" ReadOnly="true" ></asp:TextBox>
 					<span class="shadow-input1"></span>
 				</div>
 

@@ -9,17 +9,18 @@ namespace PurrSoft_Proyecto_Final
     {
         ORMDataContext bd = new ORMDataContext();
 
-        public string RegistrarUsuario(Usuarios usuario)
+        public bool RegistrarUsuario(Usuarios usuario)
         {
             try
             {
                 bd.Usuarios.InsertOnSubmit(usuario);
                 bd.SubmitChanges();
-                return "Se registro un usuario exitosamente";
+                return true;
             }
             catch (Exception ex)
             {
-                return "No se pudo registrar el usuario" + ex.Message;
+                Console.WriteLine("Error" + ex.Message);
+                return false;
 
             }
 
@@ -52,11 +53,11 @@ namespace PurrSoft_Proyecto_Final
         public Usuarios ConsultaPorDocumento(string tipo_doc, int numero_documento)
         {
 
-            var consultaPorID = (from u in bd.Usuarios where u.Tipo_documento == tipo_doc && u.Numero_doc == numero_documento select u).First();
+            var consultaPorID = (from u in bd.Usuarios where u.Tipo_documento == tipo_doc && u.Numero_doc == numero_documento select u).FirstOrDefault();
             return consultaPorID;
         }
 
-        public string ActualizarUsuario(Usuarios usuario)
+        public bool ActualizarUsuario(Usuarios usuario)
         {
             try
             {
@@ -69,15 +70,17 @@ namespace PurrSoft_Proyecto_Final
                 buscarUsuario.Direccion = usuario.Direccion;
                 buscarUsuario.Telefono = usuario.Telefono;
                 buscarUsuario.Email = usuario.Email;
+                buscarUsuario.ID_ciudad = usuario.ID_ciudad;
                 buscarUsuario.Password_u = usuario.Password_u;
                 buscarUsuario.Imagen = usuario.Imagen;
 
                 bd.SubmitChanges();
-                return "Se actualizo correctamente";
+                return true;
             }
             catch (Exception ex)
             {
-                return "No se pudo actualizar" + ex.Message;
+                Console.WriteLine("Error" + ex.Message);
+                return false;
 
             }
 

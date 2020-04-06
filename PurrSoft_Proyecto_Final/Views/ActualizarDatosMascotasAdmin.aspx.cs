@@ -15,14 +15,16 @@ namespace PurrSoft_Proyecto_Final.Views
             if (!IsPostBack)
             {
                
-                    MascotaDAO mascotaDAO = new MascotaDAO();
-                    Mascotas mascotaDTO = mascotaDAO.ConsultaPorId(int.Parse(Session["idMascotaActualizar"].ToString()));
-                    txtNombreMascota.Text = mascotaDTO.Nombre.ToString();
-                    txtEspecie.Text = mascotaDTO.Especie.ToString();
-                    txtRazaMascota.Text = mascotaDTO.Raza.ToString();
-                    txtColorMascota.Text = mascotaDTO.Color.ToString();
-                    txtSexoMascota.Text = mascotaDTO.Sexo.ToString();
-                    txtSeñasMascota.Text = mascotaDTO.Señas_particulares.ToString();
+                MascotaDAO mascotaDAO = new MascotaDAO();
+                Mascotas mascotaDTO = mascotaDAO.ConsultaPorId(int.Parse(Session["idMascotaActualizar"].ToString()));
+                txtNombreMascota.Text = mascotaDTO.Nombre;
+                txtEspecie.Text = mascotaDTO.Especie;
+                txtRazaMascota.Text = mascotaDTO.Raza;
+                txtColorMascota.Text = mascotaDTO.Color;
+                txtSexoMascota.Text = mascotaDTO.Sexo;
+                ClFechaNacimiento.SelectedDate =(DateTime) mascotaDTO.Fecha_nacimiento;
+                txtSeñasMascota.Text = mascotaDTO.Señas_particulares;
+                txtEstado.Text = mascotaDTO.Estados.Descripcion;
      
             }
 
@@ -31,12 +33,12 @@ namespace PurrSoft_Proyecto_Final.Views
         
         protected void btnActualizar_Click(object sender, EventArgs e)
         {
+
             MascotaDAO mascotaDAO = new MascotaDAO();
             Mascotas mascotaDTO = new Mascotas();
             mascotaDTO.ID_mascota = (int.Parse(Session["idMascotaActualizar"].ToString()));
-            //Cambiar los datos datos de tipo de documento 
-            mascotaDTO.Tipo_documento_usuario = (Session["tipoDocUsuarioActualizar"].ToString());
-            mascotaDTO.Cedula_usuario = (int.Parse(Session["numeroDocUsuarioActualizar"].ToString()));
+            mascotaDTO.Tipo_documento_usuario = (Session["tipoDocBusquedaPerfilAdmin"].ToString());
+            mascotaDTO.Cedula_usuario = (int.Parse(Session["numeroDocBusquedaPerfilAdmin"].ToString()));
             mascotaDTO.Nombre = txtNombreMascota.Text;
             mascotaDTO.Especie = txtEspecie.Text;
             mascotaDTO.Raza = txtRazaMascota.Text;
@@ -52,11 +54,24 @@ namespace PurrSoft_Proyecto_Final.Views
             {
                 mascotaDTO.ID_estado_mascota = 2;
             }
-            // igual con todos los atributos 
-            lblMensaje.Text = mascotaDAO.ActualizarMascotas(mascotaDTO);
-            Response.Redirect("BusquedaUsuarioAdmin.aspx");
+
+            bool resultado = mascotaDAO.ActualizarMascotas(mascotaDTO);
+
+            if (resultado == true)
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "update_success_modal()", true);
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alarm", "update_fail_modal()", true);
+            }
+            
+          
         }
 
-       
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("BusquedaUsuarioAdmin.aspx");
+        }
     }
 }

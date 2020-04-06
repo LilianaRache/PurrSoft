@@ -81,7 +81,7 @@
         <div >
 
                 <div class="col-sm-6" style="left: 1090px; top: -80px;  width:10%;">
-                    <button type="submit" class="action-button shadow animate gray">Regresar</button>
+                    <button type="submit" class="action-button shadow animate gray boton">Regresar</button>
                 </div>
             </div>
 

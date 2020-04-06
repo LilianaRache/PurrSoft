@@ -184,7 +184,6 @@ C:\Users\obeltran\Documents\Oscar\Proyectos\PurrSoft\PurrSoft_Proyecto_Final\obj
 C:\Users\obeltran\Documents\Oscar\Proyectos\PurrSoft\PurrSoft_Proyecto_Final\obj\Debug\PurrSoft_Proyecto_Final.csproj.CopyComplete
 C:\Users\obeltran\Documents\Oscar\Proyectos\PurrSoft\PurrSoft_Proyecto_Final\obj\Debug\PurrSoft_Proyecto_Final.dll
 C:\Users\obeltran\Documents\Oscar\Proyectos\PurrSoft\PurrSoft_Proyecto_Final\obj\Debug\PurrSoft_Proyecto_Final.pdb
-C:\Users\ASUS\Source\Repos\PurrSoft_Proyecto_Final\PurrSoft_Proyecto_Final\obj\Debug\PurrSoft_Proyecto_Final.csprojAssemblyReference.cache
 C:\Users\Julian\Desktop\PurrSoftBush\PurrSoft\PurrSoft_Proyecto_Final\bin\PurrSoft_Proyecto_Final.dll.config
 C:\Users\Julian\Desktop\PurrSoftBush\PurrSoft\PurrSoft_Proyecto_Final\bin\PurrSoft_Proyecto_Final.dll
 C:\Users\Julian\Desktop\PurrSoftBush\PurrSoft\PurrSoft_Proyecto_Final\bin\PurrSoft_Proyecto_Final.pdb
@@ -279,6 +278,7 @@ C:\Users\Julian\Desktop\PurrSoftBush\PurrSoft\PurrSoft_Proyecto_Final\obj\Debug\
 C:\Users\Julian\Desktop\PurrSoftBush\PurrSoft\PurrSoft_Proyecto_Final\obj\Debug\PurrSoft_Proyecto_Final.csproj.CopyComplete
 C:\Users\Julian\Desktop\PurrSoftBush\PurrSoft\PurrSoft_Proyecto_Final\obj\Debug\PurrSoft_Proyecto_Final.dll
 C:\Users\Julian\Desktop\PurrSoftBush\PurrSoft\PurrSoft_Proyecto_Final\obj\Debug\PurrSoft_Proyecto_Final.pdb
+<<<<<<< HEAD
 C:\Users\juans\Desktop\purr\PurrSoft\PurrSoft_Proyecto_Final\bin\PurrSoft_Proyecto_Final.dll.config
 C:\Users\juans\Desktop\purr\PurrSoft\PurrSoft_Proyecto_Final\bin\PurrSoft_Proyecto_Final.dll
 C:\Users\juans\Desktop\purr\PurrSoft\PurrSoft_Proyecto_Final\bin\PurrSoft_Proyecto_Final.pdb
@@ -370,3 +370,6 @@ C:\Users\juans\Desktop\purr\PurrSoft\PurrSoft_Proyecto_Final\bin\es\System.Web.M
 C:\Users\juans\Desktop\purr\PurrSoft\PurrSoft_Proyecto_Final\obj\Debug\PurrSoft_Proyecto_Final.csprojResolveAssemblyReference.cache
 C:\Users\juans\Desktop\purr\PurrSoft\PurrSoft_Proyecto_Final\obj\Debug\PurrSoft_Proyecto_Final.dll
 C:\Users\juans\Desktop\purr\PurrSoft\PurrSoft_Proyecto_Final\obj\Debug\PurrSoft_Proyecto_Final.pdb
+=======
+C:\Users\ASUS\Source\Repos\PurrSoft_Proyecto_Final\PurrSoft_Proyecto_Final\obj\Debug\PurrSoft_Proyecto_Final.csprojAssemblyReference.cache
+>>>>>>> upstream/master
