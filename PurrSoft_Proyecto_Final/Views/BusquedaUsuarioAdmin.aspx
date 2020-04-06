@@ -2,42 +2,39 @@
 <%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="BusquedaUsuarioAdmin.aspx.cs" Inherits="PurrSoft_Proyecto_Final.Views.BusquedaUsuario" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <link href="../css/BusquedaUsuarioAdmin.css" rel="stylesheet" />
+    <link href="../css/BusquedaUsuarioAdmin1.css" rel="stylesheet" />
 
-
-        <div class="shadow overflow col-md-offset-4" style="margin-bottom:20px; margin-top:30px; width:500px; height: 366px;">
-            <div class="header"></div>
-            <div class="profile">
-                <div class="image">
+    <img src="../Images/fondo21.jpg" class="imagen-fondo" alt="Alternate Text" />
+        <div class="shadow overflow col-md-offset-4" style="margin-bottom:50px; margin-top:12px; width:500px; height: 250px;">
+            <img src="../Images/fondo18.jpg" class="header" alt="Alternate Text" />
+            <div class="profile datos-perfil">
+                <div class="image imagen">
                     <asp:Image ID="imgUsuario" runat="server" />
                 </div>
-                <div class="name">
+                <div class="name nombre">
                     <asp:Label ID="lblNombres" runat="server" Text="Label"></asp:Label>
                  
                 </div>
-                <div class="nickname">
+                <div class="nickname apellido">
                     <asp:Label ID="lblApellidos" runat="server" Text="Label"></asp:Label>
                   
                 </div>
-                <div class="location">
-                    <span>
-                        Telefono
+                <div class="telefono">
+                        <span class="count">Telefono: </span> <br />
                         <asp:Label ID="lblTelefono" runat="server" Text="Label"></asp:Label>
-                    </span>
                 </div>
                 <div class="bottom">
-                    <span class="following ">
-                       <span class="count">Correo </span>
-                        <asp:Label ID="lblEmail" runat="server" Text="Label"></asp:Label>
+                    <span class="following correo">
+                       <span class="count">Correo: </span> <br />
+                        <asp:Label ID="lblEmail" runat="server" Text="Label" CssClass="correo"></asp:Label>
                     </span>
                 </div>
             </div>
         </div><br /> <br />
     <div>
-        <asp:Button ID="btnCrearMascota" runat="server" Text="Crear Nueva Mascota" OnClick="btnCrearMascota_Click"/>
-    </div>
-    <h1>Listado de Mascotas Activas</h1>
-    <asp:GridView ID="gvdListaMascotas" CssClass="gridView" runat="server" AutoGenerateColumns="False" OnRowCommand="gvdListaMascotas_RowCommand" Width="967px" >
+        <asp:Button ID="btnCrearMascota" CssClass="boton-mascota" runat="server" Text="Crear Nueva Mascota" OnClick="btnCrearMascota_Click"/>
+    </div> <br />
+    <asp:GridView ID="gvdListaMascotas" CssClass="gridView tabla-mascotas" runat="server" AutoGenerateColumns="False" OnRowCommand="gvdListaMascotas_RowCommand" Width="75%" >
         <Columns>
             <asp:BoundField DataField="ID_mascota" HeaderText="Id_Mascota" />
             <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
@@ -66,16 +63,24 @@
 
     </asp:GridView>
 
+    <div >
+        <div class="col-sm-6" style="left: 1100px; top: -70px;  width:10%;">
+            <asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="action-button shadow animate boton-regresar" />
+        </div>  
+    </div>
 
-   <script src="../js/sweetalert2.all.min.js"></script>
+  <script src="../js/sweetalert2.all.min.js"></script>
 	<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
 	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
     <script src="../js/Alerts.js"></script>
-
+      <script src="../vendor/jquery/jquery.min.js"></script>
+      <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
 </asp:Content>
+
+
 
 

@@ -128,9 +128,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Content Include="assets\css\fontawesome-all.min.css" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\js\breakpoints.min.js" />
+    <Content Include="assets\js\browser.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.scrollex.min.js" />
+    <Content Include="assets\js\jquery.scrolly.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\util.js" />
+    <Content Include="assets\webfonts\fa-brands-400.svg" />
+    <Content Include="assets\webfonts\fa-regular-400.svg" />
+    <Content Include="assets\webfonts\fa-solid-900.svg" />
+=======
     <Content Include="css\ActualizarDatosAdmin.css" />
     <Content Include="css\ActualizarDatosUSUARIO.css" />
     <Content Include="css\ActulizarDatosDoctor.css" />
+>>>>>>> upstream/master
     <Content Include="css\ActulizarDatosUsuariosAdmin.css" />
     <Content Include="css\BusquedaUsuarioAdmin.css" />
     <Content Include="css\BusquedaUsuarioDoctor.css" />
@@ -138,38 +153,64 @@
     <Content Include="css\CrearDetalleHistoria.css" />
     <Content Include="css\CrearMascotaAdmin.css" />
     <Content Include="css\CrearUsuarioAdmin.css" />
+    <Content Include="css\registroMascota.css" />
+    <Content Include="css\font-awesome.css" />
     <Content Include="css\FormularioMascotasAdmin.css" />
+    <Content Include="css\historialMascota.css" />
     <Content Include="css\HistoriasClinicas.css" />
     <Content Include="css\Index.css" />
     <Content Include="css\Master.css" />
     <Content Include="css\PerfilAdmin.css" />
     <Content Include="css\PerfilDoctor.css" />
+    <Content Include="css\registrou.css" />
+    <Content Include="css\usuario.css" />
     <Content Include="css\VerDatosUsuarioAdmin.css" />
     <Content Include="css\VerDetalleHistoria.css" />
     <Content Include="css\VerDetalleHistoriaUsuario.css" />
     <Content Include="css\VerInfoMascotaAdmin.css" />
+    <Content Include="Images\backgnb.jpg" />
     <Content Include="Images\background3.jpg" />
     <Content Include="Images\Bengala.png" />
     <Content Include="Images\bg-01.jpg" />
     <Content Include="Images\cancel.png" />
     <Content Include="Images\cat-Form.png" />
+<<<<<<< HEAD
+    <Content Include="Images\detalle-Crear.PNG" />
+=======
     <Content Include="Images\detalle-Crear .PNG" />
     <Content Include="Images\detalleOK.gif" />
+>>>>>>> upstream/master
     <Content Include="Images\dog-Crear.jpg" />
     <Content Include="Images\dog-VerDetalle.PNG" />
     <Content Include="Images\edit.png" />
+    <Content Include="Images\fomdoverhistoria.png" />
+    <Content Include="Images\fondoad.jpg" />
     <Content Include="Images\FondoAdmin.jpg" />
+<<<<<<< HEAD
+    <Content Include="Images\fondocrearhistoriamedi.jpg" />
+=======
     <Content Include="Images\FondoBus.jpg" />
+>>>>>>> upstream/master
     <Content Include="Images\FondoCrearUsuario.jpg" />
+    <Content Include="Images\fondodoctor.jpg" />
     <Content Include="Images\FondoHistoria.jpg" />
     <Content Include="Images\FondoPerfil.jpg" />
+    <Content Include="Images\fondoperro.jpg" />
+    <Content Include="Images\fondou.jpg" />
+    <Content Include="Images\fondousuarios.jpg" />
     <Content Include="Images\FondoVerusu.jpg" />
+    <Content Include="Images\fondoveteri.jpg" />
     <Content Include="Images\huellaAñadir.png" />
     <Content Include="Images\Icono_usuario.jpg" />
     <Content Include="Images\nyan-cat.gif" />
     <Content Include="Images\ojo.png" />
     <Content Include="Images\parrot-Ver.jpg" />
+<<<<<<< HEAD
+    <Content Include="Images\perrosfondo.jpg" />
+    <Content Include="Images\pugm.jpg" />
+=======
     <Content Include="Images\PerroDetalleHistoria.jpg" />
+>>>>>>> upstream/master
     <Content Include="Images\summerfield-336672_1280.jpg" />
     <Content Include="js\Alerts.js" />
     <Content Include="js\sweetalert2.all.min.js" />
@@ -228,6 +269,25 @@
       <LastGenOutput>ORM.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="assets\sass\libs\_breakpoints.scss" />
+    <Content Include="assets\sass\libs\_functions.scss" />
+    <Content Include="assets\sass\libs\_html-grid.scss" />
+    <Content Include="assets\sass\libs\_mixins.scss" />
+    <Content Include="assets\sass\libs\_vars.scss" />
+    <Content Include="assets\sass\libs\_vendor.scss" />
+    <Content Include="assets\sass\main.scss" />
+    <Content Include="assets\webfonts\fa-brands-400.eot" />
+    <Content Include="assets\webfonts\fa-brands-400.ttf" />
+    <Content Include="assets\webfonts\fa-brands-400.woff" />
+    <Content Include="assets\webfonts\fa-brands-400.woff2" />
+    <Content Include="assets\webfonts\fa-regular-400.eot" />
+    <Content Include="assets\webfonts\fa-regular-400.ttf" />
+    <Content Include="assets\webfonts\fa-regular-400.woff" />
+    <Content Include="assets\webfonts\fa-regular-400.woff2" />
+    <Content Include="assets\webfonts\fa-solid-900.eot" />
+    <Content Include="assets\webfonts\fa-solid-900.ttf" />
+    <Content Include="assets\webfonts\fa-solid-900.woff" />
+    <Content Include="assets\webfonts\fa-solid-900.woff2" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
