@@ -1,20 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="ActualizarDatosMascotasAdmin.aspx.cs" Inherits="PurrSoft_Proyecto_Final.Views.FormularioMascotas_Admin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <link href="../css/FormularioMascotasAdmin.css" rel="stylesheet" />
-    <link href="../css/FormularioMascotasAdmin2.css" rel="stylesheet" />
 
     <div>
 		<img src="../Images/fondo25.jpg" alt="Imagen Formulario" style="position: absolute;"/>
 		<div class="container-contact1 formulario">
 			<div class="row">
 
-			<div class=" col-xs-3 contact1-pic js-tilt" style="left: -105px; top: 0px">
-                
+			<div class=" col-xs-3 contact1-pic js-tilt" style="left: -290px; top: 0px">
+                <img src="../Images/Fondo5.jpg" alt="Imagen Formulario" style="width:2200px; height:1095px;"/>
 			</div>
 			<div class="col-xs-6 " style="left: 590px; top: -10px; width: 55%; margin-left: 0px;">
                 <asp:Button ID="btnVolver" runat="server" Text="Volver" CssClass="btn btn-info" OnClick="btnVolver_Click"/>
 			<form class=" contact1-form validate-form" method="put">
-				<h4>Datos de las Mascotas </h4> <br />
+				<h2>Datos de las Mascotas </h2> <br />
 				
 				<div class="wrap-input1 validate-input" data-validate = "Nombre is required">
                     <asp:Label ID="Label1" runat="server" Text="Nombre" CssClass="subtitulo"></asp:Label>
@@ -74,6 +73,9 @@
 
 				<div class="container-contact1-form-btn">
                     <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" CssClass="contact1-form-btn" OnClick="btnActualizar_Click"/>
+				</div>
+				<div class="container-contact100-form-btn">
+					<asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="action-button shadow animate boton-regresar" />
 				</div>
 			</form>
 				</div>

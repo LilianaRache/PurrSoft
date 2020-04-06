@@ -3,16 +3,17 @@
 
     <link href="../css/CrearUsuarioAdmin.css" rel="stylesheet" />
 
-     
+   
 	<div class="container-contact100">
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
 		<div class="wrap-contact100">
-			<div class="contact100-form-title " style="background-image: url(../images/FondoCrearUsuario.jpg);">
+			<div class="contact100-form-title " style="background-image: url(../images/FondoVeter2.jpg);">
 
-                <span class="contact100-form-title-1"><img class="imagen" src="../Images/summerfield-336672_1280.jpg" style="margin-bottom: 0px" />
-					Pepito Perez
-				</span>	
+                <span class="contact100-form-title-1">
+					<img src="../Images/FondoVeter1.jpg" class="imagen" style="margin-bottom: 0px" />
+					Actualizar Datos Administrador
+				</span>		
 			</div><br />
             <asp:Button ID="btnVolver" runat="server" Text="Volver" CssClass="btn btn-info" OnClick="btnVolver_Click"/>
 
@@ -71,8 +72,6 @@
 					<span class="focus-input100"></span>
 				</div>
 
-
-
 				<div class="wrap-input100 validate-input" data-validate = "Email is required: ex@abc.xyz">
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label4" runat="server" Text="Label">Email</asp:Label>
@@ -80,7 +79,7 @@
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate="ciudad is required">
+				<div class="wrap-input100 validate-input" data-validate="localidad is required">
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label5" runat="server" Text="Label">Ciudad</asp:Label>
                     <asp:DropDownList ID="ddlCiudad" runat="server" CssClass="input100" DataSourceID="CIUDAD_ID" DataTextField="Nombre_ciudad" DataValueField="Nombre_ciudad" Width="664px"></asp:DropDownList>
@@ -104,8 +103,10 @@
 				</div>
 
 				<div class="container-contact100-form-btn">
-                    <asp:Button CssClass="contact100-form-btn" ID="btnCrear" runat="server" Text="Crear" OnClick="btnCrear_Click" />
+					<asp:Button CssClass="contact100-form-btn" ID="btnCrear" runat="server" Text="Crear" OnClick="btnCrear_Click" />
+					<asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="action-button shadow animate boton-regresar" />
 				</div>
+
 			</form>
 		</div>
 	</div>
@@ -116,5 +117,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
     <script src="../js/Alerts.js"></script>
+
+		  <script src="../vendor/jquery/jquery.min.js"></script>
+      <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
 </asp:Content>
