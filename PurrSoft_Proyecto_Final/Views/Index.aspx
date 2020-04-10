@@ -17,22 +17,22 @@
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('../Images/docp1.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3 class="tamañoScroll, colorL">Bienvenidos</h3>
-            <p class="colorL">este es el primer vistazo a la </p>
+            <h3 class="tamañoScroll, colorL" style="font-size:30px"><b>Bienvenidos</b></h3>
+            <p class="colorL letraBanner"><em>Cuidamos a tu consentido con amor</em> </p>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('../Images/dactp.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3 class="colorL" >Funciones</h3>
-            <p class="colorL">Nuestra pagina web funciona</p>
+            <h3 class="colorL" style="font-size:30px"> <b>Atencion</b></h3>
+            <p class="colorL letraBanner"><em>Manejamos horario de atencion las 24 horas</em> </p>
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('../Images/difrentes_ani.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <%--<h3 class="colorL">Porque se hizo</h3>--%>
-            <p class="colorL">Se hizo para suplir una necesidad</p>
+                  <h3 class="colorL" style="font-size:30px"> <b>Servicios</b></h3>
+            <p class="colorL letraBanner"> <em>Ofrecemos los mejores servicios para el cuidado de tu mascota</em></p>
           </div>
         </div>
       </div>
@@ -50,12 +50,12 @@
     
     <!--login -->
     
-    <div class=" formulario  col-4" style="left: 1099px; top: -405px; width: 247px; height: 342px"><br />
+    <div class=" formulario  col-4" style="left: 1100px; top: -406px; width: 247px; height: 342px"><br />
         <form class=" col-xs-offset-10 col-xs-2" style="left: -400px; top: 44px; width: 21%; height: 255px"">
             <div class="form-group ttamaño">
                 <h4 class="ingreso">INGRESAR</h4><br />
                 <label for="exampleInputEmail1">Tipo Documento</label><br />
-                <asp:DropDownList ID="ddlTipoDoc" runat="server" Height="33px" Width="90px">
+                <asp:DropDownList ID="ddlTipoDoc" runat="server" Height="33px" Width="88px">
                     <asp:ListItem>Seleccionar</asp:ListItem>
                     <asp:ListItem>CC</asp:ListItem>
                     <asp:ListItem>TI</asp:ListItem>
@@ -82,25 +82,20 @@
         </form>
     </div>
             
-    
-
-
-    <asp:Label ID="lblMensajeIngreso" runat="server" Text="Label" BorderStyle="Double"></asp:Label>
-   
-        
-
      <!-- Portfolio Section -->
    <div class="container" style="margin-top:-220px;">
-    <h1 class="col text-center">Sistema de informacion</h1> 
+    <h1 class="col text-center" style="font-size:40px">Nuestros Servicios</h1> <br />
     <div class="row">
       <div class="col-lg-4 col-sm-6 portfolio-item" >
         <div class="card h-100">
           <img class="card-img-top" src="../Images/dacp.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">
-                <span class="tamañoTexto">Funcionalidad</span>
+                <span class="tamañoTexto">Que hacemos</span>
             </h4><br />
-            <p class="card-text tamañoContenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+            <p class="card-text tamañoContenido">
+                Contamos con servicio de hospitalización 24 horas, el cual se presta a aquellos consentidos que requieren un tratamiento médico y/o quirúrgico con una duración superior a 24 
+            </p>
           </div>
         </div>
       </div> 
@@ -109,9 +104,28 @@
           <img class="card-img-top" src="../Images/pyg.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">
-                <span class="tamañoTexto">Alcances</span>
+                <span class="tamañoTexto" >Servicios que ofrecemos</span>
             </h4><br />
-            <p class="card-text tamañoContenido">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            <p class="card-text tamañoContenido">
+              <ul>
+                  <li style="font-size:14px">
+                       Hospitalización con monitoreo constante.<br />
+                  </li>
+                  <li style="font-size:14px">
+                         Laboratorio. <br />
+                  </li>
+                  <li style="font-size:14px">
+                      Ecografias. <br />
+                  </li>
+                  <li style="font-size:14px">
+                        Radiologia. <br />   
+                  </li>
+                  <li style="font-size:14px">
+                      Áreas de hospitalización solo para gatos.</p>
+                  </li>
+
+              </ul>   
+            </p>
           </div>
         </div>
       </div>
@@ -122,7 +136,7 @@
             <h4 class="card-title">
                 <span class="tamañoTexto">Objetivo</span>
             </h4><br />
-            <p class="card-text tamañoContenido ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+            <p class="card-text tamañoContenido ">Prestar y mejorar los servicios médicos veterinarios a todas las especies, por medio de talento humano de calidad, apoyados con equipos de última generación que garanticen veracidad en los diagnósticos y los procedimientos necesarios para el tratamiento de las enfermedades de nuestros pacientes para la satisfacción y conformidad de los propietarios de mascotas.</p>
           </div>
         </div>
       </div>

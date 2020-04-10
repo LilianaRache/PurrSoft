@@ -74,12 +74,15 @@ body {
     font-style: normal;
     line-height: 1.2;
 }
+
 .align-right {
     text-align: right;
 }
+
 .mbr-bold {
     font-weight: 700;
 }
+
 .pb-4, .py-4 {
     padding-bottom: 1.5rem !important;
 }
@@ -88,9 +91,11 @@ body {
     font-family: 'Reem Kufi', sans-serif;
     font-size: 5.2rem;
 }
+
     .display-1 > .mbr-iconfont {
         font-size: 8.32rem;
     }
+
 .cid-rAroxtsyKC .text-wrap {
     padding: 0 1rem;
 }
@@ -98,20 +103,25 @@ body {
 .cid-rArHNGGDR4 .mbr-text, .cid-rArHNGGDR4 .link-wrap {
     text-align: center;
 }
+
 .mbr-text {
     font-style: normal;
     line-height: 1.6;
 }
+
 .mbr-white {
     color: #ffffff;
 }
+
 .align-center {
     text-align: center;
 }
+
 .display-7 {
     font-family: 'Muli', sans-serif;
     font-size: 20px;
 }
+
 .mbr-black {
     color: #343434;
 }
@@ -123,7 +133,7 @@ body {
     margin: 5px 0 10px 0;
     border: solid 1px #525252;
     border-collapse: collapse;
-    text-align:center;
+    text-align: center;
 }
 
     .mGrid td {
@@ -173,10 +183,31 @@ body {
 
 .boton {
     margin-left: 1200px;
-    margin-top:30px;
+    margin-top: 30px;
 }
 
 .botonActualizar {
     margin-left: 1200px;
     margin-top: 20px;
+}
+.letraGrilla{
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:15px;
+
+}
+.boton-regresar {
+    width: 160px;
+    height: 100px;
+    left: 20px;
+    top: 500px;
+    position: absolute;
+    background-color: #9E1736;
+    border-color: #9A8F91;
+    text-shadow: 0px -2px black;
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #fff;
 }

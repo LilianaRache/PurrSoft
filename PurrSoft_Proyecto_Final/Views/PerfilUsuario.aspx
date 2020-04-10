@@ -8,47 +8,57 @@
   <div class="container" style="margin-top:50px">
         
 	<div class="nombre_u" >
-<%--		<img  class="avatar_u" src="../Images/cat-widget2.jpg" alt=""/>--%>
-        <asp:Image ID="imgFotoUsuario" runat="server" />
+        <asp:Image ID="imgFotoUsuario" runat="server" CssClass="avatar_u" />
 		<h1 class="user_n">
-        <asp:Label ID="lblNombresUsu" runat="server" ></asp:Label></h1><br />
-		<asp:Label ID="lblApellidosUsu" runat="server"></asp:Label>
+        <asp:Label ID="lblNombresUsu" runat="server" Font-Size="22px" Font-Bold="true"></asp:Label><br />
+		<asp:Label ID="lblApellidosUsu" runat="server"  Font-Size="20px"  Font-Bold="true"></asp:Label></h1> 
     </div>
 		<ul class="social_lista">
 			<li>
+                 <h3><b>Telefono:</b></h3>
             <asp:Label ID="lblTelefono" runat="server" Text="Label"></asp:Label>
 			</li>
 			<li>
+                <h3><b>Correo:</b></h3>
                 <asp:Label ID="lblEmail" runat="server" Text="Label"></asp:Label> 
 			</li>
-			<li>
-                <asp:Button ID="btnActualizar" runat="server" Text="Actualizar Mis datos" CssClass="boton_personalizado" Height="35px" Width="172px" OnClick="btnActualizar_Click" />
-			</li>
 		</ul>
+      <asp:Button ID="btnActualizar" runat="server" Text="Actualizar Mis datos" CssClass="btn btn-success" Height="60px" Width="160px" Font-Size="15px" OnClick="btnActualizar_Click" />
+      <div>  
+        <ul  class="nav justify-content-end">
+        <li class="nav-item text-right">
+            <asp:Button ID="btnVolver" runat="server" CssClass="btn btn-secondary float-right" Text="Regresar" Font-Size="20px" OnClick="btnVolver_Click" />
+        </li>
+        </ul>
+          </div>
 		<div class="infromacion">
-			<h3 style="text-align:center">Mis Mascotas</h3>
-             <asp:GridView ID="gvdListaMascotasUsu" runat="server" AutoGenerateColumns="False" OnRowCommand="gvdListaMascotasUsu_RowCommand" style="margin-top: 0px" Width="735px">
+			<h3 style="text-align:center">Mis Mascotas</h3><br />
+             <asp:GridView ID="gvdListaMascotasUsu" runat="server" AutoGenerateColumns="False" OnRowCommand="gvdListaMascotasUsu_RowCommand" CssClass="tabla-mascotas" style="margin-top: 0px; left: 0px; top: 0px; width: 738px;">
                  <Columns>
-                     <asp:BoundField DataField="ID_mascota" HeaderText="Id_Mascota" />
-                     <asp:BoundField DataField="Nombre" HeaderText="Nombre de la Mascota" />
-                     <asp:BoundField DataField="Especie" HeaderText="Especie" />
-                     <asp:BoundField DataField="Raza" HeaderText="Raza" />
+                     <asp:BoundField DataField="ID_mascota" HeaderText="Id_Mascota" >
+                     <HeaderStyle BackColor="#999999" />
+                     </asp:BoundField>
+                     <asp:BoundField DataField="Nombre" HeaderText="Nombre de la Mascota" >
+                     <HeaderStyle BackColor="#999999" />
+                     </asp:BoundField>
+                     <asp:BoundField DataField="Especie" HeaderText="Especie" >
+                     <HeaderStyle BackColor="#999999" />
+                     </asp:BoundField>
+                     <asp:BoundField DataField="Raza" HeaderText="Raza" >
+                     <HeaderStyle BackColor="#999999" />
+                     </asp:BoundField>
                      <asp:TemplateField HeaderText="Acciones">
                          <ItemTemplate>
                             <asp:ImageButton CommandName="Ver" ID="imgVisualizar" runat="server" ImageUrl="~/Images/ojo.png" Width="22px"/>
                          </ItemTemplate>
+                         <HeaderStyle BackColor="#999999" />
                      </asp:TemplateField>
                  </Columns>
             </asp:GridView>
 		</div>
 
-    <div>  
-        <ul  class="nav justify-content-end">
-        <li class="nav-item text-right">
-          <a href="#" type="button" class="btn btn-secondary">Volver</a>
-        </li>
-        </ul>
-          </div>
+    
+      </div>
 
     <!--
     CSS DEL BOTON

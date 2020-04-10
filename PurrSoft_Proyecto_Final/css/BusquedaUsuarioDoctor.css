@@ -34,17 +34,17 @@
     padding-top: 40px;
     padding-left: 25px;
     font-family: 'Open Sans', sans-serif;
-    background-color: #d0f5b5;
+    background-color: darkgray;
 }
 
 .image {
     position: absolute;
     border: 3px solid white;
-    top: -55px;
-    left: 20px;
-    height: 90px;
-    width: 90px;
-    border-radius: 10px;
+    top: -50px;
+    left: 200px;
+    width: 500px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 img {
@@ -57,14 +57,15 @@ img {
 .name {
     font-size: 2rem;
     font-weight: 500;
-    
+    text-align:left;
 }
 
 .nickname {
-    
     font-size: 2rem;
     padding-bottom: 7px;
+    text-align: left;
 }
+
 
 .location {
     color: #555;
@@ -157,3 +158,29 @@ img {
     background-image: url('../Images/FondoBus.jpg');
 }
 
+.boton-regresar {
+    width: 160px;
+    height: 50px;
+    left: 320px;
+    top: 1010px;
+    position: absolute;
+    background-color: #9E1736;
+    border-color: #9A8F91;
+    text-shadow: 0px -2px black;
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+.tabla-mascotas {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    height: 50px;
+    text-align: center;
+    border-color: black;
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}

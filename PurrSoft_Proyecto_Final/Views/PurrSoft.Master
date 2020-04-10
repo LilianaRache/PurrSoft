@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/88e0261e02.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assets/css/main.css" />
 
 </head>
 <body>
@@ -63,7 +62,7 @@
             <a class="nav-link" href="contactanos.aspx">Contactanos</a>
           </li>
              <li class="nav-item">
-                <asp:Button ID="btnSalir" runat="server" Text="Salir" CssClass="nav-link" OnClick="btnSalir_Click"  />
+                <asp:Button ID="btnSalir" runat="server" Text="Salir" Font-Bold="true" CssClass="nav-link boton-salir" OnClick="btnSalir_Click"  />
           </li>
         </ul>
       </div>
@@ -77,18 +76,17 @@
             </asp:ContentPlaceHolder>
         
   <!-- Footer -->
-  <footer style="height: 70px;"  class="py-5 bg-dark font">
+  <footer style="height:100px"  class="py-5 bg-dark font">
     <div class="container">
         <p class="m-0 text-center text-white">
-			<!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | 
+			Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | 
                                             Liliana Rache, Juan Sebastian, Julian Martinez, David Cruz
 		</p>
         <p>
-					<i class="fa fa-facebook-official" style="font-size:24px"></i>
-					<i class="fa fa-github" style="font-size:24px"></i>
-					<i class="fa fa-html5" style="font-size:24px"></i>
-					<i class="fa fa-twitter-square" style="font-size:24px"></i>
-            </p>-->
+					<i class="fa fa-facebook-official" style="font-size:30px"></i>
+					<i class="fa fa-whatsapp" style="font-size:30px"></i>
+					<i class="fa fa-twitter-square" style="font-size:30px"></i>
+            </p>
     </div>  
    </footer>
 

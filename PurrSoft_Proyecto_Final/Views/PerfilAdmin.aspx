@@ -73,21 +73,30 @@
 </div><!-- container -->
     <div class="crear">
          <asp:Button ID="btnCrear" runat="server" Text="Crear Usuario" CssClass="btn btn-info letraContenido" OnClick="btnCrear_Click" style="top: -330px;margin-left: 40px; position:relative"/>
-    </div>
+    </div><br /><br />
 
        
 
     <asp:GridView ID="gvdListaUsuarios" runat="server" CssClass="mGrid tabla-mascotas" AutoGenerateColumns="False" Width="1139px" Height="209px" OnRowCommand="gvdListaUsuarios_RowCommand" >
         <Columns>
-            <asp:BoundField DataField="Numero_doc" HeaderText="Numero Documento" />
-            <asp:BoundField DataField="Tipo_documento" HeaderText="Tipo Documento" />
-            <asp:BoundField DataField="Nombres" HeaderText="Nombres" />
-            <asp:BoundField DataField="Apellidos" HeaderText="Apellidos" />
+            <asp:BoundField DataField="Numero_doc" HeaderText="Numero Documento" >
+            <HeaderStyle BackColor="#999999" />
+            </asp:BoundField>
+            <asp:BoundField DataField="Tipo_documento" HeaderText="Tipo Documento" >
+            <HeaderStyle BackColor="#999999" />
+            </asp:BoundField>
+            <asp:BoundField DataField="Nombres" HeaderText="Nombres" >
+            <HeaderStyle BackColor="#999999" />
+            </asp:BoundField>
+            <asp:BoundField DataField="Apellidos" HeaderText="Apellidos" >
+            <HeaderStyle BackColor="#999999" />
+            </asp:BoundField>
             <asp:TemplateField HeaderText="Acciones">
                 <ItemTemplate>
                     <asp:ImageButton CommandName="Ver" ID="imgVisualizar" runat="server" ImageUrl="~/Images/ojo.png" Width="22px" />
                     <asp:ImageButton CommandName="Actualizar" ID="imgActualizar" runat="server" ImageUrl="~/Images/edit.png" Width="22px" />
                 </ItemTemplate>      
+                <HeaderStyle BackColor="#999999" />
             </asp:TemplateField>
         </Columns>
      

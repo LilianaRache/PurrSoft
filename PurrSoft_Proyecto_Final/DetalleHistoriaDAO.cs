@@ -61,7 +61,7 @@ namespace PurrSoft_Proyecto_Final
 
         public Detalle_historia ConsultarDetalleIdMascota(int id_mascota)
         {
-            var consulta = (from d in bd.Detalle_historia where d.ID_detalle_historia == id_mascota select d).First();
+            var consulta = (from d in bd.Detalle_historia where d.ID_mascota == id_mascota select d).FirstOrDefault();
             return consulta;
         }
     }

@@ -41,7 +41,7 @@ namespace PurrSoft_Proyecto_Final.Views
             usuarioDTO.ID_rol = int.Parse(txtIdRol.Text);
             usuarioDTO.Nombres = txtNombreDoctor.Text;
             usuarioDTO.Apellidos = txtApellidosDoctor.Text;
-            usuarioDTO.Telefono = int.Parse(txtTelefonoDoctor.Text);
+            usuarioDTO.Telefono = Convert.ToInt32(txtTelefonoDoctor.Text);
             usuarioDTO.Direccion = txtDireccionDoctor.Text;
             usuarioDTO.Email = txtEmailDoctor.Text;
             usuarioDTO.ID_ciudad = ddlCiudadDoctor.SelectedIndex + 1;

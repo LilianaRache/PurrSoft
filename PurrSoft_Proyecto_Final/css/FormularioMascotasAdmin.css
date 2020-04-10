@@ -228,7 +228,7 @@ textarea.input1 {
 }
 
 .shadow-input1 {
-    content: '';
+    
     display: block;
     position: absolute;
     bottom: 0;
@@ -635,3 +635,11 @@ iframe {
     font-size: 15px;
     color: #fff;
 }
+.color{
+    color:#fff;
+}
+.Requiere {
+    font-size: 17px;
+    color: red;
+}
+	

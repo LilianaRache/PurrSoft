@@ -18,22 +18,23 @@ namespace PurrSoft_Proyecto_Final.Views
 
                 lblNombreMascota.Text = mascotaDTO.Nombre;
                 lblRaza.Text = mascotaDTO.Raza;
+
                 if (mascotaDTO.Especie == "Perro")
                 {
-                    imgFotoMascota.ImageUrl = "~/Images/PerroDetalleHistoria.jpg";
-                    
+                    imgFotoMascota.ImageUrl = "~/Images/Perro_Perfil.jpg";
+
                 }
                 else if (mascotaDTO.Especie == "Gato")
                 {
-
+                    imgFotoMascota.ImageUrl = "~/Images/Perfil_gato.jpg";
                 }
                 else if (mascotaDTO.Especie == "Hamster")
                 {
-
+                    imgFotoMascota.ImageUrl = "~/Images/Raton_Perfil.jpg";
                 }
                 else
                 {
-
+                    imgFotoMascota.ImageUrl = "~/Images/Perfil_Otras mascotas.jpg";
                 }
 
                 DetalleHistoriaDAO detalleHistoriaDAO = new DetalleHistoriaDAO();
@@ -52,6 +53,11 @@ namespace PurrSoft_Proyecto_Final.Views
         }
 
         protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("HistoriasClinicas.aspx");
+        }
+
+        protected void bntRegresar_Click(object sender, EventArgs e)
         {
             Response.Redirect("HistoriasClinicas.aspx");
         }

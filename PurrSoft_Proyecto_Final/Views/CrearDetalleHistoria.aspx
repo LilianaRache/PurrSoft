@@ -59,12 +59,12 @@
                             </asp:UpdatePanel>
                             
                         </div>
-                        <div class="row">
-                            <div class=" col-md-6 form-group">
-                                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" CssClass="form-submit" OnClick="btnGuardar_Click" />
+                        <div class="row" style="height: 118px">
+                            <div class=" col-md-6 form-group" style="left: 0px; top: 0px; width: 101%">
+                                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" CssClass="form-submit contact1-form-btn" OnClick="btnGuardar_Click" Height="44px" Width="40px" />
                             </div>
-                            <div class=" col-md-6 form-group">
-                                 <asp:Button ID="btnVolver" runat="server" Text="Volver" CssClass="form-submit" OnClick="btnVolver_Click" />
+                            <div class=" col-md-6 form-group" style="left: 0px; top: 0px; height: 64px">
+                                 <asp:Button ID="btnVolver" runat="server" Text="Regresar" CssClass=" boton-regresar" OnClick="btnVolver_Click" style="left: 32px; top: -2px; width: 174px; height: 48px" />
                             </div>
                         </div>
 
@@ -84,4 +84,5 @@
 
 
 
+    </div>
 </asp:Content>

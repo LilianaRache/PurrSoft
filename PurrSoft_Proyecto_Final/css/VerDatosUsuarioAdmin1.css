@@ -222,7 +222,6 @@ iframe {
 .contact100-form-title-1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
-    color: #fff;
     line-height: 1.2;
     text-align: center;
     padding-bottom: 7px;
@@ -231,7 +230,6 @@ iframe {
 .contact100-form-title-2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
-    color: #fff;
     line-height: 1.5;
     text-align: center;
 }
@@ -246,7 +244,7 @@ iframe {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(54,84,99,0.7);
+
 }
 
 
@@ -512,11 +510,11 @@ textarea.input100 {
     width: 40px;
 }
 
-.regresar {
-    width: 140px;
-    height: 30px;
-    left: 530px;
-    top: 1134px;
+.boton-regresar {
+    width: 160px;
+    height: 50px;
+    left: 320px;
+    top: 1010px;
     position: absolute;
     background-color: #9E1736;
     border-color: #9A8F91;

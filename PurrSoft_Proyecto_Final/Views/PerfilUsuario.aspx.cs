@@ -50,5 +50,10 @@ namespace PurrSoft_Proyecto_Final.Views
         {
             Response.Redirect("ActualizarDatosUSUARIO.aspx");
         }
+
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Index.aspx");
+        }
     }
 }

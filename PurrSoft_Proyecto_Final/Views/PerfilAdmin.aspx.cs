@@ -68,7 +68,7 @@ namespace PurrSoft_Proyecto_Final.Views
 		protected void btnBuscarUsuario_Click(object sender, EventArgs e)
 		{
 			Session["tipoDocBusquedaPerfilAdmin"]= ddlTipoDocumento.Text;
-			Session["numeroDocBusquedaPerfilAdmin"] = int.Parse(txtNumeroDoc.Text);
+			Session["numeroDocBusquedaPerfilAdmin"] = txtNumeroDoc.Text;
 
 			try
 			{

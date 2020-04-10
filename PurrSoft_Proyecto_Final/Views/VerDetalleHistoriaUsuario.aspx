@@ -1,94 +1,78 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PurrSoft.Master" AutoEventWireup="true" CodeBehind="VerDetalleHistoriaUsuario.aspx.cs" Inherits="PurrSoft_Proyecto_Final.Views.VerDetalleHistoriaUsuario" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <link href="../css/VerDetalleHistoriaUsuario.css" rel="stylesheet" />
-
-     <div class="signup-content" style="width: 334px; height: 390px">
-        <div class="col-md-2 " style="left: 6px; top: 20px; width: 100%; height: 405px;">
-            <h2 class="titulo" style="width: 241px; height: 102px;">Detalle de Historia</h2>
-            <div class="fakeimg">
-                <asp:Image ID="imgFotoMascota" runat="server" />
-            </div>
-            <h4>Nombre</h4>
-            <asp:Label ID="lblNombreMascota" runat="server" Text="Label"></asp:Label>
-            <h4>Raza</h4>
-            <asp:Label ID="lblRaza" runat="server" Text="Label"></asp:Label>
+     <link href="../css/VerDetalleHistoriaUsuario.css" rel="stylesheet" />
+  
+    <div class="fondo">
+        <br />
+        <br />
         </div>
+<h1 class="text-center"  style="font-size:45px; color:#00ffff;">Historial clinico</h1>
+
+<div class="container" style="margin-top:50px">
+  <div class="row">
+
+    <div class="col-sm-4">
+      <h2 style="font-size:25px;" class="color"> &nbsp &nbsp Tu Mascota</h2>
+        <br />
+        <br />
+        <br />
+             <div >
+                <asp:Image ID="imgFotoMascota" runat="server" CssClass="foto" />
+            </div>
+            <h4 style="font-size:30px;" class="color"><b>Nombre</b></h4>
+            <asp:Label ID="lblNombreMascota1" runat="server" Text="Label" Font-Size="25px" CssClass="color"></asp:Label>
+            <h4 style="font-size:30px;" class="color"><b>Raza</b></h4>
+            <asp:Label ID="lblRaza1" runat="server" Text="Label" Font-Size="25px" CssClass="color"></asp:Label>
+
+      <hr class="d-sm-none">
+    
+
+
+    <div class="col-sm-8">
+      <b><h5  style="font-size:22px;" class="color">Doctor</h5></b>
+      <asp:Label ID="lblNombreDoctor" runat="server" CssClass="form-input labels color" Font-Size="18px"></asp:Label>
+      <br> <br>
+      <h5  style="font-size:22px;" class="color">Motivo Consulta</h5>
+      <asp:Label ID="lblMotivoConsulta" runat="server" CssClass="form-input color" Font-Size="18px"></asp:Label>
+      <br /><br/>
+      <h5  style="font-size:22px;" class="color">Descripcion del caso</h5>
+      <asp:Label ID="lblDescripcionCaso" runat="server" CssClass="form-input color" Font-Size="18px"></asp:Label>
+        <br />  <br/>
+      <h5  style="font-size:22px;" class="color">Antecedentes</h5>
+      <asp:Label ID="lblAntecedentes" runat="server" CssClass="form-input color" Font-Size="18px"></asp:Label>
+        <br /><br/>
+      <h5  style="font-size:22px;" class="color">Valoracion</h5>
+      <asp:Label ID="lblValoracion" runat="server" CssClass="form-input color" Font-Size="18px"></asp:Label>
+        <br /><br />
+      <h5  style="font-size:22px;" class="color">Prescripcion medica</h5>
+      <asp:Label ID="lblPrescripcion" runat="server" CssClass="form-input color" Font-Size="18px"></asp:Label>
+        <br /><br />
+        <h5  style="font-size:22px;" class="color">Fecha de la consulta</h5>
+        <asp:Label ID="lblFechaConsulta" runat="server" CssClass="form-input color " Font-Size="18px"></asp:Label>
+        <br /><br />
+
+        <h5  style="font-size:22px;" class="color">Fecha proxima consulta</h5>
+        <asp:Label ID="lblProximaConsulta" runat="server" CssClass="form-input color" Font-Size="16px" ></asp:Label>
+        <br /><br />
+         <div class="p-t-30">
+            <asp:Button ID="Button1" runat="server" Text="Volver" CssClass="form-submit" Height="55px" Width="120px" OnClick="btnVolver_Click" /><br /><br />
+        </div>
+        
+    </div>
+  
+  </div>
+
+</div>
     </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
-        <div class="wrapper wrapper--w960">
-            <div class="card card-2" style="left: 240px; top: -427px; width: 956px; margin-top: 0px;">
-                <div class="card-heading">
-                </div>
-                <div class="card-body">
-                    <h2 class="title">Detalle de Historia </h2>
-                    <form method="POST">
-
-                        <div class="row row-space">
-                            <div class="col-2" style="left: 0px; top: 0px; width: 111%">
-                                <div class="input-group" style="left: 0px; top: 0px; width: 170%">
-                                    <asp:Label ID="Label1" runat="server" Text="Nombre del Doctor" CssClass="letra"></asp:Label><br />
-                                    <asp:Label ID="lblNombreDoctor" runat="server" CssClass="form-input labels"></asp:Label>
-                                </div>
-                            </div>
-                            <div class="col-2" style="left: 200px; top: 0px; width: 111%">
-                                <div class="input-group" style="left: 0px; top: 0px; width: 150%">
-                                    <asp:Label ID="Label2" runat="server" Text="Motivo de la consulta" CssClass="letra"></asp:Label><br />
-                                    <asp:Label ID="lblMotivoConsulta" runat="server" CssClass="form-input"></asp:Label>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="input-group">
-                            <asp:Label ID="Label3" runat="server" Text="Descripcion el Caso" CssClass="letra"></asp:Label><br />
-                            <asp:Label ID="lblDescripcionCaso" runat="server" CssClass="form-input"></asp:Label>
-                        </div>
-                        <br />
-
-
-                        <div class="input-group">
-                            <asp:Label ID="Label11" runat="server" Text="Antecedentes Medicos" CssClass="letra"></asp:Label><br />
-                            <asp:Label ID="lblAntecedentes" runat="server" CssClass="form-input"></asp:Label>
-                        </div>
-                        <br />
-
-                        <div class="input-group">
-                            <asp:Label ID="Label12" runat="server" Text="Valoracion de Resultados" CssClass="letra"></asp:Label><br />
-                            <asp:Label ID="lblValoracion" runat="server" CssClass="form-input"></asp:Label>
-                        </div>
-                        <br />
-
-
-                        <div class="input-group">
-                            <asp:Label ID="Label15" runat="server" Text="Prescripcion Medica" CssClass="letra"></asp:Label><br />
-                            <asp:Label ID="lblPrescripcion" runat="server" CssClass="form-input"></asp:Label>
-                        </div>
-                        <br />
-
-
-                        <div class="input-group">
-                            <asp:Label ID="Label16" runat="server" Text="Fecha de la Consulta" CssClass="letra"></asp:Label><br />
-                            <asp:Label ID="lblFechaConsulta" runat="server" CssClass="form-input"></asp:Label>
-                        </div>
-                        <br />
-
-
-                        <div class="input-group">
-                            <asp:Label ID="Label17" runat="server" Text="Fecha de la Proxima Consulta" CssClass="letra"></asp:Label><br />
-                            <asp:Label ID="lblProximaConsulta" runat="server" CssClass="form-input"></asp:Label>
-                        </div>
-                        <br />
-
-                        <div class="p-t-30">
-                           <asp:Button ID="btnVolver" runat="server" Text="Volver" CssClass="form-submit" Height="55px" Width="120px" OnClick="btnVolver_Click" />
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
 </asp:Content>

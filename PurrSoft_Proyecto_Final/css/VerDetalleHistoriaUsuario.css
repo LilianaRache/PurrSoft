@@ -1,2 +1,28 @@
 ﻿body {
 }
+
+.fakeimg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #aaa;
+    background-size: cover;
+}
+
+.html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fondo {
+    background-image: url("../Images/Perritos.PNG");
+    opacity:0.5;
+}
+
+.color {
+    color: black;
+}
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}

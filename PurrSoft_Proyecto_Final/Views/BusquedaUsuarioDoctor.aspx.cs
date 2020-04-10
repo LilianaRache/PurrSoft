@@ -27,7 +27,7 @@ namespace PurrSoft_Proyecto_Final.Views
 
         }
 
-        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void gvdListaMascotasBusquedaDoctor_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             GridViewRow fila = (GridViewRow)((Control)e.CommandSource).NamingContainer;
             int indice = fila.RowIndex;

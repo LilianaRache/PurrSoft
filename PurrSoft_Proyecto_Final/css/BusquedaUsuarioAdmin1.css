@@ -186,7 +186,7 @@ img {
 .boton-regresar {
     left: 10px;
     top: -110px;
-    position: absolute;
+    position: relative;
     background-color: #9E1736;
     border-color: #9A8F91;
     text-shadow: 0px -2px black;

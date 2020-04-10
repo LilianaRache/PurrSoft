@@ -29,17 +29,18 @@ namespace PurrSoft_Proyecto_Final.Views
             mascotaDTO.Raza = txtRaza.Text;
             mascotaDTO.Especie = txtEspecie.Text;
             mascotaDTO.Color = txtColor.Text;
-            mascotaDTO.Sexo = txtSexo.Text;
+            mascotaDTO.Sexo = ddlSexoMascota.SelectedValue;
             mascotaDTO.Señas_particulares = txtSeñas.Text;
             mascotaDTO.Fecha_nacimiento = ClFechaNacimiento.SelectedDate;
             if (rbEstadoMascota.SelectedItem.Value.ToString() == "Activo")
             {
                 mascotaDTO.ID_estado_mascota = 1;
             }
-            else
+            else if (rbEstadoMascota.SelectedItem.Value.ToString() == "Inactivo")
             {
                 mascotaDTO.ID_estado_mascota = 2;
             }
+            
 
             bool registrado = mascotaDAO.RegistrarMascotas(mascotaDTO);
             if (registrado == true)
@@ -51,8 +52,13 @@ namespace PurrSoft_Proyecto_Final.Views
                 ClientScript.RegisterStartupScript(this.GetType(), "alarm", "create_fail_modal()", true);
 
             }
-            Response.Redirect("BusquedaUsuarioAdmin.aspx");
+           
 
         }
+        protected void btnRegresar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("BusquedaUsuarioAdmin.aspx");
+        }
     }
+
 }

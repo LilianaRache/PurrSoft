@@ -24,7 +24,7 @@ namespace PurrSoft_Proyecto_Final.Views
                 txtSexoMascota.Text = mascotaDTO.Sexo;
                 ClFechaNacimiento.SelectedDate =(DateTime) mascotaDTO.Fecha_nacimiento;
                 txtSeñasMascota.Text = mascotaDTO.Señas_particulares;
-                txtEstado.Text = mascotaDTO.Estados.Descripcion;
+                rbEstadoMascota.SelectedIndex = mascotaDTO.ID_estado_mascota == 1 ? 0 : 1;
      
             }
 
@@ -73,5 +73,7 @@ namespace PurrSoft_Proyecto_Final.Views
         {
             Response.Redirect("BusquedaUsuarioAdmin.aspx");
         }
+
+
     }
 }

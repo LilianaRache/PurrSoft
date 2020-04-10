@@ -7,109 +7,12 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace PurrSoft_Proyecto_Final.Views {
-    
-    
-    public partial class VerDetalleHistoria {
-        
-        /// <summary>
-        /// Control Label8.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label8;
-        
-        /// <summary>
-        /// Control clfechaConsulta.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar clfechaConsulta;
-        
-        /// <summary>
-        /// Control Label9.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label9;
-        
-        /// <summary>
-        /// Control clfechaProximaConsulta.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar clfechaProximaConsulta;
-        
-        /// <summary>
-        /// Control Image1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
-        
-        /// <summary>
-        /// Control lbNombre.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbNombre;
-        
-        /// <summary>
-        /// Control lblNombreMas.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNombreMas;
-        
-        /// <summary>
-        /// Control lbRaza.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbRaza;
-        
-        /// <summary>
-        /// Control lblRaza.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRaza;
+namespace PurrSoft_Proyecto_Final.Views
+{
 
-        /// <summary>
-        /// Control lbles.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbles;
 
-        /// <summary>
-        /// Control Button1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+    public partial class VerDetalleHistoria
+    {
 
         /// <summary>
         /// Control imgFotoMascota.
@@ -121,6 +24,15 @@ namespace PurrSoft_Proyecto_Final.Views {
         protected global::System.Web.UI.WebControls.Image imgFotoMascota;
 
         /// <summary>
+        /// Control lbNombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbNombre;
+
+        /// <summary>
         /// Control lblNombreMascota.
         /// </summary>
         /// <remarks>
@@ -128,6 +40,15 @@ namespace PurrSoft_Proyecto_Final.Views {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblNombreMascota;
+
+        /// <summary>
+        /// Control label22.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label22;
 
         /// <summary>
         /// Control lblRaza.
@@ -139,13 +60,13 @@ namespace PurrSoft_Proyecto_Final.Views {
         protected global::System.Web.UI.WebControls.Label lblRaza;
 
         /// <summary>
-        /// Control Label1.
+        /// Control labldoct.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Label labldoct;
 
         /// <summary>
         /// Control lblNombreDoctor.
@@ -157,13 +78,13 @@ namespace PurrSoft_Proyecto_Final.Views {
         protected global::System.Web.UI.WebControls.Label lblNombreDoctor;
 
         /// <summary>
-        /// Control Label2.
+        /// Control label1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labldoct;
+        protected global::System.Web.UI.WebControls.Label label1;
 
         /// <summary>
         /// Control lblMotivoConsulta.
@@ -175,13 +96,13 @@ namespace PurrSoft_Proyecto_Final.Views {
         protected global::System.Web.UI.WebControls.Label lblMotivoConsulta;
 
         /// <summary>
-        /// Control Label3.
+        /// Control label2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNombreDoc;
+        protected global::System.Web.UI.WebControls.Label label2;
 
         /// <summary>
         /// Control lblDescripcionCaso.
@@ -193,13 +114,13 @@ namespace PurrSoft_Proyecto_Final.Views {
         protected global::System.Web.UI.WebControls.Label lblDescripcionCaso;
 
         /// <summary>
-        /// Control Label11.
+        /// Control label3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label11;
+        protected global::System.Web.UI.WebControls.Label label3;
 
         /// <summary>
         /// Control lblAntecedentes.
@@ -211,13 +132,13 @@ namespace PurrSoft_Proyecto_Final.Views {
         protected global::System.Web.UI.WebControls.Label lblAntecedentes;
 
         /// <summary>
-        /// Control Label12.
+        /// Control label4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label12;
+        protected global::System.Web.UI.WebControls.Label label4;
 
         /// <summary>
         /// Control lblValoracion.
@@ -229,13 +150,13 @@ namespace PurrSoft_Proyecto_Final.Views {
         protected global::System.Web.UI.WebControls.Label lblValoracion;
 
         /// <summary>
-        /// Control Label15.
+        /// Control lblprescri.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label15;
+        protected global::System.Web.UI.WebControls.Label lblprescri;
 
         /// <summary>
         /// Control lblPrescripcion.
@@ -247,13 +168,13 @@ namespace PurrSoft_Proyecto_Final.Views {
         protected global::System.Web.UI.WebControls.Label lblPrescripcion;
 
         /// <summary>
-        /// Control Label16.
+        /// Control Label5.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label16;
+        protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
         /// Control lblFechaConsulta.
@@ -262,18 +183,16 @@ namespace PurrSoft_Proyecto_Final.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblprescri;
         protected global::System.Web.UI.WebControls.Label lblFechaConsulta;
 
         /// <summary>
-        /// Control lblPrescripcionMe.
-        /// Control Label17.
+        /// Control Label7.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label17;
+        protected global::System.Web.UI.WebControls.Label Label7;
 
         /// <summary>
         /// Control lblProximaConsulta.
@@ -285,12 +204,12 @@ namespace PurrSoft_Proyecto_Final.Views {
         protected global::System.Web.UI.WebControls.Label lblProximaConsulta;
 
         /// <summary>
-        /// Control btnVolver.
+        /// Control bntRegresar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVolver;
+        protected global::System.Web.UI.WebControls.Button bntRegresar;
     }
 }

@@ -9,8 +9,8 @@
 		}
 		.avatar_u
 		{
-			width:200px ;
-			height:200px;
+			width:180px ;
+			height:180px;
 			border-radius: 50%;
 		}
 		.user_n
@@ -85,3 +85,14 @@
             text-align: center;
 			height:300px; 
         }
+.tabla-mascotas {
+	font-size: 16px;
+	font-weight: 600;
+	color: black;
+	height: 50px;
+	text-align: center;
+	border-color: black;
+	position: relative;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}

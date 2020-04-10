@@ -14,26 +14,27 @@ namespace PurrSoft_Proyecto_Final.Views
             MascotaDAO mascotaDAO = new MascotaDAO();
             Mascotas mascotaDTO = mascotaDAO.ConsultaPorId(int.Parse(Session["IdMascotaGrilladeUsuario"].ToString()));
 
-            lblNombreMascota.Text = mascotaDTO.Nombre;
-            lblRaza.Text = mascotaDTO.Raza;
+            lblNombreMascota1.Text = mascotaDTO.Nombre;
+            lblRaza1.Text = mascotaDTO.Raza;
 
             if (mascotaDTO.Especie == "Perro")
             {
-                imgFotoMascota.ImageUrl = "~/Images/PerroDetalleHistoria.jpg";
+                imgFotoMascota.ImageUrl = "~/Images/Perro_Perfil.jpg";
 
             }
             else if (mascotaDTO.Especie == "Gato")
             {
-
+                imgFotoMascota.ImageUrl = "~/Images/Perfil_gato.jpg";
             }
             else if (mascotaDTO.Especie == "Hamster")
             {
-
+                imgFotoMascota.ImageUrl = "~/Images/Raton_Perfil.jpg";
             }
             else
             {
-
+                imgFotoMascota.ImageUrl = "~/Images/Perfil_Otras mascotas.jpg";
             }
+            
 
             DetalleHistoriaDAO detalleHistoriaDAO = new DetalleHistoriaDAO();
             Detalle_historia detalle_HistoriaDTO = detalleHistoriaDAO.ConsultarDetalleIdMascota(int.Parse(Session["IdMascotaGrilladeUsuario"].ToString()));

@@ -31,7 +31,8 @@
             </div>
         </div><br /> <br />
     <div>
-        <asp:Button ID="btnCrearMascota" CssClass="boton-mascota" runat="server" Text="Crear Nueva Mascota" OnClick="btnCrearMascota_Click"/>
+        <h1>Listado de Mascotas Activas </h1>
+        <asp:Button ID="btnCrearMascota" CssClass="boton-mascota" runat="server" Text="Crear Nueva Mascota" OnClick="btnCrearMascota_Click" style="left: 491px; top: 330px"/>
     </div> <br />
     <asp:GridView ID="gvdListaMascotas" CssClass="gridView tabla-mascotas" runat="server" AutoGenerateColumns="False" OnRowCommand="gvdListaMascotas_RowCommand" Width="75%" >
         <Columns>
@@ -48,7 +49,7 @@
         </Columns>
     </asp:GridView><br /><br />
     <h1>Listado de Mascotas Inactivas </h1>
-    <asp:GridView ID="gvdListadoMascotasInactivas" runat="server" CssClass="gridView" Width="967px" AutoGenerateColumns="False" OnRowCommand="gvdListadoMascotasInactivas_RowCommand">
+    <asp:GridView ID="gvdListadoMascotasInactivas" runat="server" CssClass="gridView tabla-mascotas" Width="967px" AutoGenerateColumns="False" OnRowCommand="gvdListadoMascotasInactivas_RowCommand">
         <Columns>
             <asp:BoundField DataField="ID_mascota" HeaderText="Id_Mascota" />
             <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
@@ -64,7 +65,7 @@
 
     <div >
         <div class="col-sm-6" style="left: 1100px; top: -70px;  width:10%;">
-            <asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="action-button shadow animate boton-regresar" />
+            <asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="action-button shadow animate boton-regresar" style="left: -136px; top: -585px" OnClick="btnRegresar_Click" />
         </div>  
     </div>
 

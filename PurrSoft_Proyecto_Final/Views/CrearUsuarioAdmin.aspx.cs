@@ -57,7 +57,7 @@ namespace PurrSoft_Proyecto_Final.Views
             }
         }
 
-        protected void btnVolver_Click(object sender, EventArgs e)
+        protected void btnRegresar_Click(object sender, EventArgs e)
         {
             Response.Redirect("PerfilAdmin.aspx");
         }

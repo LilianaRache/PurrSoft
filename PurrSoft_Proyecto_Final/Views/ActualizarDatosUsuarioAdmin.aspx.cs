@@ -17,15 +17,16 @@ namespace PurrSoft_Proyecto_Final.Views
                 UsuarioDAO usuarioDAO = new UsuarioDAO();
                 Usuarios usuarioDTO = usuarioDAO.ConsultaPorDocumento(Session["TipodocUsuarioActualizarPerfil"].ToString(), int.Parse(Session["numeroDocUsuarioActualizarPerfil"].ToString()));
 
-                txtNombre.Text = usuarioDTO.Nombres.ToString();
-                txtApellidos.Text = usuarioDTO.Apellidos.ToString();
-                txtRol.Text = usuarioDTO.Roles.Descripcion.ToString();
+                txtNombre.Text = usuarioDTO.Nombres;
+                txtApellidos.Text = usuarioDTO.Apellidos;
+                ddlRol.SelectedValue = usuarioDTO.Roles.Descripcion;
                 txtTelefono.Text = usuarioDTO.Telefono.ToString();
-                txtDireccion.Text = usuarioDTO.Direccion.ToString();
-                txtEmail.Text = usuarioDTO.Email.ToString();
-                txtCiudad.Text = usuarioDTO.Ciudades.Nombre_ciudad.ToString();
-                txtPassword.Text = usuarioDTO.Password_u.ToString();
-                imgPerfilActualizar.ImageUrl = usuarioDTO.Imagen.ToString();
+                txtDireccion.Text = usuarioDTO.Direccion;
+                txtEmail.Text = usuarioDTO.Email;
+                ddlCiudad.SelectedValue = usuarioDTO.Ciudades.Nombre_ciudad.ToString();
+                txtPassword.Text = usuarioDTO.Password_u;
+                imgPerfilActualizar.ImageUrl = usuarioDTO.Imagen;
+                txtImagen.Text = usuarioDTO.Imagen;
 
             }
            
@@ -61,7 +62,7 @@ namespace PurrSoft_Proyecto_Final.Views
             }
          }
 
-        protected void btnVolvel_Click(object sender, EventArgs e)
+        protected void btnRegresar_Click(object sender, EventArgs e)
         {
             Response.Redirect("PerfilAdmin.aspx");
         }

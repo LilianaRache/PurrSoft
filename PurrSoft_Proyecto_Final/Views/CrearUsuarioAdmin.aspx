@@ -12,10 +12,10 @@
 
                 <span class="contact100-form-title-1">
 					<img src="../Images/FondoVeter1.jpg" class="imagen" style="margin-bottom: 0px" />
-					Actualizar Datos Administrador
+					Crear Nuevo Usuario
 				</span>		
 			</div><br />
-            <asp:Button ID="btnVolver" runat="server" Text="Volver" CssClass="btn btn-info" OnClick="btnVolver_Click"/>
+           
 
 			<form class="contact100-form validate-form">
 				<div class="wrap-input100 validate-input" data-validate="tipoDocumento is required">
@@ -33,6 +33,10 @@
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label1" runat="server" Text="Label"> Numero de Documento</asp:Label>
 					<asp:TextBox ID="txtNumeroDocumento" runat="server" CssClass="input100"> </asp:TextBox>
+					<asp:RequiredFieldValidator id="RequiredFieldValidator1"
+                                ControlToValidate="txtNumeroDocumento"
+                                ErrorMessage="Numero de documento es requerido"
+                                runat="server" CssClass="Requiere"/>
 					<span class="focus-input100"></span>
 				</div>
 
@@ -48,6 +52,10 @@
 					<span class="label-input100">Phone:</span>
 					<asp:Label class="labels" ID="Label2" runat="server" Text="Label"> Nombres</asp:Label>
                     <asp:TextBox ID="txtNombre" runat="server" CssClass="input100"  ></asp:TextBox>
+					<asp:RequiredFieldValidator id="RequiredFieldValidator2"
+                                ControlToValidate="txtNombre"
+                                ErrorMessage="Nombre es requerido"
+                                runat="server" CssClass="Requiere"/>
 					<span class="focus-input100"></span>
 				</div>
 
@@ -55,6 +63,10 @@
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label3" runat="server" Text="Label">Apellidos</asp:Label>
                     <asp:TextBox ID="txtApellido" runat="server" CssClass="input100" ></asp:TextBox>
+					<asp:RequiredFieldValidator id="RequiredFieldValidator3"
+                                ControlToValidate="txtApellido"
+                                ErrorMessage="Apellido es requerido"
+                                runat="server" CssClass="Requiere"/>
 					<span class="focus-input100"></span>
 				</div>
 
@@ -62,6 +74,10 @@
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label8" runat="server" Text="Label">Telefono</asp:Label>
                     <asp:TextBox ID="txtTelefono" runat="server" CssClass="input100"></asp:TextBox>
+					<asp:RequiredFieldValidator id="RequiredFieldValidator4"
+                                ControlToValidate="txtTelefono"
+                                ErrorMessage="Telefono es requerido"
+                                runat="server" CssClass="Requiere"/>
 					<span class="focus-input100"></span>
 				</div>
 
@@ -69,6 +85,10 @@
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label9" runat="server" Text="Label">Direccion</asp:Label>
                     <asp:TextBox ID="txtDireccion" runat="server" CssClass="input100" ></asp:TextBox>
+					<asp:RequiredFieldValidator id="RequiredFieldValidator5"
+                                ControlToValidate="txtDireccion"
+                                ErrorMessage="Dirrecion es requerido"
+                                runat="server" CssClass="Requiere"/>
 					<span class="focus-input100"></span>
 				</div>
 
@@ -76,12 +96,16 @@
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label4" runat="server" Text="Label">Email</asp:Label>
                     <asp:TextBox ID="txtEmail" runat="server" CssClass="input100" TextMode="Email" ></asp:TextBox>
+						<asp:RequiredFieldValidator id="RequiredFieldValidator6"
+                                ControlToValidate="txtEmail"
+                                ErrorMessage="Correo es requerido"
+                                runat="server" CssClass="Requiere"/>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate="localidad is required">
 					<span class="label-input100"></span>
-					<asp:Label class="labels" ID="Label5" runat="server" Text="Label">Ciudad</asp:Label>
+					<asp:Label class="labels" ID="Label5" runat="server" Text="Label">Localidad</asp:Label>
                     <asp:DropDownList ID="ddlCiudad" runat="server" CssClass="input100" DataSourceID="CIUDAD_ID" DataTextField="Nombre_ciudad" DataValueField="Nombre_ciudad" Width="664px"></asp:DropDownList>
 					<asp:SqlDataSource ID="CIUDAD_ID" runat="server" ConnectionString="<%$ ConnectionStrings:PurrsoftConnectionString %>" SelectCommand="SELECT [ID_ciudad], [Nombre_ciudad] FROM [Ciudades]"></asp:SqlDataSource>
 					<asp:SqlDataSource ID="CIUDAD" runat="server" ConnectionString="<%$ ConnectionStrings:PurrsoftConnectionString %>" SelectCommand="SELECT [Nombre_ciudad] FROM [Ciudades]"></asp:SqlDataSource>
@@ -92,6 +116,10 @@
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label6" runat="server" Text="Label">Contraseña</asp:Label>
                     <asp:TextBox ID="txtPassword" runat="server"  CssClass="input100"  TextMode="Password"></asp:TextBox>
+					<asp:RequiredFieldValidator id="RequiredFieldValidator7"
+                                ControlToValidate="txtPassword"
+                                ErrorMessage=" Contraseña es requerido"
+                                runat="server" CssClass="Requiere"/>
 					<span class="focus-input100"></span>
 				</div>
 
@@ -99,14 +127,17 @@
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label7" runat="server" Text="Label">Imagen</asp:Label>
                     <asp:TextBox ID="txtImagen" runat="server" CssClass="input100"></asp:TextBox>
+					<asp:RequiredFieldValidator id="RequiredFieldValidator8"
+                                ControlToValidate="txtImagen"
+                                ErrorMessage="Imagen es requerido"
+                                runat="server" CssClass="Requiere"/>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="container-contact100-form-btn">
-					<asp:Button CssClass="contact100-form-btn" ID="btnCrear" runat="server" Text="Crear" OnClick="btnCrear_Click" />
-					<asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="action-button shadow animate boton-regresar" />
+					<asp:Button CssClass="contact100-form-btn" ID="btnCrear" runat="server" Text="Crear" OnClick="btnCrear_Click" />					
 				</div>
-
+				<asp:Button ID="btnRegresar" runat="server" Text="Regresar" CausesValidation="false" CssClass="action-button shadow animate boton-regresar" style="left: 467px; top: 1332px" OnClick="btnRegresar_Click"  />
 			</form>
 		</div>
 	</div>

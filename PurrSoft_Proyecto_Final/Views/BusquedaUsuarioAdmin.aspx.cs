@@ -105,6 +105,9 @@ namespace PurrSoft_Proyecto_Final.Views
             Response.Redirect("CrearMascotaAdmin.aspx");
         }
 
-        
+        protected void btnRegresar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PerfilAdmin.aspx");
+        }
     }
 }

@@ -8,11 +8,11 @@
 			<div class="row">
 
 			<div class=" col-md-3 contact1-pic js-tilt" style="left: -340px; top: 0px">
-                <img src="../Images/FondoInfoMas.jpg" alt="Imagen Formulario" style="width:1900px; height:1046px;"/>
+                <img src="../Images/FondoInfoMas.jpg" alt="Imagen Formulario" style="width:1900px; height:1046px; opacity:0.5"/>
 			</div>
-			<div class="col-md-6 " style="left: 438px; top: 8px; width: 55%;">
-			<form class=" contact1-form validate-form" method="get">
-				<h3>Datos de las Mascotas </h3> <br />
+			<div class="col-md-6 " style="left: 135px; top: 8px; width: 44%;">
+			<form class=" validate-form" method="get">
+				<h3 style="font-size:30px; color:black; width: 814px;"> Datos de las Mascotas</h3><br />
 				
 				<div class="wrap-input1 validate-input" data-validate = "Nombre is required">
                     <asp:Label CssClass="texto" ID="Label1" runat="server" Text="Nombre de la Mascota"></asp:Label>
@@ -51,21 +51,18 @@
 				</div>
 
 				<div class="wrap-input1 validate-input " data-validate = "FechaNacimiento is required">
-					<input class="input1" name="FechaNacimiento"  placeholder="Fecha de Nacimiento">
+					<asp:Label CssClass="texto" ID="Label7" runat="server" Text="Fecha de Nacimiento"></asp:Label>
+					<asp:TextBox ID="txtFechaNacimiento" runat="server" CssClass="input1"></asp:TextBox>
 					<span class="shadow-input1"></span>
 				</div>
-
+    
 				<div class="wrap-input1 validate-input" data-validate = "Message is required">
-
-					<h3>Estado de la Mascota</h3><br />
-                    <asp:CheckBoxList ID="cboxEstadoMascota" runat="server" RepeatColumns="1" Height="77px" Width="359px">
-                        <asp:ListItem>Activo</asp:ListItem>
-                        <asp:ListItem>Inactivo</asp:ListItem>
-                    </asp:CheckBoxList>
+					<asp:Label CssClass="texto" ID="Label8" runat="server" Text="Estado"></asp:Label>
+                    <asp:TextBox ID="txtEstado" runat="server" CssClass="input1"></asp:TextBox>
 				</div>
-
+				<br />
 				<div class="container-contact1-form-btn">
-                    <asp:Button ID="btnVolver" runat="server" Text="Volver"  CssClass="contact1-form-btn" OnClick="btnVolver_Click" />
+                    <asp:Button ID="btnVolver" runat="server" Text="Volver"  CssClass="contact1-form-btn" OnClick="btnVolver_Click" style="top:1160px;left:220px;" Width="112px" />
 				</div>
 			</form>
 				</div>

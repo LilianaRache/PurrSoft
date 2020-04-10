@@ -8,11 +8,11 @@
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
 		<div class="wrap-contact100">
-			<div class="contact100-form-title " style="background-image: url(../Images/FondoVerusu.jpg);">
+			<div class="contact100-form-title " style="background-image: url(../Images/FondoVerDatosUsu.PNG);">
 
                 <span class="contact100-form-title-1">
                     <asp:Image ID="imgFotoPerfil" runat="server" CssClass="imagen" />	
-					Ver datos			
+					Ver datos del Usuario		
 				</span>
 			</div><br />
 
@@ -86,10 +86,10 @@
 					<asp:Label class="labels" ID="Label6" runat="server" Text="Contraseña: "></asp:Label>
                     <asp:TextBox ID="txtPassword" runat="server" required="required" CssClass="input100"  ReadOnly="True" TextMode="Password" ></asp:TextBox>
 					<span class="focus-input100"></span>
-				</div>
+				</div><br /><br />
 
 				<div class="container-contact100-form-btn">
-                    <asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="regresar" />
+                    <asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="boton-regresar" OnClick="btnRegresar_Click" style="left: 389px; top: 1081px" />
 				</div>
 			</form>
 		</div>

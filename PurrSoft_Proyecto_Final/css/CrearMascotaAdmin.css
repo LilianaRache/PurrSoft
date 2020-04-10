@@ -8,7 +8,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    color: #9E1736;
+    color: #fff;
 }
 
 body, html {
@@ -133,9 +133,6 @@ iframe {
     padding: 15px;
     background: #009bff;
     background: -webkit-linear-gradient(left, #9E1736, #2c2c2c);
-    background: -o-linear-gradient(left, #0072ff, #00c6ff);
-    background: -moz-linear-gradient(left, #0072ff, #00c6ff);
-    background: linear-gradient(left, #0072ff, #00c6ff);
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -432,6 +429,45 @@ textarea.input1 {
     height: 30px;
     background-color: #a4a4a4;
 }
+.letra{
+    font-size:13px;
+}
 
+.boton-regresar {
+    width: 160px;
+    height: 50px;
+    left: 320px;
+    top: 1010px;
+    position: absolute;
+    background-color: #9E1736;
+    border-color: #9A8F91;
+    text-shadow: 0px -2px black;
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+
+.boton-mascota {
+    width: 160px;
+    height: 50px;
+    top: 1010px;
+    left: -200px;
+    position: absolute;
+    background-color: #1D6774;
+    border-color: #9A8F91;
+    text-shadow: 0px -2px black;
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
 /*David cl*/
 
+.Requiere {
+    font-size: 17px;
+    color: red;
+}
+	

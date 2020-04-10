@@ -2,28 +2,13 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <link rel="stylesheet" href="../assets/css/main.css" />
-<section id="one">
-								<div class="image main" data-position="center">
-									<img src="../images/FondoHistoria.jpg" />
-								</div>
+    <link href="../css/HistoriasClinicas.css" rel="stylesheet" />
+
+    <div class="Container" style="margin-top: 50px;">
+        <section class="content4 cid-rArHNGGDR4" id="content04-1q">
+            <img class="img1" src="../Images/FondoHistoria.jpg" alt="Mobirise" style="margin-top: 50px;">
+
             <div class="container">
-									<header class="major">
-										<h2>Historial clinico</h2>
-									</header>
-                                    <h4>Motivo de consulta </h4>
-									 <asp:Label ID="Label4" runat="server" Text="Label">cxvdfvfdfdgdfgd</asp:Label>
-                                    <br />
-									<h4>Descripcion del caso</h4>
-									 <asp:Label ID="Label3" runat="server" Text="Label">cxvdfvfdfdgdfgd</asp:Label>
-                                    <br />
-                                    <h4>Antecedentes</h4>
-									< <asp:Label ID="Label2" runat="server" Text="Label">cxvdfvfdfdgdfgd</asp:Label>
-                                    <br />
-                                    <h4>Valoracion de resultados</h4>
-                                    <asp:Label ID="Label1" runat="server" Text="Label">cxvdfvfdfdgdfgd</asp:Label>
-								</div>
-							</section>
 
                 <div class="row justify-content-md-end">
                     <div class="col-lg-6 col-md-12">
@@ -41,13 +26,12 @@
             </div>
 
             <div>
-                <asp:Button ID="btnVolver" runat="server" Text="Volver" Height="37px" Width="69px" CssClass="btn btn-info boton" OnClick="btnVolver_Click" />
-    </div>
+                <asp:Button ID="btnVolver" runat="server" Text="Regresar" CssClass="boton-regresar boton letraGrilla" OnClick="btnVolver_Click" style="left: 4px; top: 477px; width: 114px; height: 41px" />
+            </div>
 
         </section>
-        <br />
-        <br />
-        <asp:GridView ID="gvdListaDetalle" CssClass="mGrid" runat="server" Style="margin-left: 73px" Width="1209px" AutoGenerateColumns="False" OnRowCommand="gvdListaDetalle_RowCommand">
+        <br /><br /><br /><br />
+        <asp:GridView ID="gvdListaDetalle" CssClass="mGrid letraGrilla" runat="server" Style="margin-left: 73px" Width="1209px" AutoGenerateColumns="False" OnRowCommand="gvdListaDetalle_RowCommand">
             <Columns>
                 <asp:BoundField DataField="ID_detalle_historia" HeaderText="Id_Detalle" />
                 <asp:BoundField DataField="Nombre_doctor" HeaderText="Doctor que lo atendio" />
@@ -61,16 +45,9 @@
         </asp:GridView>
     </div>
     <div>
-        <asp:Button ID="btnAgregarDetalle" runat="server" Text="Agregar Detalle" CssClass="btn btn-warning botonActualizar" OnClick="btnAgregarDetalle_Click" />
+        <asp:Button ID="btnAgregarDetalle" runat="server" Text="Agregar Detalle" CssClass="btn btn-success botonActualizar letraGrilla" OnClick="btnAgregarDetalle_Click" />
     </div>
     <br />
 
-<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+
 </asp:Content>
