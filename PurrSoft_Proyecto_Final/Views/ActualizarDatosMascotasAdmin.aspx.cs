@@ -21,7 +21,7 @@ namespace PurrSoft_Proyecto_Final.Views
                 txtEspecie.Text = mascotaDTO.Especie;
                 txtRazaMascota.Text = mascotaDTO.Raza;
                 txtColorMascota.Text = mascotaDTO.Color;
-                txtSexoMascota.Text = mascotaDTO.Sexo;
+                ddlSexoMascota.SelectedValue = mascotaDTO.Sexo; 
                 ClFechaNacimiento.SelectedDate =(DateTime) mascotaDTO.Fecha_nacimiento;
                 txtSeñasMascota.Text = mascotaDTO.Señas_particulares;
                 rbEstadoMascota.SelectedIndex = mascotaDTO.ID_estado_mascota == 1 ? 0 : 1;
@@ -43,7 +43,7 @@ namespace PurrSoft_Proyecto_Final.Views
             mascotaDTO.Especie = txtEspecie.Text;
             mascotaDTO.Raza = txtRazaMascota.Text;
             mascotaDTO.Color = txtColorMascota.Text;
-            mascotaDTO.Sexo = txtSexoMascota.Text;
+            mascotaDTO.Sexo = ddlSexoMascota.SelectedValue;
             mascotaDTO.Señas_particulares = txtSeñasMascota.Text;
             mascotaDTO.Fecha_nacimiento = ClFechaNacimiento.SelectedDate;
             if (rbEstadoMascota.SelectedItem.Value.ToString() == "Activo")
@@ -74,6 +74,6 @@ namespace PurrSoft_Proyecto_Final.Views
             Response.Redirect("BusquedaUsuarioAdmin.aspx");
         }
 
-
+       
     }
 }

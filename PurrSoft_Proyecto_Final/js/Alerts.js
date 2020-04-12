@@ -3,7 +3,7 @@ function update_success_modal() {
 
     Swal.fire({
         title: 'Registro actualizado exitosamente',
-        width: 300,
+        width: 400,
         padding: '3em',
         background: '#fff url(/images/trees.png)',
         backdrop: `rgba(0,0,123,0.4) url("../Images/nyan-cat.gif") left top no-repeat`
@@ -15,7 +15,7 @@ function create_success_modal() {
 
     Swal.fire({
         title: ' Se registro exitosamente',
-        width: 300,
+        width: 400,
         padding: '3em',
         background: '#fff url(/images/trees.png)',
         backdrop: `rgba(0,0,123,0.4) url("../Images/nyan-cat.gif") left top no-repeat`
@@ -27,7 +27,7 @@ function delete_success_modal() {
 
     Swal.fire({
         title: 'Eliminado exitosamente',
-        width: 300,
+        width: 400,
         padding: '3em',
         background: '#fff url(/images/trees.png)',
         backdrop: `rgba(0,0,123,0.4) url("../Images/nyan-cat.gif") left top no-repeat  width:100px`
@@ -39,7 +39,7 @@ function activate_success_modal() {
 
     Swal.fire({
         title: 'Activado exitosamente',
-        width: 300,
+        width: 400,
         padding: '3em',
         background: '#fff url(/images/trees.png)',
         backdrop: `rgba(0,0,123,0.4) url("../Images/nyan-cat.gif") left top no-repeat`
@@ -90,6 +90,7 @@ function create_success_user_modal() {
         'Que Bien!',
         'El usuario se registro correctamente',
         'success'
+        
     )
 }
 

@@ -508,3 +508,7 @@ input[type=checkbox]:not(old) {
     -moz-transition: all 0.4s;
     transition: all 0.4s;
 }
+.Requiere {
+    font-size: 17px;
+    color: red;
+}

@@ -7,7 +7,7 @@
         <div class="shadow overflow col-md-offset-4" style="margin-bottom:50px; margin-top:12px; width:500px; height: 250px;">
             <img src="../Images/fondo29.jpg" class="header" alt="Alternate Text" />
             <div class="profile datos-perfil">
-                <div class="image imagen">
+                <div class="image imagen" style="left: 54px; top: 29px; width: 140px; height: 140px">
                     <asp:Image ID="imgUsuario" runat="server" /> 
                 </div>
                 <div class="name nombre">

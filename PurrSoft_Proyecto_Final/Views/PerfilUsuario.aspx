@@ -8,6 +8,7 @@
   <div class="container" style="margin-top:50px">
         
 	<div class="nombre_u" >
+        
         <asp:Image ID="imgFotoUsuario" runat="server" CssClass="avatar_u" />
 		<h1 class="user_n">
         <asp:Label ID="lblNombresUsu" runat="server" Font-Size="22px" Font-Bold="true"></asp:Label><br />
@@ -23,17 +24,17 @@
                 <asp:Label ID="lblEmail" runat="server" Text="Label"></asp:Label> 
 			</li>
 		</ul>
-      <asp:Button ID="btnActualizar" runat="server" Text="Actualizar Mis datos" CssClass="btn btn-success" Height="60px" Width="160px" Font-Size="15px" OnClick="btnActualizar_Click" />
+      <asp:Button ID="btnActualizar" runat="server" Text="Actualizar Mis datos" CssClass="btn btn-success" Height="60px" Width="160px" Font-Size="14px" Font-Bold="true" OnClick="btnActualizar_Click" />
       <div>  
         <ul  class="nav justify-content-end">
         <li class="nav-item text-right">
-            <asp:Button ID="btnVolver" runat="server" CssClass="btn btn-secondary float-right" Text="Regresar" Font-Size="20px" OnClick="btnVolver_Click" />
+            <asp:Button ID="btnVolver" runat="server" CssClass="btn btn-secondary float-right boton-regresar" Text="Regresar" Font-Size="20px" OnClick="btnVolver_Click" style="left: -200px; top: -56px; margin-bottom: 0" />
         </li>
         </ul>
           </div>
 		<div class="infromacion">
 			<h3 style="text-align:center">Mis Mascotas</h3><br />
-             <asp:GridView ID="gvdListaMascotasUsu" runat="server" AutoGenerateColumns="False" OnRowCommand="gvdListaMascotasUsu_RowCommand" CssClass="tabla-mascotas" style="margin-top: 0px; left: 0px; top: 0px; width: 738px;">
+             <asp:GridView ID="gvdListaMascotasUsu" runat="server" AutoGenerateColumns="False" OnRowCommand="gvdListaMascotasUsu_RowCommand" CssClass="tabla-mascotas" style="margin-top: 0px; left: 164px; top: 0px; width: 738px;">
                  <Columns>
                      <asp:BoundField DataField="ID_mascota" HeaderText="Id_Mascota" >
                      <HeaderStyle BackColor="#999999" />
@@ -60,25 +61,6 @@
     
       </div>
 
-    <!--
-    CSS DEL BOTON
-
-        <style type="text/css">
-  .boton_personalizado{
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 6px;
-    border: 2px solid #0016b0;
-  }
-  .boton_personalizado:hover{
-    color: #1883ba;
-    background-color: #ffffff;
-  }
-</style>
--->   
+    
 
 </asp:Content>

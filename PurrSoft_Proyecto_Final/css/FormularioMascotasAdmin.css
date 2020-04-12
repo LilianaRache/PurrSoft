@@ -9,7 +9,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    color: #fff;
+    color: #000000;
+    font-size: 14px;
 }
 
 body, html {
@@ -624,7 +625,7 @@ iframe {
     width: 160px;
     height: 50px;
     left: 500px;
-    top: 840px;
+    top: 1010px;
     position: absolute;
     background-color: #9E1736;
     border-color: #9A8F91;
@@ -636,7 +637,7 @@ iframe {
     color: #fff;
 }
 .color{
-    color:#fff;
+    color:#000000;
 }
 .Requiere {
     font-size: 17px;

@@ -193,11 +193,14 @@
     <Content Include="Images\FondoCrearUsuario.jpg" />
     <Content Include="Images\fondodoctor.jpg" />
     <Content Include="Images\FondoHistoria.jpg" />
+    <Content Include="Images\fondoousuario.jpeg" />
     <Content Include="Images\FondoPerfil.jpg" />
+    <Content Include="Images\fondoperfilusu.jpeg" />
     <Content Include="Images\fondoperro.jpg" />
     <Content Include="Images\fondou.jpg" />
     <Content Include="Images\fondousuarios.jpg" />
     <Content Include="Images\FondoVerDatosUsu.PNG" />
+    <Content Include="Images\fondoverdetallesusu.PNG" />
     <Content Include="Images\FondoVerusu.jpg" />
     <Content Include="Images\fondoveteri.jpg" />
     <Content Include="Images\Fondo_ActualizarDoctor.PNG" />
@@ -206,6 +209,7 @@
     <Content Include="Images\nyan-cat.gif" />
     <Content Include="Images\ojo.png" />
     <Content Include="Images\parrot-Ver.jpg" />
+    <Content Include="Images\perfilusua.jpeg" />
     <Content Include="Images\Perfil_gato.jpg" />
     <Content Include="Images\Perfil_Otras mascotas.jpg" />
     <Content Include="Images\Perritos.PNG" />

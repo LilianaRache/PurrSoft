@@ -981,3 +981,12 @@ input {
     height: 200px;
     border-radius: 150px;
 }
+
+.fondo1 {
+    background-image: url("../Images/fondoverdetallesusu.PNG");
+}
+
+.color {
+    color: black;
+    font-weight: bold;
+}

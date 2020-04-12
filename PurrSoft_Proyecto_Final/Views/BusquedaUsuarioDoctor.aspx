@@ -9,19 +9,21 @@
                 
                 <div class="name nombre">
                     &nbsp;&nbsp;
+                    <asp:Label ID="Label1" runat="server" Text="Nombre: "></asp:Label>
                     <asp:Label ID="lblNombres" runat="server" Text="Nombre"></asp:Label>
                 </div>
                 <div class="nickname apellido">
                     &nbsp;
+                    <asp:Label ID="Label2" runat="server" Text="Apellido: "></asp:Label>
                     <asp:Label ID="lblApellidos" runat="server" Text="apellido"></asp:Label>
                 </div>
                 <div class="telefono name">
-                        <span class="count">&nbsp;Telefono/Celular : </span>
-                        <asp:Label ID="lblTelefono" runat="server" Text="Label" CssClass="count"></asp:Label>
+                        <span class="count">&nbsp;Telefono: </span>
+                        <asp:Label ID="lblTelefono" runat="server" Text="Label" ></asp:Label>
                 </div>
                 <div class="Correo name">
                     <span class="count">&nbsp;Correo: </span> 
-                        <asp:Label ID="lblEmail" runat="server" Text="Label" CssClass="count"></asp:Label>
+                        <asp:Label ID="lblEmail" runat="server" Text="Label" ></asp:Label>
                 </div>
                 <div class="image imagen" style="left: 777px; top: 252px; width: 118px; height: 91px">
                     <asp:Image ID="imgPerfilDoctor" runat="server" BorderColor="Red" />
@@ -32,7 +34,9 @@
    
      <asp:Button ID="btnVolver" runat="server" Text="Volver" CssClass="boton-regresar" Height="49px" OnClick="btnVolver_Click" Width="115px" style="left: 19px; top: 358px" />
     <br /> <br />
-
+    <br />
+    <br />
+   
     <asp:GridView ID="gvdListaMascotasBusquedaDoctor" CssClass="gridView tabla-mascotas" runat="server" Width="1231px" AutoGenerateColumns="False" OnRowCommand="gvdListaMascotasBusquedaDoctor_RowCommand" style="margin-left: 91px" >
         <Columns>
             <asp:BoundField DataField="ID_mascota" HeaderText="Id_Mascota"><HeaderStyle BackColor="#999999" /></asp:BoundField>
@@ -45,7 +49,7 @@
             </asp:TemplateField>
         </Columns>
     </asp:GridView>
-
+     <br />
     
     <script src="../js/sweetalert2.all.min.js"></script>
 	<!-- Optional: include a polyfill for ES6 Promises for IE11 -->

@@ -8,7 +8,7 @@
 			<div class="row">
 
 			<div class=" col-xs-3 contact1-pic js-tilt" style="left: -290px; top: 0px">
-                <img src="../Images/Fondo5Gato.jpg" alt="Imagen Formulario" style="width:2200px; height:1246px; opacity:0.5;"/>
+                <img src="../Images/Gatofondo1.jpg" alt="Imagen Formulario" style="width:2200px; height:1246px; opacity:0.5;"/>
 			</div>
 			<div class="col-xs-6 " style="left: 121px; top: 66px; width: 59%; margin-left: 0px; height: 1182px;">
 			<form class=" contact1-form validate-form" method="put" >
@@ -16,7 +16,7 @@
 				
 				<div class="wrap-input1 validate-input" data-validate = "Nombre is required">
                     <asp:Label ID="Label1" runat="server" Text="Nombre" CssClass="subtitulo"></asp:Label>
-                    <asp:TextBox ID="txtNombreMascota" runat="server" CssClass="input1" Height="38px">dfsfdf</asp:TextBox>
+                    <asp:TextBox ID="txtNombreMascota" runat="server" CssClass="input1" Height="38px"></asp:TextBox>
 						<asp:RequiredFieldValidator id="RequiredFieldValidator1"
                                 ControlToValidate="txtNombreMascota"
                                 ErrorMessage="Nombre de la mascota es requerido"
@@ -56,9 +56,12 @@
 
 				<div class="wrap-input1 validate-input" data-validate = "Sexo is required">
                     <asp:Label ID="Label5" runat="server" Text="Sexo" CssClass="subtitulo"></asp:Label>
-                    <asp:TextBox ID="txtSexoMascota" runat="server"  CssClass="input1" Height="45px"></asp:TextBox>
+                    <asp:DropDownList ID="ddlSexoMascota" runat="server" CssClass="input1">
+                        <asp:ListItem>F</asp:ListItem>
+                        <asp:ListItem>M</asp:ListItem>
+                    </asp:DropDownList>
 						<asp:RequiredFieldValidator id="RequiredFieldValidator5"
-                                ControlToValidate="txtSexoMascota"
+                                ControlToValidate="ddlSexoMascota"
                                 ErrorMessage="Sexo es requerido"
                                 runat="server" CssClass="Requiere"/>
 					<span class="shadow-input1"></span>
@@ -71,7 +74,7 @@
                                 ControlToValidate="txtSeñasMascota"
                                 ErrorMessage="Señas de la mascota es requerido"
                                 runat="server" CssClass="Requiere"/>
-					<span class="shadow-input1" style="left: 0; bottom: -25px; height: 2600%"></span>
+					<span class="shadow-input1" style="left: 0; bottom: -25px; height: 0%"></span>
 				</div>
 
 				<div class="wrap-input1 validate-input " data-validate = "Fecha is required">
