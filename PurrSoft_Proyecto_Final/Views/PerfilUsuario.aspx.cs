@@ -34,7 +34,7 @@ namespace PurrSoft_Proyecto_Final.Views
             if (e.CommandName == "Ver")
             {
                 Session["IdMascotaGrilladeUsuario"] = gvdListaMascotasUsu.Rows[indice].Cells[0].Text;
-                Response.Redirect("VerDetalleHistoriaUsuario.aspx");
+                CargarGrillaDetalles();
             }
         }
 
@@ -44,6 +44,27 @@ namespace PurrSoft_Proyecto_Final.Views
             MascotaDAO mascotaDAO = new MascotaDAO();
             gvdListaMascotasUsu.DataSource = mascotaDAO.ConsultarMascotasActivasUsuario(int.Parse(Session["numeroDocumentoLogin"].ToString()));
             gvdListaMascotasUsu.DataBind();
+        }
+
+        protected void CargarGrillaDetalles()
+        {
+            DetalleHistoriaDAO detalleHistoriaDAO = new DetalleHistoriaDAO();
+            gvdListaDetalleMascotasUsuario.DataSource = detalleHistoriaDAO.ConsultaDetallesIdMascota(int.Parse(Session["IdMascotaGrilladeUsuario"].ToString()));
+            gvdListaDetalleMascotasUsuario.DataBind();
+        }
+
+
+
+        protected void gvdListaDetalleMascotasUsuario_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            GridViewRow fila = (GridViewRow)((Control)e.CommandSource).NamingContainer;
+            int indice = fila.RowIndex;
+
+            if (e.CommandName == "VerDetalle")
+            {
+                Session["IdDetalleGrillaUsuario"] = gvdListaDetalleMascotasUsuario.Rows[indice].Cells[0].Text;
+                Response.Redirect("VerDetalleHistoriaUsuario.aspx");
+            }
         }
 
         protected void btnActualizar_Click(object sender, EventArgs e)
@@ -57,3 +78,6 @@ namespace PurrSoft_Proyecto_Final.Views
         }
     }
 }
+
+
+

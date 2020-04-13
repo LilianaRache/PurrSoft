@@ -31,6 +31,8 @@
 
         </section>
         <br /><br /><br /><br />
+    <div class="infromacion">
+        <h3 style="text-align: center; font-size: 30px;">Lista de Detalles</h3><br/>
         <asp:GridView ID="gvdListaDetalle" CssClass="mGrid letraGrilla" runat="server" Style="margin-left: 73px" Width="1209px" AutoGenerateColumns="False" OnRowCommand="gvdListaDetalle_RowCommand">
             <Columns>
                 <asp:BoundField DataField="ID_detalle_historia" HeaderText="Id_Detalle" />
@@ -43,6 +45,7 @@
                 </asp:TemplateField>
             </Columns>
         </asp:GridView>
+        </div>
     </div>
     <div>
         <asp:Button ID="btnAgregarDetalle" runat="server" Text="Agregar Detalle" CssClass="btn btn-success botonActualizar letraGrilla" OnClick="btnAgregarDetalle_Click" />

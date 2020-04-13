@@ -97,7 +97,7 @@
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate="image is required"">
+				<div class="wrap-input100 validate-input" data-validate="image is required">
 					<span class="label-input100"></span>
 					<asp:Label class="labels" ID="Label7" runat="server" Text="Label">Imagen</asp:Label>
                     <asp:TextBox ID="txtImagenP" runat="server" CssClass="input100"></asp:TextBox>
@@ -114,7 +114,7 @@
  
 					<div class="container-contact100-form-btn">
 					<span>
-						  <asp:Button ID="btnVolvel" runat="server" Text="Regresar" CssClass=" boton-regresar" OnClick="btnVolvel_Click" style="left: 495px; top: 1170px" /> 
+						  <asp:Button ID="btnVolvel" runat="server" Text="Regresar" CausesValidation="False" CssClass=" boton-regresar" OnClick="btnVolvel_Click" style="left: 495px; top: 1170px" /> 
 					</span>
 	  
 				</div>

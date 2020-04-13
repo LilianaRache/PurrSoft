@@ -64,20 +64,26 @@
                 <asp:Label ID="Label2" runat="server" Text="Numero de documento"></asp:Label>
                 <asp:TextBox ID="txtNumeroDoc" runat="server" CssClass="cedula"></asp:TextBox>
 			</div> <br />
-			<div>
+        <div>
                 <asp:Button class="btn btn-info letraContenido" ID="btnBuscarUsuario" runat="server" Text="Buscar" Height="39px" Width="95px" OnClick="btnBuscarUsuario_Click" />
 			</div><br />
 	</section><!-- content -->
           </div>
+        <br/>
         </div>
 </div><!-- container -->
+    
     <div class="crear">
          <asp:Button ID="btnCrear" runat="server" Text="Crear Usuario" CssClass="btn btn-info letraContenido" OnClick="btnCrear_Click" style="top: -330px;margin-left: 40px; position:relative"/>
+       
     </div><br /><br />
 
        
+   
+       
 
     <asp:GridView ID="gvdListaUsuarios" runat="server" CssClass="mGrid tabla-mascotas" AutoGenerateColumns="False" Width="1139px" Height="209px" OnRowCommand="gvdListaUsuarios_RowCommand" >
+        
         <Columns>
             <asp:BoundField DataField="Numero_doc" HeaderText="Numero Documento" >
             <HeaderStyle BackColor="#999999" />
@@ -101,7 +107,8 @@
         </Columns>
      
     </asp:GridView>
-
+       
+   
 
       <script src="../vendor/jquery/jquery.min.js"></script>
       <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

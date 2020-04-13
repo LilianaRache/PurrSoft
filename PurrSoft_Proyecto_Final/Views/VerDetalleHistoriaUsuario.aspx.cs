@@ -37,7 +37,7 @@ namespace PurrSoft_Proyecto_Final.Views
             
 
             DetalleHistoriaDAO detalleHistoriaDAO = new DetalleHistoriaDAO();
-            Detalle_historia detalle_HistoriaDTO = detalleHistoriaDAO.ConsultarDetalleIdMascota(int.Parse(Session["IdMascotaGrilladeUsuario"].ToString()));
+            Detalle_historia detalle_HistoriaDTO = detalleHistoriaDAO.ConsultarDetalle(int.Parse(Session["IdDetalleGrillaUsuario"].ToString()));
 
             lblNombreDoctor.Text = detalle_HistoriaDTO.Nombre_doctor;
             lblMotivoConsulta.Text = detalle_HistoriaDTO.Motivo_consulta;

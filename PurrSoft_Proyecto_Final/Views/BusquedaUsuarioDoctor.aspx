@@ -36,7 +36,8 @@
     <br /> <br />
     <br />
     <br />
-   
+    <div class="infromacion">
+    <h3 style="text-align: center; font-size: 30px;">Lista de Mascotas</h3><br/>
     <asp:GridView ID="gvdListaMascotasBusquedaDoctor" CssClass="gridView tabla-mascotas" runat="server" Width="1231px" AutoGenerateColumns="False" OnRowCommand="gvdListaMascotasBusquedaDoctor_RowCommand" style="margin-left: 91px" >
         <Columns>
             <asp:BoundField DataField="ID_mascota" HeaderText="Id_Mascota"><HeaderStyle BackColor="#999999" /></asp:BoundField>
@@ -49,6 +50,7 @@
             </asp:TemplateField>
         </Columns>
     </asp:GridView>
+    </div>
      <br />
     
     <script src="../js/sweetalert2.all.min.js"></script>

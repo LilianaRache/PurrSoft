@@ -113,7 +113,7 @@
 						  <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" CssClass="contact100-form-btn fa fa-long-arrow-right m-l-7 " OnClick="btnActualizar_Click" />
 					</span>
 					<span>
-						  <asp:Button ID="btnVolvel" runat="server" Text="Regresar" CssClass="boton-regresar" OnClick="btnVolvel_Click" style="left: 434px; top: 1188px" />
+						  <asp:Button ID="btnVolvel" runat="server"  CausesValidation="False" Text="Regresar" CssClass="boton-regresar" OnClick="btnVolvel_Click" style="left: 434px; top: 1188px" />
 					</span>
 				</div>
 					<asp:TextBox ID="txtIdRol"  runat="server" CssClass="input100" Visible="False"></asp:TextBox>

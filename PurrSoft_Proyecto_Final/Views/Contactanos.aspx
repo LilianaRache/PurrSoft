@@ -79,7 +79,7 @@
         <div >
 
                 <div class="col-sm-6" style="left: 1090px; top: -80px;  width:10%;">
-                    <asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="action-button shadow animate boton" />
+                    <asp:Button ID="btnRegresar" runat="server" Text="Regresar" CssClass="action-button shadow animate boton" OnClick="btnRegresar_Click"/>
                 </div>  
         </div>
 
